@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif !important;
+ }
+ 
+ .playerContainer{
+    position : relative;
+    width : 100%;
+ }
+ 
+ .playerVideo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+ 
+ .playerVideo video {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+ }
+ 
+ 
+ /* ============== */
+ /* Controls */
+ /* ============== */
+ 
+ .controlContainer{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 0px;   
+    align-items: flex-end;
+ }
+ 
+ .controlContainer.closed{
+    display: none;
+ }
+ 
+ .playerBg{
+ 
+    position: absolute;
+    height: 540px;
+    width: 100%;
+    background-image: linear-gradient(0deg, #1A1819 0%, rgba(26,25,25,0.00) 100%);
+    transition: opacity 300ms;
+    opacity: 1;
+ }
+ 
+ .playerBg.closed{
+    opacity: 0;
+ }
+ 
+ .btnsContainer{
+    z-index: 1;
+    transition: transform 300ms;
+    display: flex;
+    margin: 65px;
+    align-items: center;
+    width : 100%;
+    transform: translate(0px, 0px);
+ }
+ 
+ .btnsContainer.closed{
+    transform: translate(0px, 200px);
+ }
+ 
+ .title{
+ 
+    position: absolute;
+    font-size: 70px;
+    color: #E4E4E4;
+    left: 88px;
+    top: 88px;
+    transition: transform 300ms;
+ 
+ }
+ 
+ .title.off{
+ 
+    transform : translate(0px,-200px)
+ 
+ }
+ 
+ /* ============== */
+ /* TIMELINE */
+ /* ============== */
+ 
+ .timeLineControls{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 55px;
+ }
+ 
+ .timeLine{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+ }
+ 
+ .currentTime{
+    background-color: white;
+    height: 6px;
+    position: absolute;
+ }
+ 
+ .totalTime{
+    background-color: #C0C0C0;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+ }
+ 
+ .timeCounter{
+    font-family: SFUIText-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin:25px;
+    width : 70px;
+ }
+ 
+ .playBtn{
+    
+    z-index: 1;
+    height: 95px;
+    width: 129px;
+    margin-right: 55px;
+    background-color: white;
+ }
+ 
+ .videoContainer{
+ 
+    width: 100%;
+    height: 100%;
+ 
+ }
+ 
+ /* ============== *//* ============== */
+ /* ============== *//* ============== */
+ /* ============== *//*    subtitle    */
+ /* ============== *//* ============== */
+ /* ============== *//* ============== */
+ 
+ .subtitlesContainer{
+    position: absolute;
+    color: white;
+    font-size: 40;
+    text-align: center;
+    bottom: 67px;
+    width: 100%;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    transition: transform 300ms;
+ }
+ 
+ .subtitle{
+    width: 1420px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+ }
+ 
+ .controlBg{
+    background-color: white;
+    width: 100%;
+    transition: height 300ms;
+    transition-delay : 50ms;
+ }
+ 
+ .subControlContainer{
+    width: 225px;
+    height: 56px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+ } 
+ 
+ .subControl{
+    position: absolute;
+    font-size: 20px;
+    color: #727272;
+    letter-spacing: 0;
+    padding-left: 30px;
+    width: calc(100% - 30px);
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition : transform 300ms, opacity 300ms;
+    font-family: sans-serif;
+ }
+ 
+ .subControl.active{
+    font-weight: bolder;
+    font-size: 22px;
+ }
+ 
+ .subControl.hidden{
+    opacity: 0;
+    /* transition : transform 0ms, opacity 0ms; */
+ }
+ 
+ .librasVideo{
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0,0,0,0.2);
+    width : 600px !important;
+ }
+ 
+ .iconContainer{
+ 
+    position: absolute;
+    height: 56px;
+    width: 56px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+ 
+ }
+ 
+ .subIcon{
+    
+    height: 4px;
+    width: 18px;
+    background-color: 282828;
+    transition: all 400ms;
+ 
+ }
+ 
+ /* ===================== */
+ /* Play icon */
+ /* ===================== */
+ .play-pause {
+    
+    z-index: 1;
+    height: 95px;
+    width: 129px;
+    margin-right: 55px;
+    font-size: 48px;
+  }
+  
+  .play-pause:before,
+  .play-pause:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .play-pause:before {
+    content: "";
+    left: 75px;
+    width: 0;
+    height: 45px;
+    border-top: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0.3em solid #fff;
+    transition: all 200ms linear;
+    opacity: 0;
+  }
+  
+  .play-pause:after {
+    content: "";
+    left: 40;
+    width: 0;
+    height: 0;
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+    border-left: 0.833334em solid #fff;
+    transition: all 200ms linear;
+  }
+  
+  .play-pause.on:before {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: .3em;
+    height: 45px;
+    opacity: 1;
+  }
+  
+  .play-pause.on:after {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: .3em;
+    height: 45px;
+  }

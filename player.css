@@ -46,6 +46,7 @@
     background-image: linear-gradient(0deg, #1A1819 0%, rgba(26,25,25,0.00) 100%);
     transition: opacity 300ms;
     opacity: 1;
+
  }
  
  .playerBg.closed{

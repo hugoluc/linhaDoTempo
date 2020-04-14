@@ -57,8 +57,6 @@ simplePlayer.prototype.load = function(){
 }
 
 simplePlayer.prototype.toggleVisibility = function(){
-
-    console.log("sjadfklhgkfsdhgklafsdjh");
     
 
     if(this.isVisible){
@@ -83,6 +81,15 @@ simplePlayer.prototype.toggleVisibility = function(){
 // Pause/play controls
 function timeLineControl(_video, _parent, _controlContainer, _container, _subs, _title){
 
+    this.toggleControlsEvent = new Event("toggleControls",  { menuOpen : this.menuOpen });
+    this.addEventListener = (_eventName, _function) => {
+        this.container.addEventListener(_eventName,(_e)=>{ _function({ menuOpen : this.menuOpen }) })
+    }
+
+    this.dispatchEvent = (_event)=>{
+        this.container.dispatchEvent(_event)
+    }
+
     _video.addEventListener('timeupdate', (_event)=>{ 
         if (_event.target.currentTime >= this.video.duration) {}
         this.timeUpdated(_event.target.currentTime )
@@ -103,7 +110,6 @@ function timeLineControl(_video, _parent, _controlContainer, _container, _subs, 
     this.subtilteControl.interactionHandler = () => { this.closeControlTimeout() }
     this.subtilteControl.subtitlesContainer.style.transform = "translate(0px,-150px)"
 
-    this.menuOpen = true
     this.timouts = []
     this.waitTime = 3000
     this.closeControlTimeout()
@@ -121,7 +127,6 @@ timeLineControl.prototype.createDOMelements = function (_parent,_controlContaine
     this.title = document.createElement('div')
     this.title.innerHTML = this.titleText
     this.title.className = "title"
-    // _container.appendChild(this.title)
 
     this.playBtn = document.createElement('div')
     this.playBtn.className = "play-pause"
@@ -253,22 +258,24 @@ timeLineControl.prototype.closeControls = function(){
 
     this.subtilteControl.subtitlesContainer.style.transform = "translate(0px,0px)"
     this.title.classList.add("off")  
-
+    this.dispatchEvent(this.toggleControlsEvent )
 }
 
 timeLineControl.prototype.openControls = function(){    
 
-    this.controlContainer.classList.toggle("closed")    
+    this.controlContainer.classList.remove("closed")    
     setTimeout(()=>{
-        this.btnsContainer.classList.toggle("closed")
-        this.bg.classList.toggle("closed")
+        this.btnsContainer.classList.remove("closed")
+        this.bg.classList.remove("closed")
     },1)
 
     this.menuOpen = true
     this.closeControlTimeout()
 
     this.subtilteControl.subtitlesContainer.style.transform = "translate(0px,-150px)"
-    this.title.classList.toggle("off")  
+    this.title.classList.remove("off")  
+
+    this.dispatchEvent(this.toggleControlsEvent )
 
 }
 

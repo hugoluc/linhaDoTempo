@@ -213,6 +213,14 @@ function linhaDoTempo(_data){
 
     this.createDOMElements()
 
+    setTimeout( ()=> {
+        console.log("12");
+        
+        this.goToPage(this.data.length-1)
+        setTimeout( ()=> {this.goToPage(0)},500)
+
+    },500)
+
 }
 
 //controleers functions
@@ -246,6 +254,7 @@ linhaDoTempo.prototype.goToPage = function(_pageId){
     
     this.currentPage = _pageId
     this.pagesContainer.style.transform = "translateX(" + ((-window.outerWidth) * _pageId) + "px)"
+    this.headerTitle.innerHTML = this.pages[this.currentPage].data.title
 
 }
 
@@ -266,6 +275,23 @@ linhaDoTempo.prototype.showControls = function(_pageId){
 
 }
 
+//Header
+//=============================
+linhaDoTempo.prototype.openHeader = function(_pageId){
+
+    console.log("open header");
+    this.headerContainer.classList.remove("off")
+    
+    
+}
+
+linhaDoTempo.prototype.closeHeader = function(_pageId){
+
+    console.log("close header");
+    this.headerContainer.classList.add("off")
+
+}
+
 //creating elements
 //=============================
 linhaDoTempo.prototype.createDOMElements = function(){
@@ -279,7 +305,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.pagesContainer.className = "pagesContainer"
     this.pagesContainer.style.width = this.data.length * window.innerWidth
     this.appContainer.appendChild(this.pagesContainer)
-
+    
     // interface elements
     this.nextBtn = document.createElement('div')
     this.nextBtn.className = "Btn next"
@@ -287,54 +313,69 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.nextBtn.addEventListener("touchstart", (en) =>{
         console.log(en.target);
         this.toNextPage()
-        
     })
-
+    
     this.previousBtn = document.createElement('div')
     this.previousBtn.className = "Btn previous"
     this.appContainer.appendChild(this.previousBtn)
     this.previousBtn.addEventListener("touchstart", (en) =>{
         console.log(en.target);
         this.toPreviousPage()
-        
     })
-
+    
     this.indicatorContainerOff = document.createElement('div')
     this.indicatorContainerOff.className = "indicatorContainer"
     this.appContainer.appendChild(this.indicatorContainerOff)
-
+    
     this.indicatorContainer = document.createElement('div')
     this.indicatorContainer.className = "indicatorContainer"
     this.appContainer.appendChild(this.indicatorContainer)
-
+    
     this.createPages()
     
     for (let index = 0; index < this.data.length; index++) {
-
+        
         //indicators
         var indicatorSizes = {}
         indicatorSizes.padding = 10
         indicatorSizes.parentWidth = parseInt(window.getComputedStyle(this.indicatorContainer).width)
         indicatorSizes.width = (indicatorSizes.parentWidth - (this.data.length * indicatorSizes.padding - 1))/ this.data.length
-
+        
         var indicator = document.createElement('div')
         indicator.className = "indicator"
         indicator.style.width = indicatorSizes.width 
         this.indicatorContainer.appendChild(indicator)
         this.indicators.push(indicator)
         if(index == this.currentPage){ indicator.classList.add("on") }
-
+        
         var indicatorOff = document.createElement('div')
         indicatorOff.className = "indicatorBg"
         indicatorOff.style.width = indicatorSizes.width
         this.indicatorContainerOff.appendChild(indicatorOff)
-    
+        
     }
-
+    
+    //headers
+    this.headerContainer = document.createElement('div')
+    this.headerContainer.className = "headerContainer off"
+    this.appContainer.appendChild(this.headerContainer)
+    
+    this.headerTitle = document.createElement('div')
+    this.headerTitle.className = "headerTitle"
+    this.headerContainer.appendChild(this.headerTitle)
+    
+    this.headerBtn = document.createElement('div')
+    this.headerBtn.className = "headerBtn"
+    this.headerContainer.appendChild(this.headerBtn)
+    this.headerBtn.addEventListener("touchstart",()=>{
+        this.pages[this.currentPage].showOverlay()
+        this.showControls()
+    })
+    
 }
 
 linhaDoTempo.prototype.createPages = function(){
-
+    
     // Create Pages
     for (let index = 0; index < this.data.length; index++) {
         console.log( "creating Pages..." );
@@ -343,6 +384,15 @@ linhaDoTempo.prototype.createPages = function(){
         console.log(contentData);
 
         var page = new Page(contentData)
+        page.player.controls.addEventListener("toggleControls",(_e)=>{
+            
+            if(_e.menuOpen){
+                this.openHeader()
+            }else{
+                this.closeHeader()
+            }
+    
+        })
         page.id = index
         page.overlayCallback = ()=>{ this.hideControls() }
 
@@ -354,6 +404,7 @@ linhaDoTempo.prototype.createPages = function(){
 
 }
 
+
 //===============================================================
 //===============================================================
 //                             PAGES
@@ -364,6 +415,8 @@ function Page(_data){
 
     this.data = _data.video
     this.overlayCallback = ()=>{}
+    this.overlayAnimationEnd = ()=>{}
+    
     this.createDomElements()
 
 }
@@ -383,13 +436,14 @@ Page.prototype.createDomElements = function(){
     this.player.id = this.id
     this.player.onloaded = () => { this.getVideoImage(this.player,this.overlayContainer,1) }
 
+
     //overlay
     this.overlayContainer = document.createElement('div')
     this.overlayContainer.className = "overlayContainer"
     this.container.appendChild(this.overlayContainer)
     this.overlayContainer.addEventListener("touchstart", (en) =>{
-        this.overlayCallback()
         this.hideOverLay()
+        this.overlayCallback()
     })
 
 
@@ -400,8 +454,7 @@ Page.prototype.createDomElements = function(){
     this.overlay.className = "overlay"
     this.overlayContainer.appendChild(this.overlay)
     this.overlay.addEventListener('webkitTransitionEnd', (e) => {    
-        this.overlayContainer.style.display = "none"
-        this.player.toggleVisibility()
+        this.overlayAnimationEnd()
     })
 
     //overlay content
@@ -486,15 +539,39 @@ Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
 
     this.overlay.classList.add("off")
 
+    this.overlayAnimationEnd = ()=>{
+        this.overlayContainer.style.display = "none"
+        this.player.toggleVisibility()
+        this.player.controls.play()
+        this.player.controls.openControls()
+        this.overlayAnimationEnd = ()=>{
+            console.log("fdgasfgafdg");
+            
+        }
+    }
+    
 }
 
 Page.prototype.showOverlay = function(_player,_imageContainer,scale){
 
-    this.overlay.classList.remove("off")
+    console.log("show overlay");
+    
+    this.player.controls.pause()
+    this.player.controls.closeControls()
+
+    this.overlayContainer.style.display = "block"
+    setTimeout(()=>{
+        this.overlay.classList.remove("off")
+
+    },1)
+    // this.overlay.addEventListener('webkitTransitionEnd', (e) => {    
+    //     this.overlayContainer.style.display = "none"
+    //     this.player.toggleVisibility()
+    //     this.player.controls.play()
+    //     this.player.controls.openControls()
+    // })
 
 }
-
-
 
 //===============================================================
 //===============================================================

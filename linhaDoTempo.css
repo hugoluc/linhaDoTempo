@@ -3,13 +3,21 @@
     src: url("Sohne/Sohne-Mager.otf")
 }
 @font-face {
-font-family: "Sohne bold";
-src: url("Sohne/Sohne-Halbfett.otf")
+    font-family: "Sohne bold";
+    src: url("Sohne/Sohne-Halbfett.otf")
 }
+
+@font-face {
+    font-family: "SohneBold";
+    src: url("Sohne/Sohne-Fett.otf")
+}
+
+
 html {
     overflow: scroll;
     width : 1920px;
     height: 1080px;
+    font-family: Sohne;
 
 }
 body{
@@ -121,32 +129,44 @@ body{
     position: absolute;
     top: 0px;
     width: 100%;
-    height: 100px;
+    height: 500px;
     opacity: 1;
+    transform : translateY(0);
+    transition: opacity 300ms, transform 300ms;
 }
 
 .headerContainer.off{
 
+    transform : translateY(-100px);
     opacity: 0;
 
 }
 
-.headerTitle{
+.headerBg{
 
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4)  0%, rgba(26,25,25,0.00) 50%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.headerTitle{
     color: white;
     position: absolute;
-
+    top: 60px;
+    left : 60px;
+    font-size: 70px;
+    max-width: 1420px;
 }
 
 .headerBtn{
-
     position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: white;
+    top: 60px;
+    right: 60px;
+    background-color: #3D3D3D;
     width: 100px;
     height: 100px;
-
+    
 }
 
 
@@ -169,6 +189,12 @@ body{
 .imagePreview{
     position: absolute;
 }
+
+.imagePreview.content{
+    width: 100%;
+    height: 100%;
+}
+
 .overlayContainer{
     height: 100%;
     width: 100%;
@@ -245,4 +271,203 @@ body{
     top: 640px;
     left : 410px
 
+}
+
+/* ==================================== */
+/* ==================================== */
+/*            Content Page              */
+/* ==================================== */
+/* ==================================== */
+
+.contentBackground{
+
+    width: 730px;
+    height: 730px;
+    background-color: #282828;
+    position: absolute;
+    top: 100px;
+    left: 210px;
+    padding : 50px;
+    transition: width 300ms, height 300ms, top 300ms, left 300ms;
+}
+
+.contentBackground.open{
+
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    background-color: #282828;
+    top: 0px;
+    left: 0px;
+    padding : 50px;
+    
+}
+
+.headerContet{
+    display: flex;
+}
+
+.open .contentOpen{
+    opacity: 0;
+ }
+
+ .contentOpen{
+  opacity: 1;
+  transition : opacity 200ms;
+ }
+
+ .contentContainer{
+
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+ }
+
+/* -----------text---------- */
+
+.textConainer{
+
+    width: 730px;
+    max-height: 730px;
+    min-height: 730px;
+    position: relative;
+    top: 100px;
+    left: 210px;
+    padding : 50px;
+    transition: width 300ms, height 300ms, top 300ms, left 300ms;    
+}
+
+.textConainer.open{
+    top: 0px;
+    left: 0px;
+    max-height: 99999px;
+    width: 830px;
+}
+
+
+.textConainer .overlayTitle{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-family: SohneBold;
+}
+
+.textConainer .overlayLine{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.textConainer .contentText{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    font-size: 34;
+    max-height: 250px;
+    transition: max-height 500ms;
+}
+
+.open .textConainer .contentText{
+    max-height: 99999px;
+}
+
+.textConainer .contentOpen{
+
+    color: white;
+    bottom: 50px;
+    position: absolute;
+    font-size: 40;
+}
+
+
+/* -----------btn---------- */
+
+.open .closeBtn{
+
+    transform: scale(1);
+    transition-delay: 200ms;
+}
+
+.closeBtn{
+    transition-delay: 0ms;
+    transform: scale(0);
+    transition: transform 300ms;
+   
+    width: 75px;
+    height: 75px;
+    background-color: #3D3D3D;
+    position: absolute;
+    top: 55px;
+    right: 55px;
+    border-radius: 55px;
+
+}
+
+.open .bottomBar{
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bootomBarIcon{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+/* -----------------image */
+
+.contentImageContainer{
+    
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    margin-top : 100px;
+    transition: opacity 100ms;
+}
+
+.open .contentImageContainer{
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.open .bodyContet{
+    display: flex;
+    flex-flow: column;
+}
+
+.bodyContet{
+    display: none;
+}
+
+.contentImageContainer.cover{
+    margin-top: 50px;
+}
+
+.contentImageContainer .image{
+    width : 560px;
+}
+
+.contentImageContainer .legend{
+    margin-top: 20px;
+    color: white;
+    font-size : 24px;
+    width: 560;
 }

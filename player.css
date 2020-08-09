@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif !important;
  }
  
  .playerContainer{
@@ -291,3 +290,4 @@
     border-left-width: .3em;
     height: 45px;
   }
+  

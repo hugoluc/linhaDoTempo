@@ -1,4 +1,4 @@
-
+var cIndex = 0
 var options = {
     pages : [
         {
@@ -34,31 +34,31 @@ var options = {
                 ]
             },
         },
-        // {     
-        //     type : "content",
-        //     video : {
-        //         title : "Cras varius bibendum risus quis molestie",
-        //         description : "Cras varius bibendum risus quis molestie",
-        //         images : [
-        //             { 
-        //                 url : 'content/' + cIndex + '/img.jpg' ,
-        //                 title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        //                 cover : true
-        //             },
-        //             { 
-        //                 url : 'content/' + cIndex + '/img.jpg' ,
-        //                 title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        //                 cover : true
-        //             },
-        //             { 
-        //                 url : 'content/' + cIndex + '/img.jpg' ,
-        //                 title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        //                 cover : true
-        //             }
-        //         ]
-        //     }
+        {     
+            type : "content",
+            video : {
+                title : "Em cartaz: <br> Os Romanos no cinema",
+                description : 'Passados 2 mil anos, o Império Romano ainda nos interessa. Mesmo extinto, ele continua vivo em nosso imaginário. Seu incrível poderio, suas guerras brutas, suas intrigas políticas, tudo nos fascina em sua história remota. Julio César, por exemplo, é re-assassinado todos os anos em algum ponto do planeta, numa encenação da peça de William Shakespeare. \n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.\n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.',
+                images : [
+                    { 
+                        url : 'content/' + cIndex + '/0.png' ,
+                        title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                        cover : true
+                    },
+                    { 
+                        url : 'content/' + cIndex + '/1.png' ,
+                        title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                        cover : false
+                    },
+                    { 
+                        url : 'content/' + cIndex + '/2.png' ,
+                        title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                        cover : false
+                    }
+                ]
+            }
             
-        // },
+        },
         {
             type : "video",
             video : {
@@ -360,6 +360,10 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.headerContainer.className = "headerContainer off"
     this.appContainer.appendChild(this.headerContainer)
     
+    this.headerBg = document.createElement('div')
+    this.headerBg.className = "headerBg"
+    this.headerContainer.appendChild(this.headerBg)
+
     this.headerTitle = document.createElement('div')
     this.headerTitle.className = "headerTitle"
     this.headerContainer.appendChild(this.headerTitle)
@@ -380,22 +384,35 @@ linhaDoTempo.prototype.createPages = function(){
     for (let index = 0; index < this.data.length; index++) {
         console.log( "creating Pages..." );
         
-        var contentData = this.data[index];
-        console.log(contentData);
+        var pageData = this.data[index];
 
-        var page = new Page(contentData)
-        page.player.controls.addEventListener("toggleControls",(_e)=>{
-            
-            if(_e.menuOpen){
-                this.openHeader()
-            }else{
-                this.closeHeader()
+        if(pageData.type == "content"){
+            var page = new ContentPage(pageData)
+            page.openMenu = ()=>{ 
+                
+                this.headerContainer.style.display = "none"
+                this.hideControls() 
             }
-    
-        })
-        page.id = index
-        page.overlayCallback = ()=>{ this.hideControls() }
+            
 
+            page.closeMenu = () =>{ 
+                
+                this.headerContainer.style.display = "block"
+                this.showControls() 
+            
+            }
+
+        }else{
+            var page = new Page(pageData)
+            page.player.controls.addEventListener("toggleControls",(_e)=>{
+                if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() }
+            })
+            page.overlayCallback = ()=>{ this.hideControls() }
+        }
+        
+
+
+        page.id = index
         page.container.style.backgroundColor = "rgb(" + index * 20 + "," + index * 20 + "," + index * 20 + ")"
         this.pagesContainer.appendChild(page.container)
         this.pages.push(page)
@@ -445,10 +462,6 @@ Page.prototype.createDomElements = function(){
         this.hideOverLay()
         this.overlayCallback()
     })
-
-
-    this.image = new Image()
-    this.overlayContainer.appendChild(this.image)
     
     this.overlay = document.createElement('div')
     this.overlay.className = "overlay"
@@ -456,6 +469,9 @@ Page.prototype.createDomElements = function(){
     this.overlay.addEventListener('webkitTransitionEnd', (e) => {    
         this.overlayAnimationEnd()
     })
+
+    this.image = new Image()
+    this.overlay.appendChild(this.image)
 
     //overlay content
     var backGround = document.createElement('div')
@@ -487,14 +503,13 @@ Page.prototype.createDomElements = function(){
     this.controlersContainers.className = "controlersContainers"
     this.container.appendChild(this.controlersContainers)
 
-    this.closeBtn = document.createElement('div')
-    this.closeBtn.className = "closeBtn"
-    this.controlersContainers.appendChild(this.closeBtn)
     
     this.controlTitle = document.createElement('div')
     this.controlTitle.innerHTML = this.data.title
     this.controlTitle.className = "controlTitle"
     this.controlersContainers.appendChild(this.controlTitle)
+
+
 
 
 }
@@ -537,11 +552,14 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
 
 Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
 
+    console.log("hide overlay");
+    
+
     this.overlay.classList.add("off")
+    this.player.toggleVisibility()
 
     this.overlayAnimationEnd = ()=>{
         this.overlayContainer.style.display = "none"
-        this.player.toggleVisibility()
         this.player.controls.play()
         this.player.controls.openControls()
         this.overlayAnimationEnd = ()=>{
@@ -558,20 +576,201 @@ Page.prototype.showOverlay = function(_player,_imageContainer,scale){
     
     this.player.controls.pause()
     this.player.controls.closeControls()
-
+    this.player.toggleVisibility()
     this.overlayContainer.style.display = "block"
     setTimeout(()=>{
         this.overlay.classList.remove("off")
 
     },1)
-    // this.overlay.addEventListener('webkitTransitionEnd', (e) => {    
-    //     this.overlayContainer.style.display = "none"
-    //     this.player.toggleVisibility()
-    //     this.player.controls.play()
-    //     this.player.controls.openControls()
-    // })
 
 }
+
+//===============================================================
+//===============================================================
+//                        CONTENT PAGES
+//===============================================================
+//===============================================================
+
+function ContentPage(_data){
+
+    this.data = _data.video
+    this.images = []
+    this.openMenu = ()=>{}
+    this.closeMenu = ()=>{}
+    
+    
+    console.log(this.data.images);
+    for(var i = 0; i < this.data.images.length; i++){
+        
+        console.log(this.data.images[i]);
+        
+        if(this.data.images[i].cover){
+            this.cover = this.data.images[i]
+        }else{
+            this.images.push(this.data.images[i])
+        }
+        
+    }
+    
+    this.createDomElements()
+}
+
+ContentPage.prototype.createDomElements = function(){
+
+    //player  & container
+    this.container = document.createElement('div')
+    this.container.className = "page"
+    this.container.style.width = window.outerWidth
+
+    //overlay
+    this.overlayContainer = document.createElement('div')
+    this.overlayContainer.className = "overlayContainer"
+    this.container.appendChild(this.overlayContainer)
+    
+    this.overlay = document.createElement('div')
+    this.overlay.className = "overlay"
+    this.overlayContainer.appendChild(this.overlay)
+    this.overlay.addEventListener('webkitTransitionEnd', (e) => { this.overlayAnimationEnd() })
+
+    this.image = document.createElement('div')
+    this.image.style.backgroundImage = "url(" + this.cover.url + ")"
+    this.image.className = "imagePreview content"
+    this.overlay.appendChild(this.image)
+
+    //overlay content
+    var backGround = document.createElement('div')
+    backGround.className = "overlayBG"
+    this.overlay.appendChild(backGround)
+
+    this.createContentDom()
+
+    //controls
+    this.bottomBar = document.createElement('div')
+    this.bottomBar.className = "bottomBar"
+    this.container.appendChild(this.bottomBar)
+    
+    this.bootomBarIcon = document.createElement('div')
+    this.bootomBarIcon.className = "bootomBarIcon"
+    this.bottomBar.append(this.bootomBarIcon)
+    
+    this.bootomBartext = document.createElement('div')
+    this.bootomBartext.className = "bootomBartext"
+    this.bootomBartext.innerHTML = "voltar para o topo"
+    this.bottomBar.append(this.bootomBartext)
+    
+    //closebtn
+    this.closeBtn = document.createElement('div')
+    this.closeBtn.className = "closeBtn"
+    this.container.appendChild(this.closeBtn)
+    this.closeBtn.addEventListener("touchstart", () => {
+        this.close()
+    })
+
+
+}
+
+ContentPage.prototype.createContentDom = function(_imageData){
+
+    //content
+    this.contentBackground = document.createElement('div')
+    this.contentBackground.className = "contentBackground"
+    this.container.appendChild(this.contentBackground)
+
+    this.contentContainer = document.createElement('div')
+    this.contentContainer.className = "contentContainer"
+    this.container.appendChild(this.contentContainer)
+    
+    //header
+    this.headerContet = document.createElement('div')
+    this.headerContet.className = "headerContet"
+    this.contentContainer.appendChild(this.headerContet)
+
+    //text
+    this.textConainer = document.createElement('div')
+    this.textConainer.className = "textConainer"
+    this.headerContet.appendChild(this.textConainer)
+
+    this.contentTitle = document.createElement('div')
+    this.contentTitle.className = "overlayTitle"
+    this.contentTitle.innerHTML = this.data.title
+    this.textConainer.appendChild(this.contentTitle)
+
+    this.contentlLine = document.createElement('div')
+    this.contentlLine.className = "overlayLine"
+    this.textConainer.appendChild(this.contentlLine)
+
+    this.contentText = document.createElement('div')
+    this.contentText.className = "contentText"
+    this.contentText.innerText = this.data.description.split("\n")[0].slice(0,260) + "..."
+    this.textConainer.appendChild(this.contentText)
+
+    this.contentOpen = document.createElement('div')
+    this.contentOpen.className = "contentOpen"
+    this.contentOpen.innerText = "Ver mais"
+    this.contentOpen.addEventListener("touchstart", (en) => { this.open() })
+    this.textConainer.appendChild(this.contentOpen)
+    
+    //body
+    this.bodyContet = document.createElement('div')
+    this.bodyContet.className = "bodyContet"
+    this.contentContainer.appendChild(this.bodyContet)
+
+    
+    //images
+    for (let index = 0; index < this.data.images.length; index++) {
+        this.createImageBlocks(this.data.images[index])
+    }
+    
+}
+
+ContentPage.prototype.createImageBlocks = function(_imageData){
+
+    var container = document.createElement('div')
+    container.className = "contentImageContainer"
+    if(_imageData.cover){ 
+        this.headerContet.appendChild(container)
+        container.classList.add("cover")
+    }else{ 
+        this.bodyContet.appendChild(container) 
+    }
+
+    var image = document.createElement('img')
+    image.className = "image"
+    // image.style.backgroundImage = "url(" + _imageData.url + ")"
+    image.src =  _imageData.url
+    container.appendChild(image)
+    
+    var legend = document.createElement('div')
+    legend.className = "legend"
+    legend.innerText = _imageData.title
+    container.appendChild(legend)
+
+}
+
+
+ContentPage.prototype.open = function(){
+    
+    this.contentText.innerText = this.data.description
+    this.openMenu()
+    this.contentBackground.classList.add("open")
+    this.textConainer.classList.add("open")
+    this.container.classList.add("open")
+    
+}
+
+ContentPage.prototype.close = function(){
+    
+    this.contentText.innerText = this.data.description.split("\n")[0].slice(0,260) + "..."
+    this.contentBackground.classList.remove("open")
+    this.textConainer.classList.remove("open")
+    this.container.classList.remove("open")
+    setTimeout(()=>{
+        this.closeMenu()
+
+    },1)
+    
+}
+
 
 //===============================================================
 //===============================================================
@@ -583,7 +782,6 @@ function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
-var cIndex = 0
 var v = new linhaDoTempo(options.pages)
 
 window.addEventListener("touchstart", (en) =>{

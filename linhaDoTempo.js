@@ -308,6 +308,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     
     // interface elements
     this.nextBtn = document.createElement('div')
+    this.nextBtn.innerHTML = '<div class="btnIcon"></div>'
     this.nextBtn.className = "Btn next"
     this.appContainer.appendChild(this.nextBtn)
     this.nextBtn.addEventListener("touchstart", (en) =>{
@@ -315,7 +316,9 @@ linhaDoTempo.prototype.createDOMElements = function(){
         this.toNextPage()
     })
     
+    
     this.previousBtn = document.createElement('div')
+    this.previousBtn.innerHTML = '<div class="btnIcon"></div>'
     this.previousBtn.className = "Btn previous"
     this.appContainer.appendChild(this.previousBtn)
     this.previousBtn.addEventListener("touchstart", (en) =>{
@@ -369,6 +372,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.headerContainer.appendChild(this.headerTitle)
     
     this.headerBtn = document.createElement('div')
+    this.headerBtn.innerHTML = '<img src="icons/exit.png" class="exitIcon">'
     this.headerBtn.className = "headerBtn"
     this.headerContainer.appendChild(this.headerBtn)
     this.headerBtn.addEventListener("touchstart",()=>{
@@ -593,13 +597,16 @@ Page.prototype.showOverlay = function(_player,_imageContainer,scale){
 
 function ContentPage(_data){
 
+    this.iconUp = false
+    this.clicked = false
+    this.scrollTrashHold = 1250
     this.data = _data.video
     this.images = []
     this.openMenu = ()=>{}
     this.closeMenu = ()=>{}
     
     
-    console.log(this.data.images);
+
     for(var i = 0; i < this.data.images.length; i++){
         
         console.log(this.data.images[i]);
@@ -648,10 +655,25 @@ ContentPage.prototype.createDomElements = function(){
     this.bottomBar = document.createElement('div')
     this.bottomBar.className = "bottomBar"
     this.container.appendChild(this.bottomBar)
+    this.bottomBar.addEventListener("touchstart", () => {
+
+        this.clicked = true
+
+        if(this.contentContainer.scrollTop < this.scrollTrashHold){
+            this.changeIconUp()
+            this.contentContainer.scrollTo(0,this.scrollTrashHold)
+        }else{        
+            this.changeIconDown()
+            this.contentContainer.scrollTo(0,0)
+        }
+
+    })
     
-    this.bootomBarIcon = document.createElement('div')
-    this.bootomBarIcon.className = "bootomBarIcon"
-    this.bottomBar.append(this.bootomBarIcon)
+    this.botomBarIcon = document.createElement('img')
+    this.botomBarIcon.className = "botomBarIcon"
+    this.botomBarIcon.src = "icons/botomBarIcon.png"
+
+    this.bottomBar.append(this.botomBarIcon)
     
     this.bootomBartext = document.createElement('div')
     this.bootomBartext.className = "bootomBartext"
@@ -660,12 +682,47 @@ ContentPage.prototype.createDomElements = function(){
     
     //closebtn
     this.closeBtn = document.createElement('div')
+    this.closeBtn.innerHTML = '<img src="icons/exit.png" class="exitIcon">'
     this.closeBtn.className = "closeBtn"
     this.container.appendChild(this.closeBtn)
     this.closeBtn.addEventListener("touchstart", () => {
         this.close()
     })
 
+
+}
+
+ContentPage.prototype.changeIconUp = function(_imageData){
+
+    if(!this.iconUp){
+        this.iconUp = true
+        this.bottomBar.classList.add("up")
+    }
+
+}
+
+ContentPage.prototype.changeIconDown = function(_imageData){
+
+    if(this.iconUp){
+        this.iconUp = false
+        this.bottomBar.classList.remove("up")
+    }
+
+}
+
+ContentPage.prototype.scrollHandler = function(_imageData){
+
+    if(this.clicked){
+        if(this.contentContainer.scrollTop == this.scrollTrashHold || this.contentContainer.scrollTop == 0 ){
+            this.clicked = false
+        }
+    }else{
+        if(this.contentContainer.scrollTop >= this.scrollTrashHold){
+            this.changeIconUp()
+        }else{
+            this.changeIconDown()    
+        }
+    }
 
 }
 
@@ -679,7 +736,8 @@ ContentPage.prototype.createContentDom = function(_imageData){
     this.contentContainer = document.createElement('div')
     this.contentContainer.className = "contentContainer"
     this.container.appendChild(this.contentContainer)
-    
+    this.contentContainer.addEventListener("scroll",()=>{ this.scrollHandler() })
+
     //header
     this.headerContet = document.createElement('div')
     this.headerContet.className = "headerContet"
@@ -746,7 +804,6 @@ ContentPage.prototype.createImageBlocks = function(_imageData){
     container.appendChild(legend)
 
 }
-
 
 ContentPage.prototype.open = function(){
     

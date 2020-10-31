@@ -275,9 +275,21 @@ body{
     height: 110px;
     background-color: white;
     position: absolute;
-    top: 600px;
-    left : 250px
+    top: 50px;
+    /* left : 250px */
 }
+
+.overlayIconContaine{
+    
+    width: 550px;
+    height: 230px;
+    z-index: 9999;
+    position: absolute;
+    top: 550px;
+    left: 250px;
+
+}
+
 .overlayIcon .right{
     border-top: 10px solid #1A1819;
     width: 15px;
@@ -301,8 +313,8 @@ body{
     color: white;
     position: absolute;
     font-size: 40px;
-    top: 640px;
-    left : 410px
+    top: 90px;
+    left : 160px
 
 }
 

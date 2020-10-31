@@ -449,11 +449,16 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
 }
 
 subtilteControl.prototype.play = function () {
-    this.libras.video.play()
+    
+    if (this.libras){
+        this.libras.video.play()
+    }
 }
 
 subtilteControl.prototype.pause = function () {
-    this.libras.video.pause()
+    if (this.libras){
+        this.libras.video.pause()
+    }
 }
 
 subtilteControl.prototype.openMenu = function () {
@@ -532,7 +537,10 @@ subtilteControl.prototype.selectSubtitle = function(_id) {
 }
 
 subtilteControl.prototype.setCurrentTime = function (_time) {
-    this.libras.video.currentTime = _time
+    if(this.libras){
+
+        this.libras.video.currentTime = _time
+    }
 }
 
 subtilteControl.prototype.setup = function () {

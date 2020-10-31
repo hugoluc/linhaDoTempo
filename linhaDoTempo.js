@@ -214,24 +214,35 @@ function linhaDoTempo(_data){
     this.createDOMElements()
 
     setTimeout( ()=> {
-        console.log("12");
-        
         this.goToPage(this.data.length-1)
         setTimeout( ()=> {this.goToPage(0)},500)
 
     },500)
+
+    window.addEventListener("touchstart", (en) =>{
+        this.handleSwipe(en,false)
+    })
+
+    window.addEventListener("touchmove", (en) =>{
+        this.dragPos = en.changedTouches[0].pageX
+        this.handleSwipe(en,true)
+    })
+    
+    window.addEventListener("touchend", (en) =>{
+        this.dragPos = en.changedTouches[0].pageX
+        this.handleSwipe(en,false)
+    })
+
 
 }
 
 //controleers functions
 //=============================
 linhaDoTempo.prototype.toNextPage = function(){
-    console.log("to next page");
     this.goToPage(mod(this.currentPage + 1,this.data.length))
 }
 
 linhaDoTempo.prototype.toPreviousPage = function(){
-    console.log("to previous page");
     this.goToPage(mod(this.currentPage - 1,this.data.length))
 }
 
@@ -316,7 +327,6 @@ linhaDoTempo.prototype.createDOMElements = function(){
         this.toNextPage()
     })
     
-    
     this.previousBtn = document.createElement('div')
     this.previousBtn.innerHTML = '<div class="btnIcon"></div>'
     this.previousBtn.className = "Btn previous"
@@ -386,35 +396,18 @@ linhaDoTempo.prototype.createPages = function(){
     
     // Create Pages
     for (let index = 0; index < this.data.length; index++) {
-        console.log( "creating Pages..." );
         
         var pageData = this.data[index];
 
         if(pageData.type == "content"){
             var page = new ContentPage(pageData)
-            page.openMenu = ()=>{ 
-                
-                this.headerContainer.style.display = "none"
-                this.hideControls() 
-            }
-            
-
-            page.closeMenu = () =>{ 
-                
-                this.headerContainer.style.display = "block"
-                this.showControls() 
-            
-            }
-
+            page.openMenu = ()=>{ this.headerContainer.style.display = "none"; this.hideControls(); }
+            page.closeMenu = () =>{ this.headerContainer.style.display = "block" ; this.showControls(); }
         }else{
             var page = new Page(pageData)
-            page.player.controls.addEventListener("toggleControls",(_e)=>{
-                if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() }
-            })
+            page.player.controls.addEventListener("toggleControls",(_e)=>{ if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() } })
             page.overlayCallback = ()=>{ this.hideControls() }
         }
-        
-
 
         page.id = index
         page.container.style.backgroundColor = "rgb(" + index * 20 + "," + index * 20 + "," + index * 20 + ")"
@@ -424,6 +417,24 @@ linhaDoTempo.prototype.createPages = function(){
     }
 
 }
+
+linhaDoTempo.prototype.handleSwipe = function(_event,_move){
+
+    console.log("--------------");
+    console.log(_event.type,_move);
+    this.dragMove = _move
+    
+
+
+
+}
+
+linhaDoTempo.prototype.carrousellMoveTo = function(_event,_move){
+
+
+
+}
+
 
 
 //===============================================================
@@ -439,7 +450,7 @@ function Page(_data){
     this.overlayAnimationEnd = ()=>{}
     
     this.createDomElements()
-
+    
 }
 
 Page.prototype.createDomElements = function(){
@@ -462,10 +473,7 @@ Page.prototype.createDomElements = function(){
     this.overlayContainer = document.createElement('div')
     this.overlayContainer.className = "overlayContainer"
     this.container.appendChild(this.overlayContainer)
-    this.overlayContainer.addEventListener("touchstart", (en) =>{
-        this.hideOverLay()
-        this.overlayCallback()
-    })
+
     
     this.overlay = document.createElement('div')
     this.overlay.className = "overlay"
@@ -488,13 +496,23 @@ Page.prototype.createDomElements = function(){
     var line = document.createElement('div')
     line.className = "overlayLine"
     this.overlay.appendChild(line)
+    
+    var overlayIconContainer = document.createElement('div')
+    overlayIconContainer.className = "overlayIconContaine"
+    overlayIconContainer.addEventListener("touchend", (en) =>{
+        this.hideOverLay()
+        this.overlayCallback()
+    })
+    this.overlay.appendChild(overlayIconContainer)
+
     var iconText = document.createElement('div')
     iconText.className = "iconText"
     iconText.innerHTML = "Assistir"
-    this.overlay.appendChild(iconText)
+    overlayIconContainer.appendChild(iconText)
+    
     var icon = document.createElement('div')
     icon.className = "overlayIcon"
-    this.overlay.appendChild(icon)
+    overlayIconContainer.appendChild(icon)
     var left = document.createElement('div')
     left.className = "left"
     icon.appendChild(left)
@@ -528,8 +546,6 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
     var context = canvas.getContext('2d')
     
     var getPixels = (__player) => {
-
-        console.log("---");
         
         context.drawImage(_player.video, 0, 0, canvas.width, canvas.height);
         var pixels = context.getImageData(0,0,100,100).data
@@ -604,8 +620,6 @@ function ContentPage(_data){
     this.images = []
     this.openMenu = ()=>{}
     this.closeMenu = ()=>{}
-    
-    
 
     for(var i = 0; i < this.data.images.length; i++){
         
@@ -685,7 +699,7 @@ ContentPage.prototype.createDomElements = function(){
     this.closeBtn.innerHTML = '<img src="icons/exit.png" class="exitIcon">'
     this.closeBtn.className = "closeBtn"
     this.container.appendChild(this.closeBtn)
-    this.closeBtn.addEventListener("touchstart", () => {
+    this.closeBtn.addEventListener("touchend", () => {
         this.close()
     })
 
@@ -827,7 +841,6 @@ ContentPage.prototype.close = function(){
     },1)
     
 }
-
 
 //===============================================================
 //===============================================================

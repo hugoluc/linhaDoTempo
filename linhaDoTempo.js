@@ -5,7 +5,7 @@ var options = {
             type : "video",
             video : {
                 videoUrl : "videos/0/video.mp4",
-                title : "Cras varius bibendum risus quis molestie",
+                title : "000000000",
                 subtitles : [
                     { 
                         type : "libras",
@@ -37,7 +37,7 @@ var options = {
         {     
             type : "content",
             video : {
-                title : "Em cartaz: <br> Os Romanos no cinema",
+                title : "111111111",
                 description : 'Passados 2 mil anos, o Império Romano ainda nos interessa. Mesmo extinto, ele continua vivo em nosso imaginário. Seu incrível poderio, suas guerras brutas, suas intrigas políticas, tudo nos fascina em sua história remota. Julio César, por exemplo, é re-assassinado todos os anos em algum ponto do planeta, numa encenação da peça de William Shakespeare. \n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.\n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.',
                 images : [
                     { 
@@ -62,8 +62,8 @@ var options = {
         {
             type : "video",
             video : {
-                videoUrl : "videos/0/video.mp4",
-                title : "Cras varius bibendum risus quis molestie",
+                videoUrl : "videos/0/1.mov",
+                title : "2222222222",
                 subtitles : [
                     { 
                         type : "libras",
@@ -96,7 +96,7 @@ var options = {
             type : "video",
             video : {
                 videoUrl : "videos/0/video.mp4",
-                title : "Cras varius bibendum risus quis molestie",
+                title : "333333333",
                 subtitles : [
                     { 
                         type : "libras",
@@ -129,7 +129,7 @@ var options = {
             type : "video",
             video : {
                 videoUrl : "videos/0/video.mp4",
-                title : "Cras varius bibendum risus quis molestie",
+                title : "44444444",
                 subtitles : [
                     { 
                         type : "libras",
@@ -162,7 +162,7 @@ var options = {
             type : "video",
             video : {
                 videoUrl : "videos/0/video.mp4",
-                title : "Cras varius bibendum risus quis molestie",
+                title : "5555555",
                 subtitles : [
                     { 
                         type : "libras",
@@ -210,14 +210,14 @@ function linhaDoTempo(_data){
     this.moved = false
     this.menuOpened = true
     this.pages = []
-
+    this.carrousellPos = this.getCarrousellPos(_data.length)
     this.createDOMElements()
+    this.setCarrousellPosIds()
 
     setTimeout( ()=> {
         this.goToPage(this.data.length-1)
-        setTimeout( ()=> {this.goToPage(0)},500)
-
-    },500)
+        setTimeout( ()=> {this.goToPage(0)},1000)
+    },1000)
 
     window.addEventListener("touchstart", (en) =>{
         this.handleSwipe(en,false)
@@ -239,33 +239,31 @@ function linhaDoTempo(_data){
 //controleers functions
 //=============================
 linhaDoTempo.prototype.toNextPage = function(){
-    this.goToPage(mod(this.currentPage + 1,this.data.length))
+    this.carrousellNext()
 }
 
 linhaDoTempo.prototype.toPreviousPage = function(){
-    this.goToPage(mod(this.currentPage - 1,this.data.length))
+    this.carrousellPrevious()
 }
 
 linhaDoTempo.prototype.goToPage = function(_pageId){
 
-    if( this.currentPage - _pageId == -1 || this.currentPage - _pageId == this.data.length-1 ){
-        
-        this.indicators[this.currentPage].classList.add("right")
-        this.indicators[this.currentPage].classList.remove("on")
-        this.indicators[_pageId].classList.add("on")
-        this.indicators[_pageId].classList.remove("right")
-
+    var diff = _pageId - this.currentPage
+    if(diff == 0 ){
+        return 
+    }else if(diff > 0){
+        while(diff > 0){
+            diff--
+            this.toNextPage()
+        }
     }else{
-       
-        this.indicators[this.currentPage].classList.remove("right")
-        this.indicators[this.currentPage].classList.remove("on")
-        this.indicators[_pageId].classList.add("on")
-        this.indicators[_pageId].classList.add("right")
+        while(diff < 0){
+            diff++
+            this.toPreviousPage()
+        }
     }
-    
-    this.currentPage = _pageId
-    this.pagesContainer.style.transform = "translateX(" + ((-window.outerWidth) * _pageId) + "px)"
-    this.headerTitle.innerHTML = this.pages[this.currentPage].data.title
+
+    return
 
 }
 
@@ -285,6 +283,93 @@ linhaDoTempo.prototype.showControls = function(_pageId){
     this.nextBtn.classList.remove("off")
 
 }
+
+
+//Carrousell
+//=============================
+
+linhaDoTempo.prototype.carrousellMove = function(_pageId){
+
+    if( this.currentPage - _pageId == -1 || this.currentPage - _pageId == this.data.length-1 ){
+        
+        this.indicators[this.currentPage].classList.add("right")
+        this.indicators[this.currentPage].classList.remove("on")
+        this.indicators[_pageId].classList.add("on")
+        this.indicators[_pageId].classList.remove("right")
+
+    }else{
+       
+        this.indicators[this.currentPage].classList.remove("right")
+        this.indicators[this.currentPage].classList.remove("on")
+        this.indicators[_pageId].classList.add("on")
+        this.indicators[_pageId].classList.add("right")
+    }
+    
+    this.currentPage = _pageId
+    this.headerTitle.innerHTML = this.pages[this.currentPage].data.title
+
+}
+
+linhaDoTempo.prototype.getCarrousellPos = function(_length){
+    
+    var inicialIndex = Math.ceil((_length/2)-1) // 2
+    var width = 1920
+    var positions = []
+
+    for (let index = 0; index < _length; index++) {
+        positions[index] = (index - inicialIndex) * width
+    }
+
+    return positions
+
+}
+
+linhaDoTempo.prototype.setCarrousellPosIds = function(){
+    var _length = this.pages.length
+    var inicialIndex = Math.ceil((_length/2)-1) 
+
+    for (let index = 0; index < _length; index++) {
+        
+        this.pages[index].posId = (index + inicialIndex) % _length
+        this.pages[index].setPos(this.carrousellPos[this.pages[index].posId])
+    }
+
+}
+
+linhaDoTempo.prototype.carrousellNext = function(){
+    
+    this.carrousellMove(mod(this.currentPage + 1,this.data.length))
+
+
+    var len = this.pages.length
+
+    for (let index = 0; index < len; index++) {
+        
+        this.pages[index].posId = ((this.pages[index].posId - 1) + len) % len
+        var posX = this.carrousellPos[ this.pages[index].posId]
+        this.pages[index].setPos(posX)
+        
+    }
+
+
+}
+
+linhaDoTempo.prototype.carrousellPrevious = function(){
+    
+    this.carrousellMove(mod(this.currentPage - 1,this.data.length))
+
+    var len = this.pages.length
+
+    for (let index = 0; index < len; index++) {
+        
+        this.pages[index].posId = (this.pages[index].posId+1) % len
+        var posX = this.carrousellPos[ this.pages[index].posId]
+        this.pages[index].setPos(posX)
+        
+    }
+
+}
+
 
 //Header
 //=============================
@@ -323,7 +408,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.nextBtn.className = "Btn next"
     this.appContainer.appendChild(this.nextBtn)
     this.nextBtn.addEventListener("touchstart", (en) =>{
-        console.log(en.target);
+        // console.log(en.target);
         this.toNextPage()
     })
     
@@ -332,7 +417,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.previousBtn.className = "Btn previous"
     this.appContainer.appendChild(this.previousBtn)
     this.previousBtn.addEventListener("touchstart", (en) =>{
-        console.log(en.target);
+        // console.log(en.target);
         this.toPreviousPage()
     })
     
@@ -385,8 +470,10 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.headerBtn.innerHTML = '<img src="icons/exit.png" class="exitIcon">'
     this.headerBtn.className = "headerBtn"
     this.headerContainer.appendChild(this.headerBtn)
-    this.headerBtn.addEventListener("touchstart",()=>{
+    this.headerBtn.addEventListener("touchend",()=>{
+        console.log("00");
         this.pages[this.currentPage].showOverlay()
+        console.log("11");
         this.showControls()
     })
     
@@ -400,16 +487,15 @@ linhaDoTempo.prototype.createPages = function(){
         var pageData = this.data[index];
 
         if(pageData.type == "content"){
-            var page = new ContentPage(pageData)
+            var page = new ContentPage(pageData,index)
             page.openMenu = ()=>{ this.headerContainer.style.display = "none"; this.hideControls(); }
             page.closeMenu = () =>{ this.headerContainer.style.display = "block" ; this.showControls(); }
         }else{
-            var page = new Page(pageData)
+            var page = new Page(pageData,index)
             page.player.controls.addEventListener("toggleControls",(_e)=>{ if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() } })
             page.overlayCallback = ()=>{ this.hideControls() }
         }
 
-        page.id = index
         page.container.style.backgroundColor = "rgb(" + index * 20 + "," + index * 20 + "," + index * 20 + ")"
         this.pagesContainer.appendChild(page.container)
         this.pages.push(page)
@@ -420,18 +506,16 @@ linhaDoTempo.prototype.createPages = function(){
 
 linhaDoTempo.prototype.handleSwipe = function(_event,_move){
 
-    console.log("--------------");
-    console.log(_event.type,_move);
+    // console.log("--------------");
+    // console.log(_event.type,_move);
     this.dragMove = _move
-    
-
-
 
 }
 
-linhaDoTempo.prototype.carrousellMoveTo = function(_event,_move){
-
-
+linhaDoTempo.prototype.getPagePosId = function(_index,_length){
+    
+    var inicialIndex = Math.ceil((_length/2)-1)
+    return (_index + (_length - inicialIndex)) % _length 
 
 }
 
@@ -443,8 +527,9 @@ linhaDoTempo.prototype.carrousellMoveTo = function(_event,_move){
 //===============================================================
 //===============================================================
 
-function Page(_data){
+function Page(_data,_id){
 
+    this.id = _id
     this.data = _data.video
     this.overlayCallback = ()=>{}
     this.overlayAnimationEnd = ()=>{}
@@ -465,6 +550,7 @@ Page.prototype.createDomElements = function(){
         this.data.subtitles,
         this.data.title,this.container
     )
+    
     this.player.id = this.id
     this.player.onloaded = () => { this.getVideoImage(this.player,this.overlayContainer,1) }
 
@@ -537,6 +623,7 @@ Page.prototype.createDomElements = function(){
 }
 
 Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
+    
 
     scale = scale || 1;
 
@@ -558,8 +645,12 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
             this.image.src = canvas.toDataURL()
             this.image.className = "imagePreview"
             this.image.id = _player.id
+
+            console.log("-----");
+            console.log("loaded");
+            console.log(_player.id);
             
-            if(_player.id != 0 ) _player.toggleVisibility()
+            _player.toggleVisibility()
             _player.onloaded = () =>{}
 
         }
@@ -574,7 +665,6 @@ Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
 
     console.log("hide overlay");
     
-
     this.overlay.classList.add("off")
     this.player.toggleVisibility()
 
@@ -582,10 +672,7 @@ Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
         this.overlayContainer.style.display = "none"
         this.player.controls.play()
         this.player.controls.openControls()
-        this.overlayAnimationEnd = ()=>{
-            console.log("fdgasfgafdg");
-            
-        }
+        // this.overlayAnimationEnd = ()=>{            }
     }
     
 }
@@ -600,8 +687,13 @@ Page.prototype.showOverlay = function(_player,_imageContainer,scale){
     this.overlayContainer.style.display = "block"
     setTimeout(()=>{
         this.overlay.classList.remove("off")
-
     },1)
+
+}
+
+Page.prototype.setPos = function(_pos){
+
+    this.container.style.transform = "translateX(" + _pos +  "px)"
 
 }
 
@@ -611,8 +703,9 @@ Page.prototype.showOverlay = function(_player,_imageContainer,scale){
 //===============================================================
 //===============================================================
 
-function ContentPage(_data){
-
+function ContentPage(_data, _id){
+    
+    this.id = _id
     this.iconUp = false
     this.clicked = false
     this.scrollTrashHold = 1250
@@ -842,6 +935,11 @@ ContentPage.prototype.close = function(){
     
 }
 
+ContentPage.prototype.setPos = function(_pos){
+
+    this.container.style.transform = "translateX(" + _pos +  "px)"
+
+}
 //===============================================================
 //===============================================================
 //                             UTILS
@@ -855,6 +953,5 @@ function mod(n, m) {
 var v = new linhaDoTempo(options.pages)
 
 window.addEventListener("touchstart", (en) =>{
-    console.log(en.target);
-    
+    // console.log(en.target);
 })

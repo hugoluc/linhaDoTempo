@@ -7,10 +7,11 @@ function simplePlayer(_videoUrl,_subs,_title,_parent) {
 
     this.isVisible = true
     this.videoEnded = function(){}
-
     this.container = document.createElement('div')
     this.container.className = "playerVideo"
     this.loaded = false
+    this.loadedVideosUrl = []
+    
     this.onloaded = function(){  console.log("video loaded") }
     _parent.appendChild(this.container)
 
@@ -34,7 +35,20 @@ function simplePlayer(_videoUrl,_subs,_title,_parent) {
         }
 
     });
-    this.video.addEventListener('canplaythrough', () => {  this.onloaded() });
+
+    this.video.addEventListener('canplaythrough', (_e) => {  
+
+        for (let index = 0; index < this.loadedVideosUrl.length; index++) {
+            if ( _e.target.currentSrc == this.loadedVideosUrl[index]){
+                return
+            }
+        }
+
+        this.loadedVideosUrl.push(_e.target.currentSrc)
+        this.onloaded() 
+        this.onlaoded = {}
+    
+    });
     this.video.addEventListener('ended', () => { this.videoEnded() });
 
     //background
@@ -57,18 +71,13 @@ simplePlayer.prototype.load = function(){
 }
 
 simplePlayer.prototype.toggleVisibility = function(){
-    
 
     if(this.isVisible){
-    
         this.isVisible = false
         this.container.style.display = "none"
-    
     }else{
-
         this.isVisible = true
         this.container.style.display = "block"
-
     }
 
 }

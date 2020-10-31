@@ -672,7 +672,7 @@ Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
         this.overlayContainer.style.display = "none"
         this.player.controls.play()
         this.player.controls.openControls()
-        // this.overlayAnimationEnd = ()=>{            }
+        this.overlayAnimationEnd = ()=>{            }
     }
     
 }

@@ -383,7 +383,6 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
         control.className = "subControl"
         control.innerHTML = _subs[i].title
         control.addEventListener('touchstart', e => {
-            console.log("00000");
             if (!this.animationEnded) return
 
             this.animationEnded = false
@@ -547,7 +546,6 @@ subtilteControl.prototype.selectSubtitle = function(_id) {
 
 subtilteControl.prototype.setCurrentTime = function (_time) {
     if(this.libras){
-
         this.libras.video.currentTime = _time
     }
 }

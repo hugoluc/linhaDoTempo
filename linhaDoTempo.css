@@ -213,7 +213,7 @@ body{
 .page{
     height: 100%;
     position: absolute;
-    transition: transform 500ms;
+    /* transition: transform 500ms; */
 }
 
 /* ============== */

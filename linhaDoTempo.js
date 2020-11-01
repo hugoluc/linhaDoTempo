@@ -208,11 +208,12 @@ function linhaDoTempo(_data){
     this.overlays = []
     this.currentPage = 0;
     this.moved = false
-    this.menuOpened = true
+    this.open = false
     this.pages = []
     this.carrousellPos = this.getCarrousellPos(_data.length)
     this.createDOMElements()
     this.setCarrousellPosIds()
+    this.scollCounter = 0
 
     setTimeout( ()=> {
         this.goToPage(this.data.length-1)
@@ -220,17 +221,22 @@ function linhaDoTempo(_data){
     },1000)
 
     window.addEventListener("touchstart", (en) =>{
-        this.handleSwipe(en,false)
+        this.firstDragPos = en.changedTouches[0].pageX
+        this.dragPos = en.changedTouches[0].pageX
+        this.dragMove = false
     })
 
     window.addEventListener("touchmove", (en) =>{
+        if(this.open) return
+        this.dragMove = true
         this.dragPos = en.changedTouches[0].pageX
-        this.handleSwipe(en,true)
+        this.dragPage()
     })
     
     window.addEventListener("touchend", (en) =>{
         this.dragPos = en.changedTouches[0].pageX
-        this.handleSwipe(en,false)
+        this.handleSwipe(en)
+        this.dragMove = false
     })
 
 
@@ -283,7 +289,6 @@ linhaDoTempo.prototype.showControls = function(_pageId){
     this.nextBtn.classList.remove("off")
 
 }
-
 
 //Carrousell
 //=============================
@@ -347,7 +352,7 @@ linhaDoTempo.prototype.carrousellNext = function(){
         
         this.pages[index].posId = ((this.pages[index].posId - 1) + len) % len
         var posX = this.carrousellPos[ this.pages[index].posId]
-        this.pages[index].setPos(posX)
+        this.pages[index].setPos(posX,true)
         
     }
 
@@ -361,29 +366,62 @@ linhaDoTempo.prototype.carrousellPrevious = function(){
     var len = this.pages.length
 
     for (let index = 0; index < len; index++) {
-        
         this.pages[index].posId = (this.pages[index].posId+1) % len
         var posX = this.carrousellPos[ this.pages[index].posId]
-        this.pages[index].setPos(posX)
+        this.pages[index].setPos(posX,true)
+    }
+
+}
+
+linhaDoTempo.prototype.getPagePosId = function(_index,_length){
+    
+    var inicialIndex = Math.ceil((_length/2)-1)
+    return (_index + (_length - inicialIndex)) % _length 
+
+}
+
+linhaDoTempo.prototype.dragPage = function(posX){
+
+    var dif = this.firstDragPos - this.dragPos
+    for (let index = 0; index < this.pages.length; index++) {
+        
+        //origin
+        var origin = this.carrousellPos[this.pages[index].posId]
+        
+        //destination
+        var dest = origin - dif 
+        
+        //grande
+        this.pages[index].setPos(dest)
         
     }
 
 }
 
+linhaDoTempo.prototype.handleSwipe = function(_event){
+
+    var dif = this.firstDragPos - this.dragPos
+
+    if(this.dragMove && !this.open){
+        if(dif > 0){
+            this.carrousellNext()
+        }else{
+            this.carrousellPrevious()
+        }
+    }
+    
+}
 
 //Header
 //=============================
 linhaDoTempo.prototype.openHeader = function(_pageId){
 
-    console.log("open header");
-    this.headerContainer.classList.remove("off")
-    
+    this.headerContainer.classList.remove("off")    
     
 }
 
 linhaDoTempo.prototype.closeHeader = function(_pageId){
 
-    console.log("close header");
     this.headerContainer.classList.add("off")
 
 }
@@ -407,9 +445,8 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.nextBtn.innerHTML = '<div class="btnIcon"></div>'
     this.nextBtn.className = "Btn next"
     this.appContainer.appendChild(this.nextBtn)
-    this.nextBtn.addEventListener("touchstart", (en) =>{
-        // console.log(en.target);
-        this.toNextPage()
+    this.nextBtn.addEventListener("touchstart", (en) =>{ 
+        if(!this.dragMove)  this.toNextPage() 
     })
     
     this.previousBtn = document.createElement('div')
@@ -417,8 +454,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.previousBtn.className = "Btn previous"
     this.appContainer.appendChild(this.previousBtn)
     this.previousBtn.addEventListener("touchstart", (en) =>{
-        // console.log(en.target);
-        this.toPreviousPage()
+        if(!this.dragMove) this.toPreviousPage()
     })
     
     this.indicatorContainerOff = document.createElement('div')
@@ -471,9 +507,8 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.headerBtn.className = "headerBtn"
     this.headerContainer.appendChild(this.headerBtn)
     this.headerBtn.addEventListener("touchend",()=>{
-        console.log("00");
+        this.open = false
         this.pages[this.currentPage].showOverlay()
-        console.log("11");
         this.showControls()
     })
     
@@ -488,12 +523,24 @@ linhaDoTempo.prototype.createPages = function(){
 
         if(pageData.type == "content"){
             var page = new ContentPage(pageData,index)
-            page.openMenu = ()=>{ this.headerContainer.style.display = "none"; this.hideControls(); }
-            page.closeMenu = () =>{ this.headerContainer.style.display = "block" ; this.showControls(); }
+            page.openMenu = ()=>{ 
+                this.open = true
+                this.headerContainer.style.display = "none"; 
+                this.hideControls(); 
+            }
+            
+            page.closeMenu = () =>{ 
+                this.open = false
+                this.headerContainer.style.display = "block"; 
+                this.showControls(); 
+            }
         }else{
             var page = new Page(pageData,index)
             page.player.controls.addEventListener("toggleControls",(_e)=>{ if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() } })
-            page.overlayCallback = ()=>{ this.hideControls() }
+            page.overlayCallback = ()=>{ 
+                this.open = true
+                this.hideControls() 
+            }
         }
 
         page.container.style.backgroundColor = "rgb(" + index * 20 + "," + index * 20 + "," + index * 20 + ")"
@@ -503,23 +550,6 @@ linhaDoTempo.prototype.createPages = function(){
     }
 
 }
-
-linhaDoTempo.prototype.handleSwipe = function(_event,_move){
-
-    // console.log("--------------");
-    // console.log(_event.type,_move);
-    this.dragMove = _move
-
-}
-
-linhaDoTempo.prototype.getPagePosId = function(_index,_length){
-    
-    var inicialIndex = Math.ceil((_length/2)-1)
-    return (_index + (_length - inicialIndex)) % _length 
-
-}
-
-
 
 //===============================================================
 //===============================================================
@@ -554,12 +584,10 @@ Page.prototype.createDomElements = function(){
     this.player.id = this.id
     this.player.onloaded = () => { this.getVideoImage(this.player,this.overlayContainer,1) }
 
-
     //overlay
     this.overlayContainer = document.createElement('div')
     this.overlayContainer.className = "overlayContainer"
     this.container.appendChild(this.overlayContainer)
-
     
     this.overlay = document.createElement('div')
     this.overlay.className = "overlay"
@@ -617,9 +645,6 @@ Page.prototype.createDomElements = function(){
     this.controlTitle.className = "controlTitle"
     this.controlersContainers.appendChild(this.controlTitle)
 
-
-
-
 }
 
 Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
@@ -645,10 +670,6 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
             this.image.src = canvas.toDataURL()
             this.image.className = "imagePreview"
             this.image.id = _player.id
-
-            console.log("-----");
-            console.log("loaded");
-            console.log(_player.id);
             
             _player.toggleVisibility()
             _player.onloaded = () =>{}
@@ -662,8 +683,6 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
 }
 
 Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
-
-    console.log("hide overlay");
     
     this.overlay.classList.add("off")
     this.player.toggleVisibility()
@@ -678,8 +697,6 @@ Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
 }
 
 Page.prototype.showOverlay = function(_player,_imageContainer,scale){
-
-    console.log("show overlay");
     
     this.player.controls.pause()
     this.player.controls.closeControls()
@@ -691,8 +708,14 @@ Page.prototype.showOverlay = function(_player,_imageContainer,scale){
 
 }
 
-Page.prototype.setPos = function(_pos){
+Page.prototype.setPos = function(_pos,_animate){
 
+    
+    if(_animate){
+        this.container.style.transition = "transform 500ms"
+    }else{
+        this.container.style.transition = ""
+    }
     this.container.style.transform = "translateX(" + _pos +  "px)"
 
 }
@@ -715,8 +738,6 @@ function ContentPage(_data, _id){
     this.closeMenu = ()=>{}
 
     for(var i = 0; i < this.data.images.length; i++){
-        
-        console.log(this.data.images[i]);
         
         if(this.data.images[i].cover){
             this.cover = this.data.images[i]
@@ -762,7 +783,7 @@ ContentPage.prototype.createDomElements = function(){
     this.bottomBar = document.createElement('div')
     this.bottomBar.className = "bottomBar"
     this.container.appendChild(this.bottomBar)
-    this.bottomBar.addEventListener("touchstart", () => {
+    this.bottomBar.addEventListener("touchend", () => {
 
         this.clicked = true
 
@@ -935,11 +956,17 @@ ContentPage.prototype.close = function(){
     
 }
 
-ContentPage.prototype.setPos = function(_pos){
-
+ContentPage.prototype.setPos = function(_pos,_animate){
+    
+    if(_animate){
+        this.container.style.transition = "transform 500ms"
+    }else{
+        this.container.style.transition = ""
+    }
     this.container.style.transform = "translateX(" + _pos +  "px)"
 
 }
+
 //===============================================================
 //===============================================================
 //                             UTILS

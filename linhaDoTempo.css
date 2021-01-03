@@ -115,13 +115,12 @@ body{
 
 .indicatorContainer{
 
-    width: calc(100% - 20px);
+    width: 100%;
     height: 12px;
     position: absolute;
-    top: 10px;
-    left : 10px;
+    bottom: 130px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     transition: transform 300ms;
     transform: translateY(0);
 
@@ -132,20 +131,25 @@ body{
 
 }
 .indicatorBg{
-    height: 10px;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 30px;
     background-color: #3D3D3D;
     opacity: 0.5;
 }
 .indicator{
-    height: 10px;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 30px;
     background-color: white;
-    transform: scaleX(0);
-    transition: transform 500ms;
-    transform-origin: left center;
+    transition: opacity 500ms;
+    opacity: 0;
 }
 .indicator.on{
-    transform: scaleX(1);
-    transition: transform 500ms;
+    opacity: 1;
+    transition: opacity 500ms;
 }
 .indicator.right{
     transform-origin: right center;
@@ -153,7 +157,6 @@ body{
 
 
 .headerContainer{
-
     position: absolute;
     top: 0px;
     width: 100%;
@@ -164,7 +167,6 @@ body{
 }
 
 .headerContainer.off{
-
     transform : translateY(-100px);
     opacity: 0;
 

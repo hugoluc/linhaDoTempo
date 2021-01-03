@@ -472,9 +472,10 @@ linhaDoTempo.prototype.createDOMElements = function(){
         //indicators
         var indicatorSizes = {}
         indicatorSizes.padding = 10
-        indicatorSizes.parentWidth = parseInt(window.getComputedStyle(this.indicatorContainer).width)
-        indicatorSizes.width = (indicatorSizes.parentWidth - (this.data.length * indicatorSizes.padding - 1))/ this.data.length
+        //ndicatorSizes.parentWidth = parseInt(window.getComputedStyle(this.indicatorContainer).width)
+        //indicatorSizes.width = "30px" (indicatorSizes.parentWidth - (this.data.length * indicatorSizes.padding - 1))/ this.data.length
         
+
         var indicator = document.createElement('div')
         indicator.className = "indicator"
         indicator.style.width = indicatorSizes.width 

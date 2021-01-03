@@ -183,16 +183,16 @@ body{
 .headerTitle{
     color: white;
     position: absolute;
-    top: 60px;
-    left : 60px;
+    top: 90px;
+    left : 90px;
     font-size: 70px;
     max-width: 1420px;
 }
 
 .headerBtn{
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 90px;
+    right: 90px;
     background-color: #3D3D3D;
     width: 75px;
     height: 75px;

@@ -53,13 +53,15 @@
  }
  
  .btnsContainer{
-    z-index: 1;
-    transition: transform 300ms;
-    display: flex;
-    margin: 65px;
-    align-items: center;
-    width : 100%;
-    transform: translate(0px, 0px);
+   z-index: 1;
+   transition: transform 300ms;
+   display: flex;
+   align-items: center;
+   margin-bottom: 115px;
+   width: 100%;
+   transform: translate(0px, 0px);
+   margin-left: 90px;
+   margin-right: 90px;
  }
  
  .btnsContainer.closed{
@@ -179,6 +181,7 @@
     position: relative;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 50px;
  } 
  
  .subControl{

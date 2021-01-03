@@ -295,6 +295,18 @@ linhaDoTempo.prototype.showControls = function(_pageId){
 
 linhaDoTempo.prototype.carrousellMove = function(_pageId){
 
+
+    //adjust overlaty position setting the current page and next page up front
+    for (let index = 0; index < this.pages.length; index++) {
+        if(index == this.currentPage || index == _pageId){
+            this.pages[index].container.style.zIndex = "0"
+        }else{
+            this.pages[index].container.style.zIndex = "-1"
+        }
+    }
+
+
+    //next page
     if( this.currentPage - _pageId == -1 || this.currentPage - _pageId == this.data.length-1 ){
         
         this.indicators[this.currentPage].classList.add("right")
@@ -302,6 +314,7 @@ linhaDoTempo.prototype.carrousellMove = function(_pageId){
         this.indicators[_pageId].classList.add("on")
         this.indicators[_pageId].classList.remove("right")
 
+    //previous page
     }else{
        
         this.indicators[this.currentPage].classList.remove("right")
@@ -345,12 +358,14 @@ linhaDoTempo.prototype.carrousellNext = function(){
     
     this.carrousellMove(mod(this.currentPage + 1,this.data.length))
 
-
     var len = this.pages.length
 
     for (let index = 0; index < len; index++) {
         
+        console.log(this.pages[index])
+
         this.pages[index].posId = ((this.pages[index].posId - 1) + len) % len
+        this.pages[index].container.setAttribute('posId', this.pages[index].posId)
         var posX = this.carrousellPos[ this.pages[index].posId]
         this.pages[index].setPos(posX,true)
         

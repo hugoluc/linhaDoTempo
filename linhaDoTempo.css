@@ -169,7 +169,6 @@ body{
 .headerContainer.off{
     transform : translateY(-100px);
     opacity: 0;
-
 }
 
 .headerBg{

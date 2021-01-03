@@ -127,7 +127,7 @@ body{
 }
 .indicatorContainer.off{
 
-    transform: translateY(-100px);
+    transform: translateY(200px);
 
 }
 .indicatorBg{
@@ -428,7 +428,8 @@ body{
 }
 
 .open .textConainer .contentText{
-    max-height: 99999px;
+    max-height: 450px;
+    overflow-y: scroll;
 }
 
 .textConainer .contentOpen{

@@ -422,8 +422,8 @@ body{
     text-overflow: ellipsis;
     color: white;
     font-size: 34;
-    max-height: 250px;
-    transition: max-height 500ms;
+    max-height: 210px;
+    transition: max-height 300ms;
 }
 
 .open .textConainer .contentText{

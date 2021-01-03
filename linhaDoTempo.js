@@ -916,7 +916,7 @@ ContentPage.prototype.createContentDom = function(_imageData){
 
     this.contentText = document.createElement('div')
     this.contentText.className = "contentText"
-    this.contentText.innerText = this.data.description.split("\n")[0].slice(0,260) + "..."
+    this.contentText.innerText = this.data.description.split("\n")[0].slice(0,180) + "..."
     this.textConainer.appendChild(this.contentText)
 
     this.contentOpen = document.createElement('div')

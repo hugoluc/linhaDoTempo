@@ -5,8 +5,8 @@ var options = {
             type : "video",
             video : {
                 videoUrl : "videos/0/video.mp4",
-                title : "000000000",
-                subtitles : [
+                title : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',
+                 subtitles : [
                     { 
                         type : "libras",
                         url : 'libras.webm' ,
@@ -37,11 +37,11 @@ var options = {
         {     
             type : "content",
             video : {
-                title : "111111111",
+                title : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',
                 description : 'Passados 2 mil anos, o Império Romano ainda nos interessa. Mesmo extinto, ele continua vivo em nosso imaginário. Seu incrível poderio, suas guerras brutas, suas intrigas políticas, tudo nos fascina em sua história remota. Julio César, por exemplo, é re-assassinado todos os anos em algum ponto do planeta, numa encenação da peça de William Shakespeare. \n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.\n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.',
                 images : [
                     { 
-                        url : 'content/' + cIndex + '/0.png' ,
+                        url : 'content/' + cIndex + '/0.png',
                         title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
                         cover : true
                     },
@@ -599,17 +599,24 @@ Page.prototype.createDomElements = function(){
     this.image = new Image()
     this.overlay.appendChild(this.image)
 
-    //overlay content
+
     var backGround = document.createElement('div')
     backGround.className = "overlayBG"
     this.overlay.appendChild(backGround)
+
+    //overlay content
+    var overlayContent = document.createElement('div')
+    overlayContent.className = "overlayContent"
+    this.overlay.appendChild(overlayContent)
+    
     var title = document.createElement('div')
     title.className = "overlayTitle"
     title.innerHTML = this.data.title
-    this.overlay.appendChild(title)
+    overlayContent.appendChild(title)
+    
     var line = document.createElement('div')
     line.className = "overlayLine"
-    this.overlay.appendChild(line)
+    overlayContent.appendChild(line)
     
     var overlayIconContainer = document.createElement('div')
     overlayIconContainer.className = "overlayIconContaine"
@@ -617,7 +624,9 @@ Page.prototype.createDomElements = function(){
         this.hideOverLay()
         this.overlayCallback()
     })
-    this.overlay.appendChild(overlayIconContainer)
+    overlayContent.appendChild(overlayIconContainer)
+
+    //----------
 
     var iconText = document.createElement('div')
     iconText.className = "iconText"

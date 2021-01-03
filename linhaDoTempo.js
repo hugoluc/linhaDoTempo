@@ -5,7 +5,7 @@ var options = {
             type : "video",
             video : {
                 videoUrl : "videos/0/video.mp4",
-                title : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',
+                title : '00000000000000',
                  subtitles : [
                     { 
                         type : "libras",
@@ -445,7 +445,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.nextBtn.innerHTML = '<div class="btnIcon"></div>'
     this.nextBtn.className = "Btn next"
     this.appContainer.appendChild(this.nextBtn)
-    this.nextBtn.addEventListener("touchstart", (en) =>{ 
+    this.nextBtn.addEventListener("touchend", (en) =>{ 
         if(!this.dragMove)  this.toNextPage() 
     })
     
@@ -453,7 +453,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.previousBtn.innerHTML = '<div class="btnIcon"></div>'
     this.previousBtn.className = "Btn previous"
     this.appContainer.appendChild(this.previousBtn)
-    this.previousBtn.addEventListener("touchstart", (en) =>{
+    this.previousBtn.addEventListener("touchend", (en) =>{
         if(!this.dragMove) this.toPreviousPage()
     })
     
@@ -529,12 +529,13 @@ linhaDoTempo.prototype.createPages = function(){
                 this.headerContainer.style.display = "none"; 
                 this.hideControls(); 
             }
-            
             page.closeMenu = () =>{ 
                 this.open = false
                 this.headerContainer.style.display = "block"; 
                 this.showControls(); 
             }
+            page.getScroll =  () =>{ return this.dragMove }
+
         }else{
             var page = new Page(pageData,index)
             page.player.controls.addEventListener("toggleControls",(_e)=>{ if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() } })
@@ -542,6 +543,7 @@ linhaDoTempo.prototype.createPages = function(){
                 this.open = true
                 this.hideControls() 
             }
+            page.getScroll =  () =>{ return this.dragMove }
         }
 
         page.container.style.backgroundColor = "rgb(" + index * 20 + "," + index * 20 + "," + index * 20 + ")"
@@ -622,8 +624,10 @@ Page.prototype.createDomElements = function(){
     var overlayIconContainer = document.createElement('div')
     overlayIconContainer.className = "overlayIconContaine"
     overlayIconContainer.addEventListener("touchend", (en) =>{
-        this.hideOverLay()
-        this.overlayCallback()
+        if(!this.getScroll()){
+            this.hideOverLay()
+            this.overlayCallback()
+        }
     })
     overlayContent.appendChild(overlayIconContainer)
 
@@ -903,7 +907,7 @@ ContentPage.prototype.createContentDom = function(_imageData){
     this.contentOpen = document.createElement('div')
     this.contentOpen.className = "contentOpen"
     this.contentOpen.innerText = "Ver mais"
-    this.contentOpen.addEventListener("touchstart", (en) => { this.open() })
+    this.contentOpen.addEventListener("touchend", (en) => { if(!this.getScroll()) this.open() })
     this.textConainer.appendChild(this.contentOpen)
     
     //body

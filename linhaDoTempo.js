@@ -1,198 +1,6 @@
-var cIndex = 0
-var options = {
-    pages : [
-        {
-            type : "video",
-            video : {
-                videoUrl : "videos/0/video.mp4",
-                title : '00000000000000',
-                 subtitles : [
-                    { 
-                        type : "libras",
-                        url : 'libras.webm' ,
-                        title : "Libras",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/es.vtt' ,
-                        title : "Ingles",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/de.vtt' ,
-                        title : "Espanhol",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/en.vtt' ,
-                        title : 'Portugês',
-                        default : true
-                    }
-                ]
-            },
-        },
-        {     
-            type : "content",
-            video : {
-                title : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',
-                description : 'Passados 2 mil anos, o Império Romano ainda nos interessa. Mesmo extinto, ele continua vivo em nosso imaginário. Seu incrível poderio, suas guerras brutas, suas intrigas políticas, tudo nos fascina em sua história remota. Julio César, por exemplo, é re-assassinado todos os anos em algum ponto do planeta, numa encenação da peça de William Shakespeare. \n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.\n \n E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.',
-                images : [
-                    { 
-                        url : 'content/' + cIndex + '/0.png',
-                        title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                        cover : true
-                    },
-                    { 
-                        url : 'content/' + cIndex + '/1.png' ,
-                        title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                        cover : false
-                    },
-                    { 
-                        url : 'content/' + cIndex + '/2.png' ,
-                        title : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                        cover : false
-                    }
-                ]
-            }
-            
-        },
-        {
-            type : "video",
-            video : {
-                videoUrl : "videos/0/1.mov",
-                title : "2222222222",
-                subtitles : [
-                    { 
-                        type : "libras",
-                        url : 'libras.webm' ,
-                        title : "Libras",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/es.vtt' ,
-                        title : "Ingles",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/de.vtt' ,
-                        title : "Espanhol",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/en.vtt' ,
-                        title : 'Portugês',
-                        default : true
-                    }
-                ]
-            },
-        },
-        {
-            type : "video",
-            video : {
-                videoUrl : "videos/0/video.mp4",
-                title : "333333333",
-                subtitles : [
-                    { 
-                        type : "libras",
-                        url : 'libras.webm' ,
-                        title : "Libras",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/es.vtt' ,
-                        title : "Ingles",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/de.vtt' ,
-                        title : "Espanhol",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/en.vtt' ,
-                        title : 'Portugês',
-                        default : true
-                    }
-                ]
-            },
-        },
-        {
-            type : "video",
-            video : {
-                videoUrl : "videos/0/video.mp4",
-                title : "44444444",
-                subtitles : [
-                    { 
-                        type : "libras",
-                        url : 'libras.webm' ,
-                        title : "Libras",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/es.vtt' ,
-                        title : "Ingles",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/de.vtt' ,
-                        title : "Espanhol",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/en.vtt' ,
-                        title : 'Portugês',
-                        default : true
-                    }
-                ]
-            },
-        },
-        {
-            type : "video",
-            video : {
-                videoUrl : "videos/0/video.mp4",
-                title : "5555555",
-                subtitles : [
-                    { 
-                        type : "libras",
-                        url : 'libras.webm' ,
-                        title : "Libras",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/es.vtt' ,
-                        title : "Ingles",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/de.vtt' ,
-                        title : "Espanhol",
-                        default : false
-                    },
-                    { 
-                        type : "text",
-                        url : 'videos/' + index + '/subs/en.vtt' ,
-                        title : 'Portugês',
-                        default : true
-                    }
-                ]
-            },
-        }
-    ]
-}
+var EXP_ID = new URLSearchParams(window.location.search).get("id");
+
+var options = data[EXP_ID]
 
 //===============================================================
 //===============================================================
@@ -214,7 +22,6 @@ function linhaDoTempo(_data){
     this.createDOMElements()
     this.setCarrousellPosIds()
     this.scollCounter = 0
-
     setTimeout( ()=> {
         this.goToPage(this.data.length-1)
         setTimeout( ()=> {this.goToPage(0)},1000)
@@ -463,7 +270,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.nextBtn.addEventListener("touchend", (en) =>{ 
         if(!this.dragMove)  this.toNextPage() 
     })
-    
+
     this.previousBtn = document.createElement('div')
     this.previousBtn.innerHTML = '<div class="btnIcon"></div>'
     this.previousBtn.className = "Btn previous"
@@ -532,6 +339,7 @@ linhaDoTempo.prototype.createDOMElements = function(){
 
 linhaDoTempo.prototype.createPages = function(){
     
+
     // Create Pages
     for (let index = 0; index < this.data.length; index++) {
         
@@ -583,7 +391,7 @@ function Page(_data,_id){
     this.overlayAnimationEnd = ()=>{}
     
     this.createDomElements()
-    
+
 }
 
 Page.prototype.createDomElements = function(){

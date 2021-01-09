@@ -330,12 +330,13 @@ timeLineControl.prototype.closeControlTimeout = function(){
 
 function subtilteControl(_subs,_video,_subParent, _controlParent){
 
+    
+
     //get opened menu height based on subtitle number
     this.menuItemSizes = {
         itemHeight : 45,
         margin : 26,
     }
-    this.openMenuHeight = (2 * this.menuItemSizes.margin)  + (_subs.length * this.menuItemSizes.itemHeight)
     this.menuClosed = false
     this.animationEnded = true
     this.interactionHandler = function(){}
@@ -344,7 +345,7 @@ function subtilteControl(_subs,_video,_subParent, _controlParent){
     this.subtitles = []
     this.activeSubtitle = ""
     this.defaultSubtitle = false
-
+    
     this.createDOMelements(_controlParent,_video,_subs,_subParent)
     this.closeMenu()
  
@@ -352,21 +353,26 @@ function subtilteControl(_subs,_video,_subParent, _controlParent){
 
 subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_subs,_subParent) {
     
+    
+
     //-------------------
     //    container
     //-------------------    
     this.controlContainer = document.createElement("div")
     this.controlContainer.className = "subControlContainer"
     _controlParent.appendChild(this.controlContainer)
+    if(!_subs){ this.controlContainer.style.display = "none" }
 
     //-------------------
     //    background
     //-------------------
     this.controlBg = document.createElement("div")
     this.controlBg.className = "controlBg"
-    this.controlBg.style.height = this.openMenuHeight
     this.controlContainer.appendChild(this.controlBg)
-
+    if(_subs){
+        this.openMenuHeight = (2 * this.menuItemSizes.margin)  + (_subs.length * this.menuItemSizes.itemHeight)
+        this.controlBg.style.height = this.openMenuHeight
+    }
     //-------------------
     //    subtitles
     //-------------------
@@ -374,48 +380,52 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
     this.subtitlesContainer = document.createElement("div")
     this.subtitlesContainer.className = "subtitlesContainer"
     _video.insertAdjacentElement("afterEnd", this.subtitlesContainer)
-
-    for(var i = 0; i < _subs.length; i++ ){
+    
+    if(_subs){
         
-        //add controls
-        var control = document.createElement("div")
-        control.id = i
-        control.className = "subControl"
-        control.innerHTML = _subs[i].title
-        control.addEventListener('touchstart', e => {
-            if (!this.animationEnded) return
-
-            this.animationEnded = false
-            if(!this.menuClosed){
-                this.selectSubtitle(e.target.id)
-                this.closeMenu()
+        for(var i = 0; i < _subs.length; i++ ){
+                
+            //add controls
+            var control = document.createElement("div")
+            control.id = i
+            control.className = "subControl"
+            control.innerHTML = _subs[i].title
+            control.addEventListener('touchstart', e => {
+                if (!this.animationEnded) return
+    
+                this.animationEnded = false
+                if(!this.menuClosed){
+                    this.selectSubtitle(e.target.id)
+                    this.closeMenu()
+                }else{
+                    this.openMenu()
+                }
+            })
+    
+            control.addEventListener('webkitTransitionEnd', e => {
+                this.animationEnded = true
+            })
+            this.controlContainer.appendChild(control)
+            this.controls.push(control)
+    
+            var finalPos = ( this.menuItemSizes.itemHeight * i) + this.menuItemSizes.margin
+            control.setAttribute("finalpos", finalPos)
+            control.style.transform = "translateY(-" + finalPos + 20 +  "px)"
+            control.style.height = this.menuItemSizes.itemHeight +  "px"
+    
+            //add subtitles
+            var sub;
+            if(_subs[i].type == "text"){
+                sub = new subtitle(_video,_subs[i], i, this.subtitlesContainer)
             }else{
-                this.openMenu()
+                sub = new libras(_video,_subs[i], i, _subParent)
+                this.libras = sub
             }
-        })
-
-        control.addEventListener('webkitTransitionEnd', e => {
-            this.animationEnded = true
-        })
-        this.controlContainer.appendChild(control)
-        this.controls.push(control)
-
-        var finalPos = ( this.menuItemSizes.itemHeight * i) + this.menuItemSizes.margin
-        control.setAttribute("finalpos", finalPos)
-        control.style.transform = "translateY(-" + finalPos + 20 +  "px)"
-        control.style.height = this.menuItemSizes.itemHeight +  "px"
-
-        //add subtitles
-        var sub;
-        if(_subs[i].type == "text"){
-            sub = new subtitle(_video,_subs[i], i, this.subtitlesContainer)
-        }else{
-            sub = new libras(_video,_subs[i], i, _subParent)
-            this.libras = sub
+            this.subtitles.push( sub )
+            if (_subs[i].default) this.selectSubtitle(i)
+         
         }
-        this.subtitles.push( sub )
-        if (_subs[i].default) this.selectSubtitle(i)
- 
+
     }
 
     //-------------------

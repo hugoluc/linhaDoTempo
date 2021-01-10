@@ -62,6 +62,8 @@ csv().fromFile(imagensCsvPath).then((_images) => {
 
 csv().fromFile(paginasCsvPath).then((_pages) => {
 
+    debugger
+
     var currentModule = 0
     var currentPage = -1
     modules.push({ pages : [] })

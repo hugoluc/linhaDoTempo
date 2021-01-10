@@ -1,6 +1,5 @@
 var EXP_ID = new URLSearchParams(window.location.search).get("id");
-
-var options = data[EXP_ID]
+var options = data[EXP_ID-1]
 
 //===============================================================
 //===============================================================
@@ -168,8 +167,6 @@ linhaDoTempo.prototype.carrousellNext = function(){
     var len = this.pages.length
 
     for (let index = 0; index < len; index++) {
-        
-        console.log(this.pages[index])
 
         this.pages[index].posId = ((this.pages[index].posId - 1) + len) % len
         this.pages[index].container.setAttribute('posId', this.pages[index].posId)
@@ -338,7 +335,6 @@ linhaDoTempo.prototype.createDOMElements = function(){
 }
 
 linhaDoTempo.prototype.createPages = function(){
-    
 
     // Create Pages
     for (let index = 0; index < this.data.length; index++) {
@@ -400,6 +396,8 @@ Page.prototype.createDomElements = function(){
     this.container = document.createElement('div')
     this.container.className = "page"
     this.container.style.width = window.outerWidth
+
+    
 
     this.player = new simplePlayer(
         this.data.videoUrl,
@@ -816,6 +814,7 @@ function mod(n, m) {
 
 var v = new linhaDoTempo(options.pages)
 
-window.addEventListener("touchstart", (en) =>{
+//click debug
+// window.addEventListener("touchstart", (en) =>{
     // console.log(en.target);
-})
+// })

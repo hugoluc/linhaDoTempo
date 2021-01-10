@@ -7,11 +7,11 @@ function simplePlayer(_videoUrl,_subs,_title,_parent) {
 
     this.isVisible = true
     this.videoEnded = function(){}
+    
     this.container = document.createElement('div')
     this.container.className = "playerVideo"
     this.loaded = false
     this.loadedVideosUrl = []
-    
     this.onloaded = function(){  console.log("video loaded") }
     _parent.appendChild(this.container)
 

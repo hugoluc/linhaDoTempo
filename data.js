@@ -5,35 +5,35 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/1/1/video.mov",
-                    "title": "Línguas latinas;Ataliba Castilho"
+                    "title": "Línguas latinas"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/1/2/video.mov",
-                    "title": "Enfraquecimento do Império Romano; Ataliba Castilho"
+                    "title": "Enfraquecimento do Império Romano"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/1/3/video.mov",
-                    "title": "O Império Romano; Luiz Marques"
+                    "title": "O Império Romano"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/1/4/video.mov",
-                    "title": "O sistema político Romano; Luiz Marques"
+                    "title": "O sistema político Romano"
                 }
             },
             {
                 "type": "content",
                 "video": {
                     "title": "Em cartaz: os romanos no cinema.",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     "images": [
                         {
                             "url": "content/1/5/1.jpg",
@@ -81,21 +81,21 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/2/1/video.mov",
-                    "title": "A influência dos árabes no mundo ibérico;Darcy Ribeiro e Roberto Pinho"
+                    "title": "A influência dos árabes no mundo ibérico"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/2/2/video.mov",
-                    "title": "A língua na expansão do mundo árabe;Adalberto Alves"
+                    "title": "A língua na expansão do mundo árabe"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/2/3/video.mov",
-                    "title": "As heranças dos árabes no Novo Mundo;Antonio Risério"
+                    "title": "As heranças dos árabes no Novo Mundo"
                 }
             }
         ]
@@ -106,35 +106,35 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/1/video.mov",
-                    "title": "Os primórdios da língua portuguesa;Ataliba de Castilho"
+                    "title": "Os primórdios da língua portuguesa"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/2/video.mov",
-                    "title": "<FALTA CONTEUDO> Livro ilustrado contendo as Cantigas de Santa Maria (c. 1281)."
+                    "title": "<FALTA CONTEUDO> Livro ilustrado contendo as Cantigas de Santa Maria (c. 1281)"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/3/video.mov",
-                    "title": "A formação de Portugal;Judith Cortesão e Roberto Pinho"
+                    "title": "A formação de Portugal"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/4/video.mov",
-                    "title": "A vocação lírica da língua portuguesa;José Miguel Wisnik"
+                    "title": "A vocação lírica da língua portuguesa"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/5/video.mov",
-                    "title": "“D. Diniz”, de Fernando Pessoa;Carminho"
+                    "title": "“D. Diniz”  de Fernando Pessoa  Carminho"
                 }
             }
         ]
@@ -145,35 +145,35 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/1/video.mov",
-                    "title": "O português nas grandes navegações;Ataliba Castilho"
+                    "title": "O português nas grandes navegações"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/2/video.mov",
-                    "title": "Os impactos das grandes navegações;Ronaldo Vainfas"
+                    "title": "Os impactos das grandes navegações"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/3/video.mov",
-                    "title": "“Os Lusíadas”, de Luis de Camões;Tom Zé"
+                    "title": "“Os Lusíadas” de Luis de Camões"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/4/video.mov",
-                    "title": "“Os argonautas\", de Caetano Veloso;Maria Bethânia"
+                    "title": "“Os argonautas  de Caetano Veloso"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/5/video.mov",
-                    "title": "<FALTA CONTEUDO> “Padrão”, de Fernando Pessoa;Caetano Veloso"
+                    "title": "<FALTA CONTEUDO> “Padrão” de Fernando Pessoa"
                 }
             }
         ]
@@ -184,28 +184,28 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/5/1/video.mov",
-                    "title": "“Carta de Pero Vaz de Caminha” / Jorge Mautner"
+                    "title": "“Carta de Pero Vaz de Caminha”"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/5/2/video.mov",
-                    "title": "O achamento do Brasil / Ronaldo Vainfas"
+                    "title": "O achamento do Brasil"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/5/3/video.mov",
-                    "title": "A invasão / Ailton Krenak"
+                    "title": "A invasão"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/5/4/video.mov",
-                    "title": "O Brasil de 1519: mapa de Lopo Homem / Matheus Nachtergaele"
+                    "title": "O Brasil de 1519: mapa de Lopo Homem"
                 }
             }
         ]
@@ -216,28 +216,28 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/6/1/video.mov",
-                    "title": "As línguas indígenas / Ana Suelly  Arruda Câmara"
+                    "title": "As línguas indígenas"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/6/2/video.mov",
-                    "title": "A antropofagia / Manuela Carneiro da Cunha"
+                    "title": "A antropofagia"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/6/3/video.mov",
-                    "title": "Língua geral / Aryon Rodrigues"
+                    "title": "Língua geral"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/6/4/video.mov",
-                    "title": "O movimento indígena / Davi Kopenawa"
+                    "title": "O movimento indígena"
                 }
             }
         ]
@@ -248,28 +248,28 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/1/video.mov",
-                    "title": "<FALTA CONTEUDO>  \"Feitio de Oração\", de Noel Rosa; Aracy de Almeida"
+                    "title": "<FALTA CONTEUDO>  Feitio de Oração de Noel Rosa"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/2/video.mov",
-                    "title": "“Desde que o Samba é Samba”, de Caetano Veloso;Gilberto Gil"
+                    "title": "“Desde que o Samba é Samba” de Caetano Veloso"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/3/video.mov",
-                    "title": "“Corra e Olhe o Céu”, de Cartola e Dalmo Castello;Cartola"
+                    "title": "“Corra e Olhe o Céu” de Cartola e Dalmo Castello"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/4/video.mov",
-                    "title": "“Atraca Atraca”; “Beira Mar”;Clementina de Jesus"
+                    "title": "“Atraca Atraca”,  “Beira Mar”"
                 }
             }
         ]
@@ -280,42 +280,42 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/8/1/video.mov",
-                    "title": "“Cartas chilenas”, de Tomás Antônio Gonzaga / Caco Ciocler"
+                    "title": "“Cartas chilenas”, de Tomás Antônio Gonzaga"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/8/2/video.mov",
-                    "title": "“Paixão e Fé”, de Tavinho Moura e Fernando Brant / Milton Nascimento"
+                    "title": "“Paixão e Fé”, de Tavinho Moura e Fernando Brant"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/8/3/video.mov",
-                    "title": "A proibição das línguas gerais / José Ribamar Bessa Freire"
+                    "title": "A proibição das línguas gerais"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/8/4/video.mov",
-                    "title": "A política do Marquês de Pombal / Célia Tavares"
+                    "title": "A política do Marquês de Pombal"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/8/5/video.mov",
-                    "title": "“Acalanto de Ouro Preto”, de Murilo Mendes / Tom Zé"
+                    "title": "“Acalanto, de Ouro Preto”, de Murilo Mendes"
                 }
             },
             {
-                "type": "imagens",
+                "type": "content",
                 "video": {
                     "title": "Série de mapas de época mostra a expansão do território brasileiro no século XVIII",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     "images": [
                         {
                             "url": "content/8/6/1.jpg",
@@ -358,28 +358,28 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/9/1/video.mov",
-                    "title": "“Marília de Dirceu”, de Tomás Antônio Gonzaga / Caco Ciocler"
+                    "title": "“Marília, de Dirceu”, de Tomás Antônio Gonzaga"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/9/2/video.mov",
-                    "title": "A língua na construção de uma identidade brasileira / José Luiz Fiorin"
+                    "title": "A língua na construção de uma identidade brasileira"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/9/3/video.mov",
-                    "title": "Escritos de Luiz Gonçalves dos Santos, o “Padre Perereca” / Matheus Nachtergaele"
+                    "title": "Escritos de Luiz Gonçalves dos Santos o “Padre Perereca”"
                 }
             },
             {
-                "type": "imagens",
+                "type": "content",
                 "video": {
-                    "title": "Série de livros que vieram de Portugal com a Biblioteca Real de D. João.",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "title": "Série de livros que vieram de Portugal com a Biblioteca Real de D. João",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     "images": [
                         {
                             "url": "content/9/4/1.jpg",
@@ -453,7 +453,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/9/5/video.mov",
-                    "title": "A escolaridade no Brasil Colônia / Luiz Carlos Villalta"
+                    "title": "A escolaridade no Brasil Colônia"
                 }
             }
         ]
@@ -464,42 +464,42 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/1/video.mov",
-                    "title": "A interferência das línguas africanas no português / Yeda Pessoa de Castro"
+                    "title": "A interferência das línguas africanas no português"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/2/video.mov",
-                    "title": "A escravidão e seus impactos / Luiz Felipe de Alencastro"
+                    "title": "A escravidão e seus impactos"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/3/video.mov",
-                    "title": "O retorno de escravizados / Manuela Carneiro da Cunha"
+                    "title": "O retorno de escravizados"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/4/video.mov",
-                    "title": "O candomblé e os orixás / Stella de Oxóssi"
+                    "title": "O candomblé e os orixás"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/5/video.mov",
-                    "title": "<FALTA CONTEUDO> Audiovisual sobre o lukumí, língua de base iorubá utilizada como língua ritual em Cuba."
+                    "title": "<FALTA CONTEUDO> Audiovisual sobre o lukumí  língua de base iorubá utilizada como língua ritual em Cuba"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/6/video.mov",
-                    "title": "<FALTA CONTEUDO> Dorival Caymmi e Carmen Miranda cantam \"A preta do acarajé\". Foto de Carmen na tela."
+                    "title": "<FALTA CONTEUDO> Dorival Caymmi e Carmen Miranda cantam A preta do acarajé"
                 }
             }
         ]
@@ -510,49 +510,49 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/1/video.mov",
-                    "title": "Imigração italiana / Nora Ronai"
+                    "title": "Imigração italiana"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/2/video.mov",
-                    "title": "Imigração polonesa / Tomasz Lychowski"
+                    "title": "Imigração polonesa"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/3/video.mov",
-                    "title": "Imigração árabe / Kamal Kalaoun"
+                    "title": "Imigração árabe"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/4/video.mov",
-                    "title": "Imigração alemã / Barbara Hepp"
+                    "title": "Imigração alemã"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/5/video.mov",
-                    "title": "Imigração japonesa / Sachimi e Hiroshi Higuchi"
+                    "title": "Imigração japonesa"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/6/video.mov",
-                    "title": "“Sodades de Zan Paolo”, de Juó Bananére / Denise Fraga"
+                    "title": "“Sodades, de Zan Paolo”, de Juó Bananére"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/7/video.mov",
-                    "title": "As imigrações / Boris Fausto"
+                    "title": "As imigrações"
                 }
             }
         ]
@@ -563,14 +563,14 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/12/1/video.mov",
-                    "title": "A Semana de Arte Moderna de 1922 / Moacir dos Anjos"
+                    "title": "A Semana de Arte Moderna de 1922"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/12/2/video.mov",
-                    "title": "“Cantoras do Rádio”, de Alberto Ribeiro, João de Barro e Lamartine Babo / Carmem e Aurora Miranda"
+                    "title": "“Cantoras do Rádio”, de Alberto Ribeiro, João, de Barro e Lamartine Babo"
                 }
             },
             {
@@ -584,7 +584,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/12/4/video.mov",
-                    "title": "Lampião e seu bando / Benjamin Abrahão"
+                    "title": "Lampião e seu bando"
                 }
             },
             {
@@ -598,14 +598,14 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/12/6/video.mov",
-                    "title": "A língua e a música entre 1940 e 1960 / José Miguel Wisnik"
+                    "title": "A língua e a música entre 1940 e 1960"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/12/7/video.mov",
-                    "title": "A língua o rádio entre 1940 e 1960 / José Miguel Wisnik"
+                    "title": "A língua o rádio entre 1940 e 1960"
                 }
             }
         ]
@@ -630,7 +630,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/13/3/video.mov",
-                    "title": "“Construção”, de Chico Buarque"
+                    "title": "“Construção”  de Chico Buarque"
                 }
             },
             {
@@ -651,21 +651,21 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/13/6/video.mov",
-                    "title": "“Sandra Rosa Madalena”, de Sidney Magal"
+                    "title": "“Sandra Rosa Madalena” de Sidney Mahal"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/13/7/video.mov",
-                    "title": "“Que país é este?”, de Legião Urbana"
+                    "title": "“Que país é este?” de Legião Urbana"
                 }
             },
             {
-                "type": "imagens",
+                "type": "content",
                 "video": {
                     "title": "Música para todos os gostos",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim venia quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     "images": []
                 }
             }
@@ -677,28 +677,28 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/1/video.mov",
-                    "title": "A língua nas redes / Francisco Bosco"
+                    "title": "A língua nas redes"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/2/video.mov",
-                    "title": "A língua viva / Djamila Ribeiro"
+                    "title": "A língua viva"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/3/video.mov",
-                    "title": "Os povos indígenas no século XXI / Manuela Carneiro da Cunha"
+                    "title": "Os povos indígenas no século XXI"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/4/video.mov",
-                    "title": "Palavra em trânsito / Arnaldo Antunes"
+                    "title": "Palavra em trânsito"
                 }
             },
             {
@@ -712,21 +712,21 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/6/video.mov",
-                    "title": "O borogodó do borogodó / Valter Hugo Mãe"
+                    "title": "O borogodó do borogodó"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/7/video.mov",
-                    "title": "“As caravanas”, de Chico Buarque"
+                    "title": "<FALTA CONTEUDO> “Alegria, alegria”, de Caetano Veloso"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/8/video.mov",
-                    "title": "Clipe de \"Negro Drama\" dos Racionais Mc's. "
+                    "title": "Clipe de Negro Drama dos Racionais Mc's"
                 }
             }
         ]

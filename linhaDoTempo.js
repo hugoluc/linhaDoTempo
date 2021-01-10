@@ -438,6 +438,13 @@ Page.prototype.createDomElements = function(){
     title.innerHTML = this.data.title
     overlayContent.appendChild(title)
     
+        // debugger
+
+    var subTitle = document.createElement('div')
+    subTitle.className = "overlaySubTitle"
+    subTitle.innerHTML = this.data.subTitle
+    overlayContent.appendChild(subTitle)
+
     var line = document.createElement('div')
     line.className = "overlayLine"
     overlayContent.appendChild(line)

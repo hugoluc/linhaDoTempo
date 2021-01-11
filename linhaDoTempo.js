@@ -494,10 +494,10 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
     
     var getPixels = (__player) => {
         
+        _player.controls.setCurrentTime(0.3)
         context.drawImage(_player.video, 0, 0, canvas.width, canvas.height);
         var pixels = context.getImageData(0,0,100,100).data
         
-
         if(pixels[0]==0 && pixels[0]==0){
             setTimeout(() => { getPixels()} , 1000)
         }else{
@@ -507,6 +507,7 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
             this.image.id = _player.id
             
             _player.toggleVisibility()
+            _player.controls.setCurrentTime(0.0)
             _player.onloaded = () =>{}
 
         }

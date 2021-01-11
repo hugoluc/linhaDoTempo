@@ -235,22 +235,14 @@ timeLineControl.prototype.togglePlay = function (_time) {
     if(!this.menuOpen){
         this.toggleControls()
     }else{
-        
         if(!this.isPlaying){
-
             this.play()
             this.closeControlTimeout()
-    
         }else{
-            
             this.pause()
-    
         }
-
     }
-
     
-
 }
 
 //=========================================================================
@@ -310,10 +302,7 @@ timeLineControl.prototype.closeControlTimeout = function(){
     
         //create new timeout
         this.timouts.push(window.setTimeout(()=>{ 
-        
-            
             if(this.isPlaying && this.subtilteControl.menuClosed){ this.closeControls() }
-        
         },this.waitTime))
 
     }

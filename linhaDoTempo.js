@@ -101,13 +101,12 @@ linhaDoTempo.prototype.showControls = function(_pageId){
 
 linhaDoTempo.prototype.carrousellMove = function(_pageId){
 
-
     //adjust overlaty position setting the current page and next page up front
     for (let index = 0; index < this.pages.length; index++) {
         if(index == this.currentPage || index == _pageId){
-            this.pages[index].container.style.zIndex = "0"
+            this.pages[index].container.style.zIndex = "2"
         }else{
-            this.pages[index].container.style.zIndex = "-1"
+            this.pages[index].container.style.zIndex = "1"
         }
     }
 
@@ -397,8 +396,6 @@ Page.prototype.createDomElements = function(){
     this.container.className = "page"
     this.container.style.width = window.outerWidth
 
-    
-
     this.player = new simplePlayer(
         this.data.videoUrl,
         this.data.subtitles,
@@ -423,7 +420,6 @@ Page.prototype.createDomElements = function(){
     this.image = new Image()
     this.overlay.appendChild(this.image)
 
-
     var backGround = document.createElement('div')
     backGround.className = "overlayBG"
     this.overlay.appendChild(backGround)
@@ -437,8 +433,6 @@ Page.prototype.createDomElements = function(){
     title.className = "overlayTitle"
     title.innerHTML = this.data.title
     overlayContent.appendChild(title)
-    
-        // debugger
 
     var subTitle = document.createElement('div')
     subTitle.className = "overlaySubTitle"
@@ -480,7 +474,6 @@ Page.prototype.createDomElements = function(){
     this.controlersContainers = document.createElement('div')
     this.controlersContainers.className = "controlersContainers"
     this.container.appendChild(this.controlersContainers)
-
     
     this.controlTitle = document.createElement('div')
     this.controlTitle.innerHTML = this.data.title

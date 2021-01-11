@@ -18,8 +18,8 @@ html {
     width : 1920px;
     height: 1080px;
     font-family: Sohne;
-
 }
+
 body{
     overflow: hidden;
     width : 1920px;
@@ -67,6 +67,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99;
 }
 .next{
     right: 70px;
@@ -115,6 +116,7 @@ body{
 
 .indicatorContainer{
 
+    z-index: 99;
     width: 100%;
     height: 12px;
     position: absolute;
@@ -164,6 +166,7 @@ body{
     opacity: 1;
     transform : translateY(0);
     transition: opacity 300ms, transform 300ms;
+    z-index: 99;
 }
 
 .headerContainer.off{

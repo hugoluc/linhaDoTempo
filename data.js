@@ -4,7 +4,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/1/1/1.mov",
+                    "videoUrl": "content/1/1/1.mp4",
                     "title": "Línguas latinas",
                     "subTitle": "Ataliba Castilho"
                 }
@@ -12,7 +12,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/1/2/1.mov",
+                    "videoUrl": "content/1/2/1.mp4",
                     "title": "Enfraquecimento do Império Romano",
                     "subTitle": "Ataliba Castilho"
                 }
@@ -20,7 +20,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/1/3/1.mov",
+                    "videoUrl": "content/1/3/1.mp4",
                     "title": "O Império Romano",
                     "subTitle": "Luiz Marques"
                 }
@@ -28,7 +28,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/1/4/1.mov",
+                    "videoUrl": "content/1/4/1.mp4",
                     "title": "O sistema político Romano",
                     "subTitle": "Luiz Marques"
                 }
@@ -85,7 +85,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/2/1/1.mov",
+                    "videoUrl": "content/2/1/1.mp4",
                     "title": "A influência dos árabes no mundo ibérico",
                     "subTitle": "Darcy Ribeiro e Roberto Pinho"
                 }
@@ -93,7 +93,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/2/2/1.mov",
+                    "videoUrl": "content/2/2/1.mp4",
                     "title": "A língua na expansão do mundo árabe",
                     "subTitle": "Adalberto Alves"
                 }
@@ -101,7 +101,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/2/3/1.mov",
+                    "videoUrl": "content/2/3/1.mp4",
                     "title": "As heranças dos árabes no Novo Mundo",
                     "subTitle": "Antonio Risério"
                 }
@@ -113,7 +113,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/3/1/1.mov",
+                    "videoUrl": "content/3/1/1.mp4",
                     "title": "Os primórdios da língua portuguesa",
                     "subTitle": "Ataliba de Castilho"
                 }
@@ -121,7 +121,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/3/2/1.mov",
+                    "videoUrl": "content/3/2/1.mp4",
                     "title": "<FALTA CONTEUDO> Livro ilustrado contendo as Cantigas de Santa Maria (c. 1281)",
                     "subTitle": ""
                 }
@@ -129,7 +129,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/3/3/1.mov",
+                    "videoUrl": "content/3/3/1.mp4",
                     "title": "A formação de Portugal",
                     "subTitle": "Judith Cortesão e Roberto Pinho"
                 }
@@ -137,7 +137,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/3/4/1.mov",
+                    "videoUrl": "content/3/4/1.mp4",
                     "title": "A vocação lírica da língua portuguesa",
                     "subTitle": "José Miguel Wisnik"
                 }
@@ -145,7 +145,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/3/5/1.mov",
+                    "videoUrl": "content/3/5/1.mp4",
                     "title": "“D. Diniz”  de Fernando Pessoa  Carminho",
                     "subTitle": ""
                 }
@@ -157,7 +157,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/4/1/1.mov",
+                    "videoUrl": "content/4/1/1.mp4",
                     "title": "O português nas grandes navegações",
                     "subTitle": "Ataliba Castilho"
                 }
@@ -165,7 +165,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/4/2/1.mov",
+                    "videoUrl": "content/4/2/1.mp4",
                     "title": "Os impactos das grandes navegações",
                     "subTitle": "Ronaldo Vainfas"
                 }
@@ -173,7 +173,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/4/3/1.mov",
+                    "videoUrl": "content/4/3/1.mp4",
                     "title": "“Os Lusíadas” de Luis de Camões",
                     "subTitle": "Tom Zé"
                 }
@@ -181,7 +181,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/4/4/1.mov",
+                    "videoUrl": "content/4/4/1.mp4",
                     "title": "“Os argonautas  de Caetano Veloso",
                     "subTitle": "Maria Bethânia"
                 }
@@ -189,7 +189,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/4/5/1.mov",
+                    "videoUrl": "content/4/5/1.mp4",
                     "title": "<FALTA CONTEUDO> “Padrão” de Fernando Pessoa",
                     "subTitle": "Caetano Veloso"
                 }
@@ -201,7 +201,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/5/1/1.mov",
+                    "videoUrl": "content/5/1/1.mp4",
                     "title": "“Carta de Pero Vaz de Caminha”",
                     "subTitle": "Jorge Mautner"
                 }
@@ -209,7 +209,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/5/2/1.mov",
+                    "videoUrl": "content/5/2/1.mp4",
                     "title": "O achamento do Brasil",
                     "subTitle": "Ronaldo Vainfas"
                 }
@@ -217,7 +217,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/5/3/1.mov",
+                    "videoUrl": "content/5/3/1.mp4",
                     "title": "A invasão",
                     "subTitle": "Ailton Krenak"
                 }
@@ -225,7 +225,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/5/4/1.mov",
+                    "videoUrl": "content/5/4/1.mp4",
                     "title": "O Brasil de 1519: mapa de Lopo Homem",
                     "subTitle": "Matheus Nachtergaele"
                 }
@@ -237,7 +237,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/6/1/1.mov",
+                    "videoUrl": "content/6/1/1.mp4",
                     "title": "As línguas indígenas",
                     "subTitle": "Ana Suelly Arruda Câmara"
                 }
@@ -245,7 +245,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/6/2/1.mov",
+                    "videoUrl": "content/6/2/1.mp4",
                     "title": "A antropofagia",
                     "subTitle": "Manuela Carneiro da Cunha"
                 }
@@ -253,7 +253,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/6/3/1.mov",
+                    "videoUrl": "content/6/3/1.mp4",
                     "title": "Língua geral",
                     "subTitle": "Aryon Rodrigues"
                 }
@@ -261,7 +261,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/6/4/1.mov",
+                    "videoUrl": "content/6/4/1.mp4",
                     "title": "O movimento indígena",
                     "subTitle": "Davi Kopenawa"
                 }
@@ -273,7 +273,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/7/1/1.mov",
+                    "videoUrl": "content/7/1/1.mp4",
                     "title": "<FALTA CONTEUDO>  Feitio de Oração de Noel Rosa",
                     "subTitle": "Aracy de Almeida"
                 }
@@ -281,7 +281,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/7/2/1.mov",
+                    "videoUrl": "content/7/2/1.mp4",
                     "title": "“Desde que o Samba é Samba” de Caetano Veloso",
                     "subTitle": "Gilberto Gil"
                 }
@@ -289,7 +289,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/7/3/1.mov",
+                    "videoUrl": "content/7/3/1.mp4",
                     "title": "“Corra e Olhe o Céu” de Cartola e Dalmo Castello",
                     "subTitle": "Cartola"
                 }
@@ -297,7 +297,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/7/4/1.mov",
+                    "videoUrl": "content/7/4/1.mp4",
                     "title": "“Atraca Atraca”,  “Beira Mar”",
                     "subTitle": "Clementina de Jesus"
                 }
@@ -309,7 +309,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/8/1/1.mov",
+                    "videoUrl": "content/8/1/1.mp4",
                     "title": "“Cartas chilenas”, de Tomás Antônio Gonzaga",
                     "subTitle": "Caco Ciocler"
                 }
@@ -317,7 +317,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/8/2/1.mov",
+                    "videoUrl": "content/8/2/1.mp4",
                     "title": "“Paixão e Fé”, de Tavinho Moura e Fernando Brant",
                     "subTitle": "Milton Nascimento"
                 }
@@ -325,7 +325,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/8/3/1.mov",
+                    "videoUrl": "content/8/3/1.mp4",
                     "title": "A proibição das línguas gerais",
                     "subTitle": "José Ribamar Bessa Freire"
                 }
@@ -333,7 +333,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/8/4/1.mov",
+                    "videoUrl": "content/8/4/1.mp4",
                     "title": "A política do Marquês de Pombal",
                     "subTitle": "Célia Tavares"
                 }
@@ -341,7 +341,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/8/5/1.mov",
+                    "videoUrl": "content/8/5/1.mp4",
                     "title": "“Acalanto, de Ouro Preto”, de Murilo Mendes",
                     "subTitle": "Tom Zé"
                 }
@@ -393,7 +393,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/9/1/1.mov",
+                    "videoUrl": "content/9/1/1.mp4",
                     "title": "“Marília, de Dirceu”, de Tomás Antônio Gonzaga",
                     "subTitle": "Caco Ciocler"
                 }
@@ -401,7 +401,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/9/2/1.mov",
+                    "videoUrl": "content/9/2/1.mp4",
                     "title": "A língua na construção de uma identidade brasileira",
                     "subTitle": "José Luiz Fiorin"
                 }
@@ -409,7 +409,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/9/3/1.mov",
+                    "videoUrl": "content/9/3/1.mp4",
                     "title": "Escritos de Luiz Gonçalves dos Santos o “Padre Perereca”",
                     "subTitle": "Matheus Nachtergaele"
                 }
@@ -492,7 +492,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/9/5/1.mov",
+                    "videoUrl": "content/9/5/1.mp4",
                     "title": "A escolaridade no Brasil Colônia",
                     "subTitle": "Luiz Carlos Villalta"
                 }
@@ -504,7 +504,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/10/1/1.mov",
+                    "videoUrl": "content/10/1/1.mp4",
                     "title": "A interferência das línguas africanas no português",
                     "subTitle": "Yeda Pessoa de Castro"
                 }
@@ -512,7 +512,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/10/2/1.mov",
+                    "videoUrl": "content/10/2/1.mp4",
                     "title": "A escravidão e seus impactos",
                     "subTitle": "Luiz Felipe de Alencastro"
                 }
@@ -520,7 +520,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/10/3/1.mov",
+                    "videoUrl": "content/10/3/1.mp4",
                     "title": "O retorno de escravizados",
                     "subTitle": "Manuela Carneiro da Cunha"
                 }
@@ -528,7 +528,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/10/4/1.mov",
+                    "videoUrl": "content/10/4/1.mp4",
                     "title": "O candomblé e os orixás",
                     "subTitle": "Stella de Oxóssi"
                 }
@@ -536,7 +536,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/10/5/1.mov",
+                    "videoUrl": "content/10/5/1.mp4",
                     "title": "<FALTA CONTEUDO> Audiovisual sobre o lukumí  língua de base iorubá utilizada como língua ritual em Cuba",
                     "subTitle": ""
                 }
@@ -544,7 +544,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/10/6/1.mov",
+                    "videoUrl": "content/10/6/1.mp4",
                     "title": "<FALTA CONTEUDO> Dorival Caymmi e Carmen Miranda cantam A preta do acarajé",
                     "subTitle": ""
                 }
@@ -556,7 +556,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/11/1/1.mov",
+                    "videoUrl": "content/11/1/1.mp4",
                     "title": "Imigração italiana",
                     "subTitle": "Nora Ronai"
                 }
@@ -564,7 +564,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/11/2/1.mov",
+                    "videoUrl": "content/11/2/1.mp4",
                     "title": "Imigração polonesa",
                     "subTitle": "Tomasz Lychowski"
                 }
@@ -572,7 +572,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/11/3/1.mov",
+                    "videoUrl": "content/11/3/1.mp4",
                     "title": "Imigração árabe",
                     "subTitle": "Kamal Kalaoun"
                 }
@@ -580,7 +580,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/11/4/1.mov",
+                    "videoUrl": "content/11/4/1.mp4",
                     "title": "Imigração alemã",
                     "subTitle": "Barbara Hepp"
                 }
@@ -588,7 +588,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/11/5/1.mov",
+                    "videoUrl": "content/11/5/1.mp4",
                     "title": "Imigração japonesa",
                     "subTitle": "Sachimi e Hiroshi Higuchi"
                 }
@@ -596,7 +596,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/11/6/1.mov",
+                    "videoUrl": "content/11/6/1.mp4",
                     "title": "“Sodades, de Zan Paolo”, de Juó Bananére",
                     "subTitle": "Denise Fraga"
                 }
@@ -604,7 +604,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/11/7/1.mov",
+                    "videoUrl": "content/11/7/1.mp4",
                     "title": "As imigrações",
                     "subTitle": "Boris Fausto"
                 }
@@ -616,7 +616,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/12/1/1.mov",
+                    "videoUrl": "content/12/1/1.mp4",
                     "title": "A Semana de Arte Moderna de 1922",
                     "subTitle": "Moacir dos Anjos"
                 }
@@ -624,7 +624,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/12/2/1.mov",
+                    "videoUrl": "content/12/2/1.mp4",
                     "title": "“Cantoras do Rádio”, de Alberto Ribeiro, João, de Barro e Lamartine Babo",
                     "subTitle": "Carmem e Aurora Miranda"
                 }
@@ -632,7 +632,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/12/3/1.mov",
+                    "videoUrl": "content/12/3/1.mp4",
                     "title": "“Luar do Sertão”, de Luiz Gonzaga, Sivuca e Oswaldinho",
                     "subTitle": ""
                 }
@@ -640,7 +640,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/12/4/1.mov",
+                    "videoUrl": "content/12/4/1.mp4",
                     "title": "Lampião e seu bando",
                     "subTitle": "Benjamin Abrahão"
                 }
@@ -648,7 +648,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/12/5/1.mov",
+                    "videoUrl": "content/12/5/1.mp4",
                     "title": "“Brasília segundo Feldman” (1979), de Eugene Feldman",
                     "subTitle": ""
                 }
@@ -656,7 +656,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/12/6/1.mov",
+                    "videoUrl": "content/12/6/1.mp4",
                     "title": "A língua e a música entre 1940 e 1960",
                     "subTitle": "José Miguel Wisnik"
                 }
@@ -664,7 +664,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/12/7/1.mov",
+                    "videoUrl": "content/12/7/1.mp4",
                     "title": "A língua o rádio entre 1940 e 1960",
                     "subTitle": "José Miguel Wisnik"
                 }
@@ -676,7 +676,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/13/1/1.mov",
+                    "videoUrl": "content/13/1/1.mp4",
                     "title": "<FALTA CONTEUDO> “Pra não dizer que não falei das flores (Caminhando)”, de Geraldo Vandré",
                     "subTitle": ""
                 }
@@ -684,7 +684,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/13/2/1.mov",
+                    "videoUrl": "content/13/2/1.mp4",
                     "title": "<FALTA CONTEUDO> “Alegria, alegria”, de Caetano Veloso",
                     "subTitle": ""
                 }
@@ -692,7 +692,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/13/3/1.mov",
+                    "videoUrl": "content/13/3/1.mp4",
                     "title": "“Construção”  de Chico Buarque",
                     "subTitle": ""
                 }
@@ -700,7 +700,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/13/4/1.mov",
+                    "videoUrl": "content/13/4/1.mp4",
                     "title": "“Metamorfose ambulante”, de Raul Seixas",
                     "subTitle": ""
                 }
@@ -708,7 +708,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/13/5/1.mov",
+                    "videoUrl": "content/13/5/1.mp4",
                     "title": "Músicas de Odair José",
                     "subTitle": ""
                 }
@@ -716,7 +716,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/13/6/1.mov",
+                    "videoUrl": "content/13/6/1.mp4",
                     "title": "“Sandra Rosa Madalena” de Sidney Mahal",
                     "subTitle": ""
                 }
@@ -724,7 +724,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/13/7/1.mov",
+                    "videoUrl": "content/13/7/1.mp4",
                     "title": "“Que país é este?” de Legião Urbana",
                     "subTitle": ""
                 }
@@ -745,7 +745,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/1/1.mov",
+                    "videoUrl": "content/14/1/1.mp4",
                     "title": "A língua nas redes",
                     "subTitle": "Francisco Bosco"
                 }
@@ -753,7 +753,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/2/1.mov",
+                    "videoUrl": "content/14/2/1.mp4",
                     "title": "A língua viva",
                     "subTitle": "Djamila Ribeiro"
                 }
@@ -761,7 +761,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/3/1.mov",
+                    "videoUrl": "content/14/3/1.mp4",
                     "title": "Os povos indígenas no século XXI",
                     "subTitle": "Manuela Carneiro da Cunha"
                 }
@@ -769,7 +769,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/4/1.mov",
+                    "videoUrl": "content/14/4/1.mp4",
                     "title": "Palavra em trânsito",
                     "subTitle": "Arnaldo Antunes"
                 }
@@ -777,7 +777,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/5/1.mov",
+                    "videoUrl": "content/14/5/1.mp4",
                     "title": "Eutro, escultura de Arnaldo Antunes",
                     "subTitle": ""
                 }
@@ -785,7 +785,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/6/1.mov",
+                    "videoUrl": "content/14/6/1.mp4",
                     "title": "O borogodó do borogodó",
                     "subTitle": "Valter Hugo Mãe"
                 }
@@ -793,7 +793,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/7/1.mov",
+                    "videoUrl": "content/14/7/1.mp4",
                     "title": "<FALTA CONTEUDO> “Alegria, alegria”, de Caetano Veloso",
                     "subTitle": ""
                 }
@@ -801,7 +801,7 @@ var data = [
             {
                 "type": "video",
                 "video": {
-                    "videoUrl": "content/14/8/1.mov",
+                    "videoUrl": "content/14/8/1.mp4",
                     "title": "Clipe de Negro Drama dos Racionais Mc's",
                     "subTitle": ""
                 }

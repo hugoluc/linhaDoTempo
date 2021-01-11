@@ -18,7 +18,7 @@ var getPages = (_pagedata) => {
 
     if(_pagedata.type == "video"){
         var data = { type : _pagedata.type, video : {
-            videoUrl : 'content/' + _pagedata.module +'/'+ _pagedata.page_id +'/1.mov', 
+            videoUrl : 'content/' + _pagedata.module +'/'+ _pagedata.page_id +'/1.mp4', 
             title : _pagedata.title,
             subTitle : _pagedata.subtittle
             } 

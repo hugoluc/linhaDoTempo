@@ -326,11 +326,38 @@ linhaDoTempo.prototype.createDOMElements = function(){
     this.headerBtn.className = "headerBtn"
     this.headerContainer.appendChild(this.headerBtn)
     this.headerBtn.addEventListener("touchend",()=>{
-        this.open = false
-        this.pages[this.currentPage].showOverlay()
-        this.showControls()
+        this.close()
     })
     
+}
+
+linhaDoTempo.prototype.resetAllVideos = function(){
+
+    for (let index = 0; index < this.pages.length; index++) {
+        var page = this.pages[index];
+        if(page.type == "video"){
+            page.player.controls.setCurrentTime(0)
+        }
+        
+    }
+}
+
+linhaDoTempo.prototype.close = function(){
+
+    console.log(this.open);
+    
+    if(this.open){
+        
+        if(this.pages[this.currentPage].type == "video"){
+            this.pages[this.currentPage].showOverlay()
+            this.showControls()
+        }else{
+            this.pages[this.currentPage].close()   
+        }
+
+        this.open = false
+    }
+
 }
 
 linhaDoTempo.prototype.createPages = function(){
@@ -364,10 +391,21 @@ linhaDoTempo.prototype.createPages = function(){
             page.getScroll =  () =>{ return this.dragMove }
         }
 
+        page.type = pageData.type
         page.container.style.backgroundColor = "rgb(" + index * 20 + "," + index * 20 + "," + index * 20 + ")"
         this.pagesContainer.appendChild(page.container)
         this.pages.push(page)
 
+    }
+
+}
+
+linhaDoTempo.prototype.playing = function(){
+
+    var page = this.pages[this.currentPage]
+    console.log(page.player.video);
+    if(page.type == "video"){
+        return page.player.video.playing
     }
 
 }
@@ -384,7 +422,7 @@ function Page(_data,_id){
     this.data = _data.video
     this.overlayCallback = ()=>{}
     this.overlayAnimationEnd = ()=>{}
-    
+    this.isOpend = false
     this.createDomElements()
 
 }
@@ -522,12 +560,13 @@ Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
     
     this.overlay.classList.add("off")
     this.player.toggleVisibility()
-
+    
     this.overlayAnimationEnd = ()=>{
         this.overlayContainer.style.display = "none"
         this.player.controls.play()
         this.player.controls.openControls()
-        this.overlayAnimationEnd = ()=>{            }
+        this.overlayAnimationEnd = ()=>{}
+        this.isOpend = true
     }
     
 }
@@ -539,6 +578,7 @@ Page.prototype.showOverlay = function(_player,_imageContainer,scale){
     this.player.toggleVisibility()
     this.overlayContainer.style.display = "block"
     setTimeout(()=>{
+        this.isOpend = false
         this.overlay.classList.remove("off")
     },1)
 
@@ -564,6 +604,7 @@ Page.prototype.setPos = function(_pos,_animate){
 
 function ContentPage(_data, _id){
     
+    this.isOpend = false
     this.id = _id
     this.iconUp = false
     this.clicked = false
@@ -770,12 +811,12 @@ ContentPage.prototype.createImageBlocks = function(_imageData){
 }
 
 ContentPage.prototype.open = function(){
-    
     this.contentText.innerText = this.data.description
     this.openMenu()
     this.contentBackground.classList.add("open")
     this.textConainer.classList.add("open")
     this.container.classList.add("open")
+    this.isOpend = true
     
 }
 
@@ -785,12 +826,14 @@ ContentPage.prototype.close = function(){
     this.contentBackground.classList.remove("open")
     this.textConainer.classList.remove("open")
     this.container.classList.remove("open")
-    setTimeout(()=>{
-        this.closeMenu()
-
+    setTimeout(()=>{ 
+        this.closeMenu() 
+        this.isOpend = false
     },1)
     
 }
+
+
 
 ContentPage.prototype.setPos = function(_pos,_animate){
     
@@ -819,3 +862,33 @@ var v = new linhaDoTempo(options.pages)
 // window.addEventListener("touchstart", (en) =>{
     // console.log(en.target);
 // })
+
+//TIMEOUT
+var currentPage;
+var timeOut;
+setTimer()
+
+document.addEventListener("touchstart", ()=>{ resetTimer() })
+function setTimer(){ timeOut = setTimeout( resetAll, 180000) }
+
+function resetTimer() {
+  clearTimeout(timeOut);
+  setTimer()
+} 
+
+
+function resetAll(){
+    console.log(v.playing());
+
+    if(!v.playing()){
+        v.close()
+        v.goToPage(0)
+        v.resetAllVideos()
+    }
+}
+
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+    get: function(){
+        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+    }
+})

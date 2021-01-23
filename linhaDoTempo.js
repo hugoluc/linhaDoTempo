@@ -343,9 +343,10 @@ linhaDoTempo.prototype.resetAllVideos = function(){
 }
 
 linhaDoTempo.prototype.close = function(){
-
-    console.log(this.open);
     
+    console.log("-----------")
+    console.log(this.open)
+
     if(this.open){
         
         if(this.pages[this.currentPage].type == "video"){
@@ -403,7 +404,7 @@ linhaDoTempo.prototype.createPages = function(){
 linhaDoTempo.prototype.playing = function(){
 
     var page = this.pages[this.currentPage]
-    console.log(page.player.video);
+    
     if(page.type == "video"){
         return page.player.video.playing
     }
@@ -764,7 +765,7 @@ ContentPage.prototype.createContentDom = function(_imageData){
 
     this.contentText = document.createElement('div')
     this.contentText.className = "contentText"
-    this.contentText.innerText = this.data.description.split("\n")[0].slice(0,180) + "..."
+    this.contentText.innerText = this.data.description.split("\n")[0].slice(0,200) + "..."
     this.textConainer.appendChild(this.contentText)
 
     this.contentOpen = document.createElement('div')
@@ -833,8 +834,6 @@ ContentPage.prototype.close = function(){
     
 }
 
-
-
 ContentPage.prototype.setPos = function(_pos,_animate){
     
     if(_animate){
@@ -878,7 +877,6 @@ function resetTimer() {
 
 
 function resetAll(){
-    console.log(v.playing());
 
     if(!v.playing()){
         v.close()

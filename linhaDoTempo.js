@@ -533,7 +533,7 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
     
     var getPixels = (__player) => {
         
-        _player.controls.setCurrentTime(0.3)
+        _player.controls.setCurrentTime(0.9)
         context.drawImage(_player.video, 0, 0, canvas.width, canvas.height);
         var pixels = context.getImageData(0,0,100,100).data
         

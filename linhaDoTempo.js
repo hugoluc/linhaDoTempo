@@ -570,7 +570,6 @@ Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
         this.player.controls.play()
         this.overlayAnimationEnd = ()=>{}
     }
-    
 }
 
 Page.prototype.showOverlay = function(_player,_imageContainer,scale){

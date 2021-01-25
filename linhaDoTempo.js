@@ -559,27 +559,30 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
 
 Page.prototype.hideOverLay = function(_player,_imageContainer,scale){
     
+    if(this.isOpend) return
+    this.isOpend = true
+    
     this.overlay.classList.add("off")
     this.player.toggleVisibility()
     
     this.overlayAnimationEnd = ()=>{
         this.overlayContainer.style.display = "none"
         this.player.controls.play()
-        this.player.controls.openControls()
         this.overlayAnimationEnd = ()=>{}
-        this.isOpend = true
     }
     
 }
 
 Page.prototype.showOverlay = function(_player,_imageContainer,scale){
     
+    if(!this.isOpend) return
+    this.isOpend = false
+    
     this.player.controls.pause()
     this.player.controls.closeControls()
     this.player.toggleVisibility()
     this.overlayContainer.style.display = "block"
     setTimeout(()=>{
-        this.isOpend = false
         this.overlay.classList.remove("off")
     },1)
 

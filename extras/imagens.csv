@@ -1,27 +1,20 @@
 module,page,filename,descricao,cover
-1,5,1,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",TRUE
-1,5,2,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-1,5,3,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-1,5,4,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-1,5,5,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-1,5,6,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-1,5,7,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-8,6,1,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",TRUE
-8,6,2,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-8,6,3,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-8,6,4,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-8,6,5,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-8,6,6,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,1,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",TRUE
-9,4,2,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,3,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,4,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,5,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,6,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,7,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,8,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,9,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,10,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,11,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,12,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
-9,4,13,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",FALSE
+1,5,1,"Cartaz do filme ""Julio Cesar"", de Joseph L. Mankiewicz. 1953",TRUE
+1,5,2,"Cartaz do filme ""Julio Cesar"", de William Wyler. 1960",FALSE
+1,5,3,"Cartaz do filme ""Spartacus"", de Stanley Kubrick. 1960",FALSE
+1,5,4,"Cartaz do filme ""Os dois gladiadores"", de Mario Caiano. 1964",FALSE
+1,5,5,"Cartaz do filme ""Julio Cesar"", de Joseph L. Mankiewicz. 1963",FALSE
+1,5,6,"Cartaz do filme ""Asterix e a surpresa de Cesar"", de Gaëtan Brizzi e Paul Brizzi. 1985",FALSE
+1,5,7,"Cartaz do filme ""Satiricon"", de Federico Fellini. 1969",FALSE
+8,6,1,"Esse mapa de 1794 abarca todas as possessões portuguesas na costa do Brasil, desde o Ceará até o Rio de Janeiro, com marcações de relevo, em forma pictórica, com picos e montanhas avistados a partir do mar (provavelmente das serras da Mantiqueira e do Mar).",TRUE
+8,6,2,"No sul do Brasil, região longamente disputada com a Espanha, Portugal marcou seu domínio povoando-a com portugueses trazidos das Ilhas dos Açores e da Madeira. Os colonos ocuparam a Ilha de Santa Catarina (1748) e fundaram a cidade de Porto Alegre (1772), fazendo surgir novos pontos de irradiação da língua portuguesa. Esse mapa é da década de 1780. Registra as terras que vão desde a Ilha Santa Catarina até o Rio da Prata, com indicação dos caminhos.",FALSE
+8,6,3,"Essa carta, desenhada em 1777 a pedido do governador da Capitania de Minas Gerais, mostra as divisões administrativas em comarcas, detalha cidades, vilas, paróquias, fazendas, povoações, aldeias indígenas, caminhos e acidentes geográficos. Para poder controlar a administração era preciso conhecer o território, seus ocupantes, seus meandros.",FALSE
+8,6,4,"Esse mapa espanhol de 1778 abrange os atuais estados de Mato Grosso, Mato Grosso do Sul e parte da Bolívia. Perto das Missões de Chiquitos há indicação das “casas dos negros fugitivos de Mato Grosso” (quilombos, provavelmente) além de destacar alguns aldeamentos indígenas e minas.",FALSE
+8,6,5,"Antes da expulsão dos jesuítas, foram muitos os missionários viajantes, como mostra esse registro da viagem do Pe. Samuel Fritz pelo rio Amazonas, descendo pelo rio Solimões (no Peru) e chegando até a cidade de Belém. Ele contém a localização de povos indígenas, vilas, povoações, aldeias, minas e caminhos; e um texto sobre o Rio Amazonas, seus afluentes e o histórico das missões jesuíticas na América do Sul.",FALSE
+8,6,6,"Esse mapa manuscrito mostra caminhos percorridos pelo interior do território do Brasil de meados do século XVIII, os chamados sertões. Mostra a região compreendida entre o rio Amazonas e São Paulo, 1722.",FALSE
+9,4,1,"Cultura e opulência do Brasil, por suas Drogas e Minas, de André João Antonil. Esta obra aborda a produção brasileira do açúcar, do ouro, da criação de gado e do tabaco. O autor fala sobre os recursos econômicos brasileiros dos Séculos XVII e XVIII e mostra um estudo de testemunhos para a história da economia colonial do Brasil.",TRUE
+9,4,2,"Anatomia corporum humanorum, de Guilielmo (William) Cowper. Uma das melhores obras de anatomia do século XVIII, foi publicado inicialmente em inglês com o título 'The Anatomy of Humane Bodies' (1698).",FALSE
+9,4,3,"O grande atlas anatômico é ilustrado com 115 gravuras de página inteira, acompanhadas por uma descrição da dissecção retratada. São ilustrações muito detalhadas e, apesar dos assuntos exibidos, fornecem uma representação de bom gosto da dissecção. Por isso é também denominado um dos mais belos atlas anatômicos do século XVIII.",FALSE
+9,4,4,"Chronica del famoso cavallero, de Cid Ruy Diez Campeador. Impresso na Espanha em 1593.",FALSE
+9,4,5,"Breve aparelho, e modo facil para ajudar a bem morrer hum christam, de Estevam de Castro (1573-1639).",FALSE
+9,4,6,"Apologia da Religião no Espiritual, e dos Imperios no temporal, de Domingos Alves Branco Muniz Barreto (1825)",FALSE

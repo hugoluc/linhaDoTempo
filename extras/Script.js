@@ -15,19 +15,20 @@ var allImages = []
 var getPages = (_pagedata) => {
 
     if (!_pagedata) return
+    // debugger
 
     if(_pagedata.type == "video"){
         var data = { type : _pagedata.type, video : {
             videoUrl : 'content/' + _pagedata.module +'/'+ _pagedata.page_id +'/1.mp4', 
             title : _pagedata.title,
-            subTitle : _pagedata.subtittle
+            subTitle : _pagedata.subtitle
             } 
         }
     }else{
-        var data = { type : _pagedata.type,
+        var data = { type : "content" ,
             video : {       
                 title : _pagedata.title,
-                subTitle : _pagedata.subtittle,
+                subTitle : _pagedata.subtitle,
                 description : _pagedata.description,
                 images : getImages(_pagedata)
             }
@@ -61,42 +62,41 @@ function getImages(_pagedata){
 
 }
 
-
-csv().fromFile(imagensCsvPath).then((_images) => {
-    allImages = _images
-})
-
-csv().fromFile(paginasCsvPath).then((_pages) => {
-
-    debugger
-
-    var currentModule = 0
-    var currentPage = -1
-    modules.push({ pages : [] })
+function openPagesCSV(){
+    console.log(2);
+    csv().fromFile(paginasCsvPath).then((_pages) => {
     
-    for (var l = 0; l < _pages.length; l++) {    
-
+        debugger
+    
+        var currentModule = 0
+        var currentPage = -1
+        modules.push({ pages : [] })
         
-        if(currentModule != (_pages[l].module-1)){
-            modules.push({pages : []})
-            currentModule++
-            currentPage = -1
-            modules[currentModule].pages.push(getPages(_pages[l]))
-        }else{
-            modules[currentModule].pages.push(getPages(_pages[l]))
+        for (var l = 0; l < _pages.length; l++) {    
+    
+            
+            if(currentModule != (_pages[l].module-1)){
+                modules.push({pages : []})
+                currentModule++
+                currentPage = -1
+                modules[currentModule].pages.push(getPages(_pages[l]))
+            }else{
+                modules[currentModule].pages.push(getPages(_pages[l]))
+            }
+            currentPage++
+    
+            // console.log("MODULE:" + currentModule + " ,PAGE:" + currentPage );
+            // console.log(_pages[l]);
+            // console.log(modules[currentModule].pages[currentPage].video);
+            // console.log("-----------------");
+    
         }
-        currentPage++
+    
+        saveData()
+    
+    })
 
-        // console.log("MODULE:" + currentModule + " ,PAGE:" + currentPage );
-        // console.log(_pages[l]);
-        // console.log(modules[currentModule].pages[currentPage].video);
-        // console.log("-----------------");
-
-    }
-
-    saveData()
-
-})
+}
 
 function saveData() {
 
@@ -105,7 +105,24 @@ function saveData() {
     debugger
   
     fs.writeFile("/Users/hugolucena/Desktop/linhaDoTempo/data.js", data, 'utf8', function(error){
-      console.log(data)
-      console.log(error)
+    //   console.log(data)
+    //   console.log(error)
     })
 }
+
+
+///-----------------------------
+
+function openImageCSV(){
+    console.log(1);
+    csv().fromFile(imagensCsvPath).then((_images) => {
+        
+        allImages = _images
+        openPagesCSV()
+    })
+}
+
+
+
+
+openImageCSV()

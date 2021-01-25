@@ -38,41 +38,41 @@ var data = [
                 "video": {
                     "title": "Em cartaz: os romanos no cinema.",
                     "subTitle": "",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "description": "Passados 2 mil anos, o Império Romano ainda nos interessa. Mesmo extinto, ele continua vivo em nosso imaginário. Seu incrível poderio, suas guerras brutas, suas intrigas políticas, tudo nos fascina em sua história remota. Julio César, por exemplo, é re-assassinado todos os anos em algum ponto do planeta, numa encenação da peça de William Shakespeare. E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.",
                     "images": [
                         {
                             "url": "content/1/5/1.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cartaz do filme \"Julio Cesar\", de Joseph L. Mankiewicz. 1953",
                             "cover": true
                         },
                         {
                             "url": "content/1/5/2.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cartaz do filme \"Julio Cesar\", de William Wyler. 1960",
                             "cover": false
                         },
                         {
                             "url": "content/1/5/3.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cartaz do filme \"Spartacus\", de Stanley Kubrick. 1960",
                             "cover": false
                         },
                         {
                             "url": "content/1/5/4.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cartaz do filme \"Os dois gladiadores\", de Mario Caiano. 1964",
                             "cover": false
                         },
                         {
                             "url": "content/1/5/5.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cartaz do filme \"Julio Cesar\", de Joseph L. Mankiewicz. 1963",
                             "cover": false
                         },
                         {
                             "url": "content/1/5/6.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cartaz do filme \"Asterix e a surpresa de Cesar\", de Gaëtan Brizzi e Paul Brizzi. 1985",
                             "cover": false
                         },
                         {
                             "url": "content/1/5/7.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cartaz do filme \"Satiricon\", de Federico Fellini. 1969",
                             "cover": false
                         }
                     ]
@@ -105,6 +105,14 @@ var data = [
                     "title": "As heranças dos árabes no Novo Mundo",
                     "subTitle": "Antonio Risério"
                 }
+            },
+            {
+                "type": "video",
+                "video": {
+                    "videoUrl": "content/2/4/1.mp4",
+                    "title": "“Ai Mouraria”",
+                    "subTitle": "por Amália Rodrigues"
+                }
             }
         ]
     },
@@ -122,7 +130,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/2/1.mp4",
-                    "title": "<FALTA CONTEUDO> Livro ilustrado contendo as Cantigas de Santa Maria (c. 1281)",
+                    "title": "Cantigas de Santa Maria",
                     "subTitle": ""
                 }
             },
@@ -138,7 +146,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/4/1.mp4",
-                    "title": "A vocação lírica da língua portuguesa",
+                    "title": "Cantigas de amigo",
                     "subTitle": "José Miguel Wisnik"
                 }
             },
@@ -146,8 +154,16 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/3/5/1.mp4",
-                    "title": "“D. Diniz”  de Fernando Pessoa  Carminho",
+                    "title": "Cantiga de amigo e iluminuras",
                     "subTitle": ""
+                }
+            },
+            {
+                "type": "video",
+                "video": {
+                    "videoUrl": "content/3/6/1.mp4",
+                    "title": "“D. Diniz”, de Fernando Pessoa",
+                    "subTitle": "Carminho"
                 }
             }
         ]
@@ -166,7 +182,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/2/1.mp4",
-                    "title": "Os impactos das grandes navegações",
+                    "title": "Os impactos das grandes navegações;",
                     "subTitle": "Ronaldo Vainfas"
                 }
             },
@@ -174,7 +190,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/3/1.mp4",
-                    "title": "“Os Lusíadas” de Luis de Camões",
+                    "title": "“Os Lusíadas”, de Luis de Camões",
                     "subTitle": "Tom Zé"
                 }
             },
@@ -182,7 +198,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/4/1.mp4",
-                    "title": "“Os argonautas  de Caetano Veloso",
+                    "title": "“Os argonautas\", de Caetano Veloso",
                     "subTitle": "Maria Bethânia"
                 }
             },
@@ -190,7 +206,15 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/5/1.mp4",
-                    "title": "<FALTA CONTEUDO> “Padrão” de Fernando Pessoa",
+                    "title": "O processo colonial português e as lutas de independência",
+                    "subTitle": "Luiz Felipe Alencastro"
+                }
+            },
+            {
+                "type": "video",
+                "video": {
+                    "videoUrl": "content/4/6/1.mp4",
+                    "title": "<FALTA CONTEUDO> “Padrão”, de Fernando Pessoa",
                     "subTitle": "Caetano Veloso"
                 }
             }
@@ -238,7 +262,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/6/1/1.mp4",
-                    "title": "As línguas indígenas",
+                    "title": "As línguas indígena do Brasils",
                     "subTitle": "Ana Suelly Arruda Câmara"
                 }
             },
@@ -274,7 +298,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/1/1.mp4",
-                    "title": "<FALTA CONTEUDO>  Feitio de Oração de Noel Rosa",
+                    "title": "\"Feitio de Oração\", de Noel Rosa",
                     "subTitle": "Aracy de Almeida"
                 }
             },
@@ -282,15 +306,15 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/2/1.mp4",
-                    "title": "“Desde que o Samba é Samba” de Caetano Veloso",
-                    "subTitle": "Gilberto Gil"
+                    "title": "“Desde que o Samba é Samba”, de Caetano Veloso",
+                    "subTitle": "Gilberto Gil e José Gil"
                 }
             },
             {
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/3/1.mp4",
-                    "title": "“Corra e Olhe o Céu” de Cartola e Dalmo Castello",
+                    "title": "“Corra e Olhe o Céu”, de Cartola e Dalmo Castello",
                     "subTitle": "Cartola"
                 }
             },
@@ -298,7 +322,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/7/4/1.mp4",
-                    "title": "“Atraca Atraca”,  “Beira Mar”",
+                    "title": "“Atraca Atraca”; “Beira Mar”",
                     "subTitle": "Clementina de Jesus"
                 }
             }
@@ -342,7 +366,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/8/5/1.mp4",
-                    "title": "“Acalanto, de Ouro Preto”, de Murilo Mendes",
+                    "title": "“Acalanto de Ouro Preto”, de Murilo Mendes",
                     "subTitle": "Tom Zé"
                 }
             },
@@ -351,36 +375,36 @@ var data = [
                 "video": {
                     "title": "Série de mapas de época mostra a expansão do território brasileiro no século XVIII",
                     "subTitle": "",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "description": "",
                     "images": [
                         {
                             "url": "content/8/6/1.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Esse mapa de 1794 abarca todas as possessões portuguesas na costa do Brasil, desde o Ceará até o Rio de Janeiro, com marcações de relevo, em forma pictórica, com picos e montanhas avistados a partir do mar (provavelmente das serras da Mantiqueira e do Mar).",
                             "cover": true
                         },
                         {
                             "url": "content/8/6/2.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "No sul do Brasil, região longamente disputada com a Espanha, Portugal marcou seu domínio povoando-a com portugueses trazidos das Ilhas dos Açores e da Madeira. Os colonos ocuparam a Ilha de Santa Catarina (1748) e fundaram a cidade de Porto Alegre (1772), fazendo surgir novos pontos de irradiação da língua portuguesa. Esse mapa é da década de 1780. Registra as terras que vão desde a Ilha Santa Catarina até o Rio da Prata, com indicação dos caminhos.",
                             "cover": false
                         },
                         {
                             "url": "content/8/6/3.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Essa carta, desenhada em 1777 a pedido do governador da Capitania de Minas Gerais, mostra as divisões administrativas em comarcas, detalha cidades, vilas, paróquias, fazendas, povoações, aldeias indígenas, caminhos e acidentes geográficos. Para poder controlar a administração era preciso conhecer o território, seus ocupantes, seus meandros.",
                             "cover": false
                         },
                         {
                             "url": "content/8/6/4.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Esse mapa espanhol de 1778 abrange os atuais estados de Mato Grosso, Mato Grosso do Sul e parte da Bolívia. Perto das Missões de Chiquitos há indicação das “casas dos negros fugitivos de Mato Grosso” (quilombos, provavelmente) além de destacar alguns aldeamentos indígenas e minas.",
                             "cover": false
                         },
                         {
                             "url": "content/8/6/5.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Antes da expulsão dos jesuítas, foram muitos os missionários viajantes, como mostra esse registro da viagem do Pe. Samuel Fritz pelo rio Amazonas, descendo pelo rio Solimões (no Peru) e chegando até a cidade de Belém. Ele contém a localização de povos indígenas, vilas, povoações, aldeias, minas e caminhos; e um texto sobre o Rio Amazonas, seus afluentes e o histórico das missões jesuíticas na América do Sul.",
                             "cover": false
                         },
                         {
                             "url": "content/8/6/6.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Esse mapa manuscrito mostra caminhos percorridos pelo interior do território do Brasil de meados do século XVIII, os chamados sertões. Mostra a região compreendida entre o rio Amazonas e São Paulo, 1722.",
                             "cover": false
                         }
                     ]
@@ -394,7 +418,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/9/1/1.mp4",
-                    "title": "“Marília, de Dirceu”, de Tomás Antônio Gonzaga",
+                    "title": "“Marília de Dirceu”, de Tomás Antônio Gonzaga",
                     "subTitle": "Caco Ciocler"
                 }
             },
@@ -410,80 +434,45 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/9/3/1.mp4",
-                    "title": "Escritos de Luiz Gonçalves dos Santos o “Padre Perereca”",
+                    "title": "Escritos de Luiz Gonçalves dos Santos, o “Padre Perereca”",
                     "subTitle": "Matheus Nachtergaele"
                 }
             },
             {
                 "type": "content",
                 "video": {
-                    "title": "Série de livros que vieram de Portugal com a Biblioteca Real de D. João",
+                    "title": "Biblioteca Real de D. João",
                     "subTitle": "",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "description": "Importantes livros originários da Biblioteca Real de D. João e que, atualmente, pertencem ao acervo Fundação Biblioteca Nacional/FBN.",
                     "images": [
                         {
                             "url": "content/9/4/1.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Cultura e opulência do Brasil, por suas Drogas e Minas, de André João Antonil. Esta obra aborda a produção brasileira do açúcar, do ouro, da criação de gado e do tabaco. O autor fala sobre os recursos econômicos brasileiros dos Séculos XVII e XVIII e mostra um estudo de testemunhos para a história da economia colonial do Brasil.",
                             "cover": true
                         },
                         {
                             "url": "content/9/4/2.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Anatomia corporum humanorum, de Guilielmo (William) Cowper. Uma das melhores obras de anatomia do século XVIII, foi publicado inicialmente em inglês com o título 'The Anatomy of Humane Bodies' (1698).",
                             "cover": false
                         },
                         {
                             "url": "content/9/4/3.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "O grande atlas anatômico é ilustrado com 115 gravuras de página inteira, acompanhadas por uma descrição da dissecção retratada. São ilustrações muito detalhadas e, apesar dos assuntos exibidos, fornecem uma representação de bom gosto da dissecção. Por isso é também denominado um dos mais belos atlas anatômicos do século XVIII.",
                             "cover": false
                         },
                         {
                             "url": "content/9/4/4.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Chronica del famoso cavallero, de Cid Ruy Diez Campeador. Impresso na Espanha em 1593.",
                             "cover": false
                         },
                         {
                             "url": "content/9/4/5.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Breve aparelho, e modo facil para ajudar a bem morrer hum christam, de Estevam de Castro (1573-1639).",
                             "cover": false
                         },
                         {
                             "url": "content/9/4/6.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                            "cover": false
-                        },
-                        {
-                            "url": "content/9/4/7.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                            "cover": false
-                        },
-                        {
-                            "url": "content/9/4/8.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                            "cover": false
-                        },
-                        {
-                            "url": "content/9/4/9.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                            "cover": false
-                        },
-                        {
-                            "url": "content/9/4/10.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                            "cover": false
-                        },
-                        {
-                            "url": "content/9/4/11.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                            "cover": false
-                        },
-                        {
-                            "url": "content/9/4/12.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                            "cover": false
-                        },
-                        {
-                            "url": "content/9/4/13.jpg",
-                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                            "title": "Apologia da Religião no Espiritual, e dos Imperios no temporal, de Domingos Alves Branco Muniz Barreto (1825)",
                             "cover": false
                         }
                     ]
@@ -537,7 +526,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/5/1.mp4",
-                    "title": "<FALTA CONTEUDO> Audiovisual sobre o lukumí  língua de base iorubá utilizada como língua ritual em Cuba",
+                    "title": "Audiovisual sobre o lukumí, língua de base iorubá utilizada como língua ritual em Cuba.",
                     "subTitle": ""
                 }
             },
@@ -545,7 +534,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/10/6/1.mp4",
-                    "title": "<FALTA CONTEUDO> Dorival Caymmi e Carmen Miranda cantam A preta do acarajé",
+                    "title": "Dorival Caymmi e Carmen Miranda cantam \"A preta do acarajé\".",
                     "subTitle": ""
                 }
             }
@@ -597,7 +586,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/11/6/1.mp4",
-                    "title": "“Sodades, de Zan Paolo”, de Juó Bananére",
+                    "title": "“Sodades de Zan Paolo”, de Juó Bananére",
                     "subTitle": "Denise Fraga"
                 }
             },
@@ -625,7 +614,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/12/2/1.mp4",
-                    "title": "“Cantoras do Rádio”, de Alberto Ribeiro, João, de Barro e Lamartine Babo",
+                    "title": "“Cantoras do Rádio”, de Alberto Ribeiro, João de Barro e Lamartine Babo",
                     "subTitle": "Carmem e Aurora Miranda"
                 }
             },
@@ -677,7 +666,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/13/1/1.mp4",
-                    "title": "<FALTA CONTEUDO> “Pra não dizer que não falei das flores (Caminhando)”, de Geraldo Vandré",
+                    "title": "“Pra não dizer que não falei das flores (Caminhando)”, de Geraldo Vandré",
                     "subTitle": ""
                 }
             },
@@ -693,7 +682,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/13/3/1.mp4",
-                    "title": "“Construção”  de Chico Buarque",
+                    "title": "“Construção”, de Chico Buarque",
                     "subTitle": ""
                 }
             },
@@ -717,7 +706,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/13/6/1.mp4",
-                    "title": "“Sandra Rosa Madalena” de Sidney Mahal",
+                    "title": "“Sandra Rosa Madalena”, de Sidney Magal",
                     "subTitle": ""
                 }
             },
@@ -725,7 +714,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/13/7/1.mp4",
-                    "title": "“Que país é este?” de Legião Urbana",
+                    "title": "“Que país é este?”, de Legião Urbana",
                     "subTitle": ""
                 }
             },
@@ -734,7 +723,7 @@ var data = [
                 "video": {
                     "title": "Música para todos os gostos",
                     "subTitle": "",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim venia quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                     "images": []
                 }
             }
@@ -794,7 +783,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/7/1.mp4",
-                    "title": "<FALTA CONTEUDO> “Alegria, alegria”, de Caetano Veloso",
+                    "title": "“As caravanas”, de Chico Buarque",
                     "subTitle": ""
                 }
             },
@@ -802,7 +791,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/14/8/1.mp4",
-                    "title": "Clipe de Negro Drama dos Racionais Mc's",
+                    "title": "Clipe de \"Negro Drama\" dos Racionais Mc's. ",
                     "subTitle": ""
                 }
             }

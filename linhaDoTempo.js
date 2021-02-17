@@ -522,7 +522,10 @@ Page.prototype.createDomElements = function(){
 }
 
 Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
-    
+
+
+    console.log(_player);
+    console.log("------------------");
 
     scale = scale || 1;
 
@@ -533,14 +536,19 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
     
     var getPixels = (__player) => {
         
+        console.log(__player.id);
+
         _player.controls.setCurrentTime(0.9)
         context.drawImage(_player.video, 0, 0, canvas.width, canvas.height);
         var pixels = context.getImageData(0,0,100,100).data
         
-        if(pixels[0]==0 && pixels[0]==0){
-            setTimeout(() => { getPixels()} , 1000)
-        }else{
-            
+        console.log(pixels);
+        console.log(pixels[0],pixels[1],pixels[2],pixels[3],pixels[4]);
+        
+
+        if(pixels[0]==0 && pixels[3]==0){
+            setTimeout(() => { getPixels(__player)} , 1000)
+        }else{    
             this.image.src = canvas.toDataURL()
             this.image.className = "imagePreview"
             this.image.id = _player.id
@@ -548,9 +556,7 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
             _player.toggleVisibility()
             _player.controls.setCurrentTime(0.0)
             _player.onloaded = () =>{}
-
         }
-
     }
     
     getPixels(_player)

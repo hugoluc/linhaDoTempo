@@ -18,8 +18,7 @@ module,page_id,type,title,subtitle,description
 4,2,video,Os impactos das grandes navegações;,Ronaldo Vainfas,
 4,3,video,"“Os Lusíadas”, de Luis de Camões",Tom Zé,
 4,4,video,"“Os argonautas"", de Caetano Veloso",Maria Bethânia,
-4,5,video,O processo colonial português e as lutas de independência,Luiz Felipe Alencastro,
-4,6,video,"<FALTA CONTEUDO> “Padrão”, de Fernando Pessoa",Caetano Veloso,
+4,5,video,"“Padrão”, de Fernando Pessoa",Caetano Veloso,
 5,1,video,“Carta de Pero Vaz de Caminha” ,Jorge Mautner,
 5,2,video,O achamento do Brasil ,Ronaldo Vainfas,
 5,3,video,A invasão ,Ailton Krenak,
@@ -37,7 +36,7 @@ module,page_id,type,title,subtitle,description
 8,3,video,A proibição das línguas gerais,José Ribamar Bessa Freire,
 8,4,video,A política do Marquês de Pombal,Célia Tavares,
 8,5,video,"“Acalanto de Ouro Preto”, de Murilo Mendes",Tom Zé,
-8,6,imagens,Série de mapas de época mostra a expansão do território brasileiro no século XVIII,,
+8,6,imagens,Expansão do território brasileiro no século XVIII,,Sequência de mapas antigos mostram a expansão do território brasileiro no século XVIII
 9,1,video,"“Marília de Dirceu”, de Tomás Antônio Gonzaga",Caco Ciocler,
 9,2,video,A língua na construção de uma identidade brasileira,José Luiz Fiorin,
 9,3,video,"Escritos de Luiz Gonçalves dos Santos, o “Padre Perereca”",Matheus Nachtergaele,
@@ -70,7 +69,6 @@ module,page_id,type,title,subtitle,description
 13,5,video,Músicas de Odair José,,
 13,6,video,"“Sandra Rosa Madalena”, de Sidney Magal",,
 13,7,video,"“Que país é este?”, de Legião Urbana",,
-13,8,imagens,Música para todos os gostos,,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 14,1,video,A língua nas redes,Francisco Bosco,
 14,2,video,A língua viva,Djamila Ribeiro,
 14,3,video,Os povos indígenas no século XXI ,Manuela Carneiro da Cunha,

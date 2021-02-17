@@ -206,15 +206,7 @@ var data = [
                 "type": "video",
                 "video": {
                     "videoUrl": "content/4/5/1.mp4",
-                    "title": "O processo colonial português e as lutas de independência",
-                    "subTitle": "Luiz Felipe Alencastro"
-                }
-            },
-            {
-                "type": "video",
-                "video": {
-                    "videoUrl": "content/4/6/1.mp4",
-                    "title": "<FALTA CONTEUDO> “Padrão”, de Fernando Pessoa",
+                    "title": "“Padrão”, de Fernando Pessoa",
                     "subTitle": "Caetano Veloso"
                 }
             }
@@ -373,9 +365,9 @@ var data = [
             {
                 "type": "content",
                 "video": {
-                    "title": "Série de mapas de época mostra a expansão do território brasileiro no século XVIII",
+                    "title": "Expansão do território brasileiro no século XVIII",
                     "subTitle": "",
-                    "description": "",
+                    "description": "Sequência de mapas antigos mostram a expansão do território brasileiro no século XVIII",
                     "images": [
                         {
                             "url": "content/8/6/1.jpg",

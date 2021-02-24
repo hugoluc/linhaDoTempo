@@ -21,14 +21,41 @@ var getPages = (_pagedata) => {
         var data = { type : _pagedata.type, video : {
             videoUrl : 'content/' + _pagedata.module +'/'+ _pagedata.page_id +'/1.mp4', 
             title : _pagedata.title,
-            subTitle : _pagedata.subtitle
-            } 
+            underTitle : _pagedata.subtitle,
+            subtitles : [
+                { 
+                    type : "libras",
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id +'/libras.mp4',
+                    title : "Libras",
+                    default : false
+                }
+                //,
+                // { 
+                //     type : "text",
+                //     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/es.vtt' ,
+                //     title : "Ingles",
+                //     default : false
+                // },
+                // { 
+                //     type : "text",
+                //     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/de.vtt' ,
+                //     title : "Espanhol",
+                //     default : false
+                // },
+                // { 
+                //     type : "text",
+                //     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/en.vtt' ,
+                //     title : 'Portugês',
+                //     default : true
+                // }
+            ]
+            }
         }
     }else{
         var data = { type : "content" ,
             video : {       
                 title : _pagedata.title,
-                subTitle : _pagedata.subtitle,
+                underTitle : _pagedata.subtitle,
                 description : _pagedata.description,
                 images : getImages(_pagedata)
             }
@@ -66,8 +93,6 @@ function openPagesCSV(){
     console.log(2);
     csv().fromFile(paginasCsvPath).then((_pages) => {
     
-        debugger
-    
         var currentModule = 0
         var currentPage = -1
         modules.push({ pages : [] })
@@ -85,11 +110,6 @@ function openPagesCSV(){
             }
             currentPage++
     
-            // console.log("MODULE:" + currentModule + " ,PAGE:" + currentPage );
-            // console.log(_pages[l]);
-            // console.log(modules[currentModule].pages[currentPage].video);
-            // console.log("-----------------");
-    
         }
     
         saveData()
@@ -98,15 +118,13 @@ function openPagesCSV(){
 
 }
 
-function saveData() {
+function saveData() { 
 
     var data = 'var data = ' + JSON.stringify(modules, null, 4)
   
     debugger
   
     fs.writeFile("/Users/hugolucena/Desktop/linhaDoTempo/data.js", data, 'utf8', function(error){
-    //   console.log(data)
-    //   console.log(error)
     })
 }
 

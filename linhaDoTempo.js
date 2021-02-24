@@ -344,8 +344,6 @@ linhaDoTempo.prototype.resetAllVideos = function(){
 
 linhaDoTempo.prototype.close = function(){
     
-    console.log("-----------")
-    console.log(this.open)
 
     if(this.open){
         
@@ -475,7 +473,7 @@ Page.prototype.createDomElements = function(){
 
     var subTitle = document.createElement('div')
     subTitle.className = "overlaySubTitle"
-    subTitle.innerHTML = this.data.subTitle
+    subTitle.innerHTML = this.data.underTitle
     overlayContent.appendChild(subTitle)
 
     var line = document.createElement('div')
@@ -523,10 +521,6 @@ Page.prototype.createDomElements = function(){
 
 Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
 
-
-    console.log(_player);
-    console.log("------------------");
-
     scale = scale || 1;
 
     const canvas = document.createElement("canvas");
@@ -535,15 +529,10 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
     var context = canvas.getContext('2d')
     
     var getPixels = (__player) => {
-        
-        console.log(__player.id);
 
         _player.controls.setCurrentTime(0.9)
         context.drawImage(_player.video, 0, 0, canvas.width, canvas.height);
         var pixels = context.getImageData(0,0,100,100).data
-        
-        console.log(pixels);
-        console.log(pixels[0],pixels[1],pixels[2],pixels[3],pixels[4]);
         
 
         if(pixels[0]==0 && pixels[3]==0){

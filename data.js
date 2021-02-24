@@ -6,7 +6,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/1/1/1.mp4",
                     "title": "Línguas latinas",
-                    "subTitle": "Ataliba Castilho"
+                    "underTitle": "Ataliba Castilho",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/1/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -14,7 +22,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/1/2/1.mp4",
                     "title": "Enfraquecimento do Império Romano",
-                    "subTitle": "Ataliba Castilho"
+                    "underTitle": "Ataliba Castilho",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/1/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -22,7 +38,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/1/3/1.mp4",
                     "title": "O Império Romano",
-                    "subTitle": "Luiz Marques"
+                    "underTitle": "Luiz Marques",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/1/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -30,14 +54,22 @@ var data = [
                 "video": {
                     "videoUrl": "content/1/4/1.mp4",
                     "title": "O sistema político Romano",
-                    "subTitle": "Luiz Marques"
+                    "underTitle": "Luiz Marques",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/1/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
                 "type": "content",
                 "video": {
                     "title": "Em cartaz: os romanos no cinema.",
-                    "subTitle": "",
+                    "underTitle": "",
                     "description": "Passados 2 mil anos, o Império Romano ainda nos interessa. Mesmo extinto, ele continua vivo em nosso imaginário. Seu incrível poderio, suas guerras brutas, suas intrigas políticas, tudo nos fascina em sua história remota. Julio César, por exemplo, é re-assassinado todos os anos em algum ponto do planeta, numa encenação da peça de William Shakespeare. E o cinema de Hollywood continua apaixonado pelo tema. Mesmo já tendo realizado dezenas de filmes como Spartacus ou Gladiador, a cada poucos anos surge uma nova superprodução do gênero. Os antigos romanos ainda garantem uma boa bilheteria.",
                     "images": [
                         {
@@ -87,7 +119,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/2/1/1.mp4",
                     "title": "A influência dos árabes no mundo ibérico",
-                    "subTitle": "Darcy Ribeiro e Roberto Pinho"
+                    "underTitle": "Darcy Ribeiro e Roberto Pinho",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/2/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -95,7 +135,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/2/2/1.mp4",
                     "title": "A língua na expansão do mundo árabe",
-                    "subTitle": "Adalberto Alves"
+                    "underTitle": "Adalberto Alves",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/2/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -103,7 +151,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/2/3/1.mp4",
                     "title": "As heranças dos árabes no Novo Mundo",
-                    "subTitle": "Antonio Risério"
+                    "underTitle": "Antonio Risério",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/2/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -111,7 +167,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/2/4/1.mp4",
                     "title": "“Ai Mouraria”",
-                    "subTitle": "por Amália Rodrigues"
+                    "underTitle": "por Amália Rodrigues",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/2/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -123,7 +187,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/3/1/1.mp4",
                     "title": "Os primórdios da língua portuguesa",
-                    "subTitle": "Ataliba de Castilho"
+                    "underTitle": "Ataliba de Castilho",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/3/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -131,7 +203,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/3/2/1.mp4",
                     "title": "Cantigas de Santa Maria",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/3/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -139,7 +219,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/3/3/1.mp4",
                     "title": "A formação de Portugal",
-                    "subTitle": "Judith Cortesão e Roberto Pinho"
+                    "underTitle": "Judith Cortesão e Roberto Pinho",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/3/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -147,7 +235,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/3/4/1.mp4",
                     "title": "Cantigas de amigo",
-                    "subTitle": "José Miguel Wisnik"
+                    "underTitle": "José Miguel Wisnik",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/3/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -155,7 +251,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/3/5/1.mp4",
                     "title": "Cantiga de amigo e iluminuras",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/3/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -163,7 +267,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/3/6/1.mp4",
                     "title": "“D. Diniz”, de Fernando Pessoa",
-                    "subTitle": "Carminho"
+                    "underTitle": "Carminho",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/3/6/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -175,7 +287,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/4/1/1.mp4",
                     "title": "O português nas grandes navegações",
-                    "subTitle": "Ataliba Castilho"
+                    "underTitle": "Ataliba Castilho",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/4/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -183,7 +303,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/4/2/1.mp4",
                     "title": "Os impactos das grandes navegações;",
-                    "subTitle": "Ronaldo Vainfas"
+                    "underTitle": "Ronaldo Vainfas",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/4/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -191,7 +319,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/4/3/1.mp4",
                     "title": "“Os Lusíadas”, de Luis de Camões",
-                    "subTitle": "Tom Zé"
+                    "underTitle": "Tom Zé",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/4/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -199,7 +335,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/4/4/1.mp4",
                     "title": "“Os argonautas\", de Caetano Veloso",
-                    "subTitle": "Maria Bethânia"
+                    "underTitle": "Maria Bethânia",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/4/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -207,7 +351,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/4/5/1.mp4",
                     "title": "“Padrão”, de Fernando Pessoa",
-                    "subTitle": "Caetano Veloso"
+                    "underTitle": "Caetano Veloso",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/4/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -219,7 +371,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/5/1/1.mp4",
                     "title": "“Carta de Pero Vaz de Caminha”",
-                    "subTitle": "Jorge Mautner"
+                    "underTitle": "Jorge Mautner",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/5/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -227,7 +387,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/5/2/1.mp4",
                     "title": "O achamento do Brasil",
-                    "subTitle": "Ronaldo Vainfas"
+                    "underTitle": "Ronaldo Vainfas",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/5/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -235,7 +403,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/5/3/1.mp4",
                     "title": "A invasão",
-                    "subTitle": "Ailton Krenak"
+                    "underTitle": "Ailton Krenak",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/5/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -243,7 +419,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/5/4/1.mp4",
                     "title": "O Brasil de 1519: mapa de Lopo Homem",
-                    "subTitle": "Matheus Nachtergaele"
+                    "underTitle": "Matheus Nachtergaele",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/5/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -255,7 +439,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/6/1/1.mp4",
                     "title": "As línguas indígena do Brasils",
-                    "subTitle": "Ana Suelly Arruda Câmara"
+                    "underTitle": "Ana Suelly Arruda Câmara",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/6/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -263,7 +455,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/6/2/1.mp4",
                     "title": "A antropofagia",
-                    "subTitle": "Manuela Carneiro da Cunha"
+                    "underTitle": "Manuela Carneiro da Cunha",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/6/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -271,7 +471,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/6/3/1.mp4",
                     "title": "Língua geral",
-                    "subTitle": "Aryon Rodrigues"
+                    "underTitle": "Aryon Rodrigues",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/6/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -279,7 +487,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/6/4/1.mp4",
                     "title": "O movimento indígena",
-                    "subTitle": "Davi Kopenawa"
+                    "underTitle": "Davi Kopenawa",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/6/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -291,7 +507,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/7/1/1.mp4",
                     "title": "\"Feitio de Oração\", de Noel Rosa",
-                    "subTitle": "Aracy de Almeida"
+                    "underTitle": "Aracy de Almeida",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/7/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -299,7 +523,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/7/2/1.mp4",
                     "title": "“Desde que o Samba é Samba”, de Caetano Veloso",
-                    "subTitle": "Gilberto Gil e José Gil"
+                    "underTitle": "Gilberto Gil e José Gil",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/7/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -307,7 +539,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/7/3/1.mp4",
                     "title": "“Corra e Olhe o Céu”, de Cartola e Dalmo Castello",
-                    "subTitle": "Cartola"
+                    "underTitle": "Cartola",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/7/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -315,7 +555,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/7/4/1.mp4",
                     "title": "“Atraca Atraca”; “Beira Mar”",
-                    "subTitle": "Clementina de Jesus"
+                    "underTitle": "Clementina de Jesus",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/7/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -327,7 +575,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/8/1/1.mp4",
                     "title": "“Cartas chilenas”, de Tomás Antônio Gonzaga",
-                    "subTitle": "Caco Ciocler"
+                    "underTitle": "Caco Ciocler",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/8/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -335,7 +591,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/8/2/1.mp4",
                     "title": "“Paixão e Fé”, de Tavinho Moura e Fernando Brant",
-                    "subTitle": "Milton Nascimento"
+                    "underTitle": "Milton Nascimento",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/8/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -343,7 +607,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/8/3/1.mp4",
                     "title": "A proibição das línguas gerais",
-                    "subTitle": "José Ribamar Bessa Freire"
+                    "underTitle": "José Ribamar Bessa Freire",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/8/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -351,7 +623,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/8/4/1.mp4",
                     "title": "A política do Marquês de Pombal",
-                    "subTitle": "Célia Tavares"
+                    "underTitle": "Célia Tavares",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/8/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -359,14 +639,22 @@ var data = [
                 "video": {
                     "videoUrl": "content/8/5/1.mp4",
                     "title": "“Acalanto de Ouro Preto”, de Murilo Mendes",
-                    "subTitle": "Tom Zé"
+                    "underTitle": "Tom Zé",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/8/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
                 "type": "content",
                 "video": {
                     "title": "Expansão do território brasileiro no século XVIII",
-                    "subTitle": "",
+                    "underTitle": "",
                     "description": "Sequência de mapas antigos mostram a expansão do território brasileiro no século XVIII",
                     "images": [
                         {
@@ -411,7 +699,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/9/1/1.mp4",
                     "title": "“Marília de Dirceu”, de Tomás Antônio Gonzaga",
-                    "subTitle": "Caco Ciocler"
+                    "underTitle": "Caco Ciocler",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/9/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -419,7 +715,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/9/2/1.mp4",
                     "title": "A língua na construção de uma identidade brasileira",
-                    "subTitle": "José Luiz Fiorin"
+                    "underTitle": "José Luiz Fiorin",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/9/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -427,14 +731,22 @@ var data = [
                 "video": {
                     "videoUrl": "content/9/3/1.mp4",
                     "title": "Escritos de Luiz Gonçalves dos Santos, o “Padre Perereca”",
-                    "subTitle": "Matheus Nachtergaele"
+                    "underTitle": "Matheus Nachtergaele",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/9/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
                 "type": "content",
                 "video": {
                     "title": "Biblioteca Real de D. João",
-                    "subTitle": "",
+                    "underTitle": "",
                     "description": "Importantes livros originários da Biblioteca Real de D. João e que, atualmente, pertencem ao acervo Fundação Biblioteca Nacional/FBN.",
                     "images": [
                         {
@@ -475,7 +787,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/9/5/1.mp4",
                     "title": "A escolaridade no Brasil Colônia",
-                    "subTitle": "Luiz Carlos Villalta"
+                    "underTitle": "Luiz Carlos Villalta",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/9/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -487,7 +807,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/10/1/1.mp4",
                     "title": "A interferência das línguas africanas no português",
-                    "subTitle": "Yeda Pessoa de Castro"
+                    "underTitle": "Yeda Pessoa de Castro",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/10/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -495,7 +823,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/10/2/1.mp4",
                     "title": "A escravidão e seus impactos",
-                    "subTitle": "Luiz Felipe de Alencastro"
+                    "underTitle": "Luiz Felipe de Alencastro",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/10/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -503,7 +839,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/10/3/1.mp4",
                     "title": "O retorno de escravizados",
-                    "subTitle": "Manuela Carneiro da Cunha"
+                    "underTitle": "Manuela Carneiro da Cunha",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/10/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -511,7 +855,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/10/4/1.mp4",
                     "title": "O candomblé e os orixás",
-                    "subTitle": "Stella de Oxóssi"
+                    "underTitle": "Stella de Oxóssi",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/10/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -519,7 +871,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/10/5/1.mp4",
                     "title": "Audiovisual sobre o lukumí, língua de base iorubá utilizada como língua ritual em Cuba.",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/10/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -527,7 +887,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/10/6/1.mp4",
                     "title": "Dorival Caymmi e Carmen Miranda cantam \"A preta do acarajé\".",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/10/6/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -539,7 +907,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/11/1/1.mp4",
                     "title": "Imigração italiana",
-                    "subTitle": "Nora Ronai"
+                    "underTitle": "Nora Ronai",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/11/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -547,7 +923,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/11/2/1.mp4",
                     "title": "Imigração polonesa",
-                    "subTitle": "Tomasz Lychowski"
+                    "underTitle": "Tomasz Lychowski",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/11/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -555,7 +939,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/11/3/1.mp4",
                     "title": "Imigração árabe",
-                    "subTitle": "Kamal Kalaoun"
+                    "underTitle": "Kamal Kalaoun",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/11/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -563,7 +955,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/11/4/1.mp4",
                     "title": "Imigração alemã",
-                    "subTitle": "Barbara Hepp"
+                    "underTitle": "Barbara Hepp",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/11/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -571,7 +971,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/11/5/1.mp4",
                     "title": "Imigração japonesa",
-                    "subTitle": "Sachimi e Hiroshi Higuchi"
+                    "underTitle": "Sachimi e Hiroshi Higuchi",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/11/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -579,7 +987,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/11/6/1.mp4",
                     "title": "“Sodades de Zan Paolo”, de Juó Bananére",
-                    "subTitle": "Denise Fraga"
+                    "underTitle": "Denise Fraga",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/11/6/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -587,7 +1003,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/11/7/1.mp4",
                     "title": "As imigrações",
-                    "subTitle": "Boris Fausto"
+                    "underTitle": "Boris Fausto",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/11/7/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -599,7 +1023,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/12/1/1.mp4",
                     "title": "A Semana de Arte Moderna de 1922",
-                    "subTitle": "Moacir dos Anjos"
+                    "underTitle": "Moacir dos Anjos",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/12/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -607,7 +1039,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/12/2/1.mp4",
                     "title": "“Cantoras do Rádio”, de Alberto Ribeiro, João de Barro e Lamartine Babo",
-                    "subTitle": "Carmem e Aurora Miranda"
+                    "underTitle": "Carmem e Aurora Miranda",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/12/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -615,7 +1055,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/12/3/1.mp4",
                     "title": "“Luar do Sertão”, de Luiz Gonzaga, Sivuca e Oswaldinho",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/12/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -623,7 +1071,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/12/4/1.mp4",
                     "title": "Lampião e seu bando",
-                    "subTitle": "Benjamin Abrahão"
+                    "underTitle": "Benjamin Abrahão",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/12/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -631,7 +1087,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/12/5/1.mp4",
                     "title": "“Brasília segundo Feldman” (1979), de Eugene Feldman",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/12/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -639,7 +1103,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/12/6/1.mp4",
                     "title": "A língua e a música entre 1940 e 1960",
-                    "subTitle": "José Miguel Wisnik"
+                    "underTitle": "José Miguel Wisnik",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/12/6/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -647,7 +1119,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/12/7/1.mp4",
                     "title": "A língua o rádio entre 1940 e 1960",
-                    "subTitle": "José Miguel Wisnik"
+                    "underTitle": "José Miguel Wisnik",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/12/7/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -659,7 +1139,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/13/1/1.mp4",
                     "title": "“Pra não dizer que não falei das flores (Caminhando)”, de Geraldo Vandré",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/13/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -667,7 +1155,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/13/2/1.mp4",
                     "title": "<FALTA CONTEUDO> “Alegria, alegria”, de Caetano Veloso",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/13/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -675,7 +1171,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/13/3/1.mp4",
                     "title": "“Construção”, de Chico Buarque",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/13/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -683,7 +1187,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/13/4/1.mp4",
                     "title": "“Metamorfose ambulante”, de Raul Seixas",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/13/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -691,7 +1203,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/13/5/1.mp4",
                     "title": "Músicas de Odair José",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/13/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -699,7 +1219,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/13/6/1.mp4",
                     "title": "“Sandra Rosa Madalena”, de Sidney Magal",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/13/6/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -707,7 +1235,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/13/7/1.mp4",
                     "title": "“Que país é este?”, de Legião Urbana",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/13/7/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]
@@ -719,7 +1255,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/1/1.mp4",
                     "title": "A língua nas redes",
-                    "subTitle": "Francisco Bosco"
+                    "underTitle": "Francisco Bosco",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/1/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -727,7 +1271,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/2/1.mp4",
                     "title": "A língua viva",
-                    "subTitle": "Djamila Ribeiro"
+                    "underTitle": "Djamila Ribeiro",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/2/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -735,7 +1287,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/3/1.mp4",
                     "title": "Os povos indígenas no século XXI",
-                    "subTitle": "Manuela Carneiro da Cunha"
+                    "underTitle": "Manuela Carneiro da Cunha",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/3/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -743,7 +1303,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/4/1.mp4",
                     "title": "Palavra em trânsito",
-                    "subTitle": "Arnaldo Antunes"
+                    "underTitle": "Arnaldo Antunes",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/4/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -751,7 +1319,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/5/1.mp4",
                     "title": "Eutro, escultura de Arnaldo Antunes",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/5/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -759,7 +1335,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/6/1.mp4",
                     "title": "O borogodó do borogodó",
-                    "subTitle": "Valter Hugo Mãe"
+                    "underTitle": "Valter Hugo Mãe",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/6/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -767,7 +1351,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/7/1.mp4",
                     "title": "“As caravanas”, de Chico Buarque",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/7/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             },
             {
@@ -775,7 +1367,15 @@ var data = [
                 "video": {
                     "videoUrl": "content/14/8/1.mp4",
                     "title": "Clipe de \"Negro Drama\" dos Racionais Mc's. ",
-                    "subTitle": ""
+                    "underTitle": "",
+                    "subtitles": [
+                        {
+                            "type": "libras",
+                            "url": "content/14/8/libras.mp4",
+                            "title": "Libras",
+                            "default": false
+                        }
+                    ]
                 }
             }
         ]

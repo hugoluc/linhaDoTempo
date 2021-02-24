@@ -571,7 +571,7 @@ function subtitle(_video,_sub,_id,_parent){
     this.track.id = _id
     this.track.mode = "hidden"
     _video.appendChild(this.track)
-    
+
     _video.textTracks[_video.textTracks.length-1].mode = "hidden"
 
     this.textTrack = _video.textTracks[_video.textTracks.length-1]
@@ -617,8 +617,8 @@ subtitle.prototype.setup = function(){
         var text = cue.text
         var _this = this
 
-        cue.onenter = function() { _this.cueEnter(this.text) }
-        cue.onexit = function()  { _this.cueExit()           }
+        cue.onenter = function()    { _this.cueEnter(this.text) }
+        cue.onexit  = function()    { _this.cueExit()           }
     }
 
 }

@@ -411,10 +411,11 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
                 this.libras = sub
             }
             this.subtitles.push( sub )
-            if (_subs[i].default) this.selectSubtitle(i)
-         
+            
         }
-
+        
+        this.selectSubtitle(0)
+        
     }
 
     //-------------------

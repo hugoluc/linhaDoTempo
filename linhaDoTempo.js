@@ -50,7 +50,8 @@ function linhaDoTempo(_data){
     })
 
     
-    this.menu = new Menu(this.appContainer, )
+    this.menu = new Menu(this.appContainer, this.data )
+    this.menu.goToPage = (_id) => { this.goToPage(_id)}
     this.menu.createDomElements()
 
 }
@@ -393,6 +394,9 @@ linhaDoTempo.prototype.createPages = function(){
 
         }else{
             var page = new Page(pageData,index)
+            page.imageLoadedCallback= (_url,_id) => {
+                this.menu.loadImage(_url,_id)
+            }
             page.player.controls.addEventListener("toggleControls",(_e)=>{ if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() } })
             page.overlayCallback = ()=>{ 
                 this.open = true
@@ -434,6 +438,7 @@ function Page(_data,_id){
     this.overlayAnimationEnd = ()=>{}
     this.isOpend = false
     this.createDomElements()
+    this.imageLoadedCallback = ()=>{}
 
 }
 
@@ -549,6 +554,8 @@ Page.prototype.getVideoImage = function(_player,_imageContainer,scale){
         if(pixels[0]==0 && pixels[3]==0){
             setTimeout(() => { getPixels(__player)} , 1000)
         }else{    
+            
+            this.imageLoadedCallback(canvas.toDataURL(),_player.id)
             this.image.src = canvas.toDataURL()
             this.image.className = "imagePreview"
             this.image.id = _player.id
@@ -856,12 +863,12 @@ ContentPage.prototype.setPos = function(_pos,_animate){
 //===============================================================
 //===============================================================
 
-function Menu(_parent,_pages){
+function Menu(_parent,_data){
 
     this.parent = _parent
-    this.pages = _pages
+    this.data = _data
     this.menuOpen = true
-    this.pages= [] 
+    this.pages = [] 
 
 }
 
@@ -898,6 +905,7 @@ Menu.prototype.createDomElements = function(){
     this.menuContentContaner.appendChild(this.menuContent)
 
     this.closeMenu()
+    this.createContent()
     
 }
 
@@ -937,13 +945,35 @@ Menu.prototype.showMenu = function(){
 
 }
 
-Menu.prototype.createPage = function(){
+Menu.prototype.createContent = function(){
 
+    for (let index = 0; index < this.data.length; index++) {
+        
+        var title = this.data[index].title;
+        this.addPage(title,index)
+
+    }
+
+
+}
+
+
+Menu.prototype.addPage = function(_title,_index){
     var page = document.createElement("div")
     page.className = "menuPage"
+    page.innerHTML = _title
+    page.id = _index
+    page.addEventListener("touchend",()=>{
+        this.closeMenu()
+        this.goToPage(page.id)
+
+    })
     this.menuContent.appendChild(page)
     this.pages.push(page)
+    
+}
 
+Menu.prototype.loadImage = function(_url,_id){
 }
 
 //===============================================================

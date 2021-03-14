@@ -48,7 +48,7 @@ var getPages = (_pagedata) => {
                 //     title : 'Portugês',
                 //     default : true
                 // }
-            ]
+                ]
             }
         }
     }else{

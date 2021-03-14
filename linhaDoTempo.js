@@ -33,10 +33,14 @@ function linhaDoTempo(_data){
     })
 
     window.addEventListener("touchmove", (en) =>{
-        if(this.open) return
-        this.dragMove = true
-        this.dragPos = en.changedTouches[0].pageX
-        this.dragPage()
+        
+        if(!this.open && !this.menu.menuOpen){
+            
+            this.dragMove = true
+            this.dragPos = en.changedTouches[0].pageX
+            this.dragPage()
+
+        } 
     })
     
     window.addEventListener("touchend", (en) =>{
@@ -45,6 +49,9 @@ function linhaDoTempo(_data){
         this.dragMove = false
     })
 
+    
+    this.menu = new Menu(this.appContainer, )
+    this.menu.createDomElements()
 
 }
 
@@ -85,6 +92,7 @@ linhaDoTempo.prototype.hideControls = function(_pageId){
     this.indicatorContainerOff.classList.add("off")
     this.previousBtn.classList.add("off")
     this.nextBtn.classList.add("off")
+    this.menu.hideMenu()
 }
 
 linhaDoTempo.prototype.showControls = function(_pageId){
@@ -93,6 +101,7 @@ linhaDoTempo.prototype.showControls = function(_pageId){
     this.indicatorContainerOff.classList.remove("off")
     this.previousBtn.classList.remove("off") 
     this.nextBtn.classList.remove("off")
+    this.menu.showMenu()
 
 }
 
@@ -101,7 +110,7 @@ linhaDoTempo.prototype.showControls = function(_pageId){
 
 linhaDoTempo.prototype.carrousellMove = function(_pageId){
 
-    //adjust overlaty position setting the current page and next page up front
+    //adjust overlay position setting the current page and next page up front
     for (let index = 0; index < this.pages.length; index++) {
         if(index == this.currentPage || index == _pageId){
             this.pages[index].container.style.zIndex = "2"
@@ -198,7 +207,9 @@ linhaDoTempo.prototype.getPagePosId = function(_index,_length){
 
 }
 
-linhaDoTempo.prototype.dragPage = function(posX){
+linhaDoTempo.prototype.dragPage = function(){
+
+    console.log(this.menu.menuOpen);
 
     var dif = this.firstDragPos - this.dragPos
     for (let index = 0; index < this.pages.length; index++) {
@@ -220,7 +231,7 @@ linhaDoTempo.prototype.handleSwipe = function(_event){
 
     var dif = this.firstDragPos - this.dragPos
 
-    if(this.dragMove && !this.open){
+    if(this.dragMove && !this.open && !this.menu.menuOpen){
         if(dif > 0){
             this.carrousellNext()
         }else{
@@ -833,11 +844,8 @@ ContentPage.prototype.close = function(){
 
 ContentPage.prototype.setPos = function(_pos,_animate){
     
-    if(_animate){
-        this.container.style.transition = "transform 500ms"
-    }else{
-        this.container.style.transition = ""
-    }
+    if(_animate){ this.container.style.transition = "transform 500ms"
+    }else{ this.container.style.transition = "" }
     this.container.style.transform = "translateX(" + _pos +  "px)"
 
 }
@@ -845,6 +853,102 @@ ContentPage.prototype.setPos = function(_pos,_animate){
 //===============================================================
 //===============================================================
 //                             UTILS
+//===============================================================
+//===============================================================
+
+function Menu(_parent,_pages){
+
+    this.parent = _parent
+    this.pages = _pages
+    this.menuOpen = true
+    this.pages= [] 
+
+}
+
+Menu.prototype.createDomElements = function(){
+
+    this.menuBtnContainer = document.createElement("div")
+    this.menuBtnContainer.className = "menuBtnConteiner"
+    this.parent.appendChild(this.menuBtnContainer)
+
+
+    this.menuLeft = document.createElement("div")
+    this.menuLeft.className = "menuBtn left"
+    this.menuBtnContainer.appendChild(this.menuLeft)
+    this.menuLeft.innerHTML = '<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="list-icon" transform="translate(-1650.000000, -86.000000)" fill="#3D3D3D" fill-rule="nonzero"><g id="Group-3" transform="translate(1622.000000, 58.000000)"><g id="Group" transform="translate(60.500000, 60.500000) scale(1, -1) translate(-60.500000, -60.500000) translate(28.000000, 28.000000)"><polygon id="Shape" points="0 65 65 65 65 20 0 20"></polygon><rect id="Rectangle" x="5" y="10" width="55" height="5"></rect><rect id="Rectangle" x="10" y="0" width="45" height="5"></rect></g></g></g></g></svg>'
+    this.menuLeft.addEventListener("touchend", ()=>{
+        this.closeMenu()
+    })
+
+    this.menuRight = document.createElement("div")
+    this.menuRight.className = "menuBtn right"
+    this.menuBtnContainer.appendChild(this.menuRight)
+    this.menuRight.innerHTML = '<svg width="69px" height="76px" viewBox="0 0 69 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="grid-icon" stroke="none" stroke-width="1" fill="#3D3D3D" fill-rule="evenodd"><rect id="Rectangle-0"  x="0" y="0" width="32" height="22"></rect><rect id="Rectangle-5"  x="0" y="27" width="32" height="22"></rect><rect id="Rectangle-4"  x="0" y="53" width="32" height="22"></rect><rect id="Rectangle-3"  x="37" y="0" width="32" height="22"></rect><rect id="Rectangle-2"  x="37" y="27" width="32" height="22"></rect><rect id="Rectangle-1"  x="37" y="55" width="32" height="22"></rect></g></svg>'
+    this.menuRight.addEventListener("touchend", ()=>{
+        this.openMenu()
+    })
+
+    this.menuContentContaner = document.createElement("div")
+    this.menuContentContaner.className = "menuContentContaner"
+    this.parent.appendChild(this.menuContentContaner)
+    
+
+    this.menuContent = document.createElement("div")
+    this.menuContent.className = "menuContent"
+    this.menuContentContaner.appendChild(this.menuContent)
+
+    this.closeMenu()
+    
+}
+
+Menu.prototype.openMenu = function(){
+
+    if(this.menuOpen == false ){        
+        this.menuOpen = true
+        this.menuContentContaner.style.display = "block"
+        document.querySelector("#grid-icon").setAttribute("fill","#ffffff")
+        document.querySelector("#list-icon").setAttribute("fill","#3D3D3D")
+        setTimeout(()=>{ this.menuContentContaner.classList.add("open") },5)
+    }
+    
+}
+
+Menu.prototype.closeMenu = function(){
+
+    if(this.menuOpen == true ){
+        this.menuOpen = false
+        this.menuContentContaner.classList.remove("open")
+        setTimeout(()=>{ this.menuContentContaner.style.display = "none" },200)
+        document.querySelector("#grid-icon").setAttribute("fill","#3D3D3D")
+        document.querySelector("#list-icon").setAttribute("fill","#ffffff")
+    }
+    
+}
+
+Menu.prototype.hideMenu = function(){
+
+    this.menuBtnContainer.style.right = "-400px"
+
+}
+
+Menu.prototype.showMenu = function(){
+
+    this.menuBtnContainer.style.right = "50px"
+
+}
+
+Menu.prototype.createPage = function(){
+
+    var page = document.createElement("div")
+    page.className = "menuPage"
+    this.menuContent.appendChild(page)
+    this.pages.push(page)
+
+}
+
+//===============================================================
+//===============================================================
+//                             MENU
 //===============================================================
 //===============================================================
 
@@ -887,3 +991,4 @@ Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
         return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
     }
 })
+

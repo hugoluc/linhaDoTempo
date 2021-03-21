@@ -640,7 +640,7 @@ function libras(_video,_sub,_id,_parent){
 }
 
 libras.prototype.setup = function(){
-    this.makeActive(false)
+    // this.makeActive(false)
 }
 
 libras.prototype.makeActive = function(_isActve){

@@ -9,6 +9,7 @@ var options = data[EXP_ID-1]
 function linhaDoTempo(_data){
 
     this.data = _data
+    this.slideView = true
     this.videos = []
     this.videosContaners = []
     this.indicators = []
@@ -50,12 +51,13 @@ function linhaDoTempo(_data){
     })
 
     
-    this.menu = new Menu(this.appContainer, this.data )
+    this.menu = new Menu(this.appContainer, this.data, () =>{ return this } )
     this.menu.goToPage = (_id) => { 
         this.goToPage(_id)
         this.pages[_id].open(true)
     }
     this.menu.createDomElements()
+    this.menu.loadContentPageImages()
 
 }
 
@@ -108,7 +110,7 @@ linhaDoTempo.prototype.hideControls = function(_noAnimation){
     this.indicatorContainerOff.classList.add("off")
     this.previousBtn.classList.add("off")
     this.nextBtn.classList.add("off")
-    this.menu.hideMenu()
+    this.menu.hideMenuController()
 }
 
 linhaDoTempo.prototype.showControls = function(_pageId){
@@ -117,7 +119,6 @@ linhaDoTempo.prototype.showControls = function(_pageId){
     this.indicatorContainerOff.classList.remove("off")
     this.previousBtn.classList.remove("off") 
     this.nextBtn.classList.remove("off")
-    this.menu.showMenu()
 
 }
 
@@ -224,9 +225,6 @@ linhaDoTempo.prototype.getPagePosId = function(_index,_length){
 }
 
 linhaDoTempo.prototype.dragPage = function(){
-
-    console.log(this.menu.menuOpen);
-
     var dif = this.firstDragPos - this.dragPos
     for (let index = 0; index < this.pages.length; index++) {
         
@@ -369,20 +367,20 @@ linhaDoTempo.prototype.resetAllVideos = function(){
     }
 }
 
-linhaDoTempo.prototype.close = function(){
+linhaDoTempo.prototype.close = function(_contentPage){
 
-    if(this.open){
-        this.menu.showContent()
-        if(this.pages[this.currentPage].type == "video"){
+    this.menu.handleVeiw()
+    this.menu.showMenuControler()
+    
+    if(this.open && !_contentPage){
+        
+        var timeoutTime = this.slideView ? 1 : 500 
+        setTimeout(()=>{
             this.pages[this.currentPage].showOverlay()
             this.showControls()
-        }else{
-            this.pages[this.currentPage].close()   
-        }
-
+        },timeoutTime)
         this.open = false
     }
-
 }
 
 linhaDoTempo.prototype.createPages = function(){
@@ -393,6 +391,7 @@ linhaDoTempo.prototype.createPages = function(){
         var pageData = this.data[index];
 
         if(pageData.type == "content"){
+
             var page = new ContentPage(pageData,index)
             page.openMenu = ()=>{ 
                 this.open = true
@@ -405,11 +404,13 @@ linhaDoTempo.prototype.createPages = function(){
                 this.showControls(); 
             }
             page.getScroll =  () =>{ return this.dragMove }
+            page.closeCallback = () => {  this.close(true) }
+
 
         }else{
             var page = new Page(pageData,index)
             page.imageLoadedCallback= (_url,_id) => {
-                this.menu.loadImage(_url,_id)
+                this.menu.loadVideoImage(_url,_id)
             }
             page.player.controls.addEventListener("toggleControls",(_e)=>{ if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() } })
             page.overlayCallback = (_noAnimation)=>{ 
@@ -718,7 +719,6 @@ ContentPage.prototype.createDomElements = function(){
     this.bottomBar.addEventListener("touchend", () => {
 
         this.clicked = true
-
         if(this.contentContainer.scrollTop < this.scrollTrashHold){
             this.changeIconUp()
             this.contentContainer.scrollTo(0,this.scrollTrashHold)
@@ -748,7 +748,6 @@ ContentPage.prototype.createDomElements = function(){
     this.closeBtn.addEventListener("touchend", () => {
         this.close()
     })
-
 
 }
 
@@ -877,6 +876,7 @@ ContentPage.prototype.open = function(){
 
 ContentPage.prototype.close = function(){
     
+    this.closeCallback()
     this.contentText.innerText = this.data.description.split("\n")[0].slice(0,260) + "..."
     this.contentBackground.classList.remove("open")
     this.textConainer.classList.remove("open")
@@ -902,28 +902,36 @@ ContentPage.prototype.setPos = function(_pos,_animate){
 //===============================================================
 //===============================================================
 
-function Menu(_parent,_data){
+function Menu(_parent,_data, _linhaDoTempo){
 
+    this.linhaDoTempo = _linhaDoTempo
     this.parent = _parent
     this.data = _data
-    this.menuOpen = true
     this.pages = [] 
+    this.enableClick = false
 
+    window.addEventListener("touchmove", (en) =>{
+        this.enableClick = false
+    })
+    
+    window.addEventListener("toucstart", (en) =>{
+        this.enableClick = true
+    })
 }
 
 Menu.prototype.createDomElements = function(){
 
     this.menuBtnContainer = document.createElement("div")
-    this.menuBtnContainer.className = "menuBtnConteiner"
+    this.menuBtnContainer.className = "menuBtnContainer"
     this.parent.appendChild(this.menuBtnContainer)
-
 
     this.menuLeft = document.createElement("div")
     this.menuLeft.className = "menuBtn left"
     this.menuBtnContainer.appendChild(this.menuLeft)
-    this.menuLeft.innerHTML = '<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="list-icon" transform="translate(-1650.000000, -86.000000)" fill="#3D3D3D" fill-rule="nonzero"><g id="Group-3" transform="translate(1622.000000, 58.000000)"><g id="Group" transform="translate(60.500000, 60.500000) scale(1, -1) translate(-60.500000, -60.500000) translate(28.000000, 28.000000)"><polygon id="Shape" points="0 65 65 65 65 20 0 20"></polygon><rect id="Rectangle" x="5" y="10" width="55" height="5"></rect><rect id="Rectangle" x="10" y="0" width="45" height="5"></rect></g></g></g></g></svg>'
+    this.menuLeft.innerHTML = '<svg width="90px" height="45px" viewBox="0 0 101 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="list-icon" stroke="none" stroke-width="1" fill-rule="evenodd"><g id="Option-2.1-Copy-14" transform="translate(-1632.000000, -96.000000)"><g id="Group" transform="translate(1632.000000, 96.000000)" fill-rule="nonzero"><polygon id="Path" transform="translate(50.500000, 22.500000) scale(1, -1) translate(-50.500000, -22.500000) " points="24 45 77 45 77 0 24 0"></polygon><rect id="Rectangle-Copy-6" transform="translate(15.500000, 22.500000) scale(1, -1) translate(-15.500000, -22.500000) " x="12" y="2" width="7" height="41"></rect><rect id="Rectangle-Copy-8" transform="translate(85.500000, 22.500000) scale(1, -1) translate(-85.500000, -22.500000) " x="82" y="2" width="7" height="41"></rect><rect id="Rectangle-Copy-7" transform="translate(3.500000, 22.500000) scale(1, -1) translate(-3.500000, -22.500000) " x="0" y="4" width="7" height="37"></rect><rect id="Rectangle-Copy-9" transform="translate(97.500000, 22.500000) scale(1, -1) translate(-97.500000, -22.500000) " x="94" y="4" width="7" height="37"></rect></g></g></g></svg>'
     this.menuLeft.addEventListener("touchend", ()=>{
-        this.closeMenu()
+        this.linhaDoTempo().slideView = true
+        this.handleVeiw()
     })
 
     this.menuRight = document.createElement("div")
@@ -931,99 +939,145 @@ Menu.prototype.createDomElements = function(){
     this.menuBtnContainer.appendChild(this.menuRight)
     this.menuRight.innerHTML = '<svg width="69px" height="76px" viewBox="0 0 69 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="grid-icon" stroke="none" stroke-width="1" fill="#3D3D3D" fill-rule="evenodd"><rect id="Rectangle-0"  x="0" y="0" width="32" height="22"></rect><rect id="Rectangle-5"  x="0" y="27" width="32" height="22"></rect><rect id="Rectangle-4"  x="0" y="53" width="32" height="22"></rect><rect id="Rectangle-3"  x="37" y="0" width="32" height="22"></rect><rect id="Rectangle-2"  x="37" y="27" width="32" height="22"></rect><rect id="Rectangle-1"  x="37" y="55" width="32" height="22"></rect></g></svg>'
     this.menuRight.addEventListener("touchend", ()=>{
-        this.openMenu()
+        this.linhaDoTempo().slideView = false
+        this.handleVeiw()
     })
 
     this.menuContentContaner = document.createElement("div")
-    this.menuContentContaner.className = "menuContentContaner"
+    this.menuContentContaner.className = "menuContentContaner open"
     this.parent.appendChild(this.menuContentContaner)
     
-
     this.menuContent = document.createElement("div")
     this.menuContent.className = "menuContent"
     this.menuContentContaner.appendChild(this.menuContent)
 
-    this.closeMenu()
+    this.handleVeiw()
     this.createContent()
     
 }
 
-Menu.prototype.openMenu = function(){
+Menu.prototype.handleVeiw = function(){
 
-    if(this.menuOpen == false ){        
-        this.menuOpen = true
-        this.menuContentContaner.style.display = "block"
-        document.querySelector("#grid-icon").setAttribute("fill","#ffffff")
-        document.querySelector("#list-icon").setAttribute("fill","#3D3D3D")
-        setTimeout(()=>{ this.menuContentContaner.classList.add("open") },5)
+
+    if (this.linhaDoTempo().slideView){
+        this.closeMenu()
+    }else{
+        this.openMenu()
     }
     
+}
+//==============================================================
+
+Menu.prototype.hideMenuController = function(){
+
+    this.menuBtnContainer.style.transform = "translateX(400px)"
+
+}
+
+Menu.prototype.showMenuControler = function(){
+
+    this.menuBtnContainer.style.transform = "translateX(0px)"
+
+}
+
+//==============================================================
+
+Menu.prototype.openMenu = function(){
+    
+    this.showContent()
+    document.querySelector("#grid-icon").setAttribute("fill","#ffffff")
+    document.querySelector("#list-icon").setAttribute("fill","#3D3D3D")
+    this.menuOpen = true
 }
 
 Menu.prototype.closeMenu = function(){
-
-    if(this.menuOpen == true ){
-        this.menuOpen = false
-        this.menuContentContaner.classList.remove("open")
-        setTimeout(()=>{ this.menuContentContaner.style.display = "none" },200)
-        document.querySelector("#grid-icon").setAttribute("fill","#3D3D3D")
-        document.querySelector("#list-icon").setAttribute("fill","#ffffff")
-    }
     
-}
-
-Menu.prototype.hideMenu = function(){
-
-    this.menuBtnContainer.style.right = "-400px"
-
-}
-
-Menu.prototype.showMenu = function(){
-
-    this.menuBtnContainer.style.right = "50px"
+    this.hideContent()
+    document.querySelector("#grid-icon").setAttribute("fill","#3D3D3D")
+    document.querySelector("#list-icon").setAttribute("fill","#ffffff")
+    this.menuOpen = false
 
 }
+
+//==============================================================
+//==============================================================
 
 Menu.prototype.hideContent = function(){
     
-    // this.menuContentContaner.style.display = "none"
+    this.menuContentContaner.classList.remove("open")
+    setTimeout(()=>{ this.menuContentContaner.style.display = "none" },200)
+
 }
 
 Menu.prototype.showContent = function(){
     
-    // this.menuContentContaner.style.display = "block"
+    this.menuContentContaner.style.display = "block"
+    setTimeout(()=>{ this.menuContentContaner.classList.add("open") },5)
+
 }
 
+//==============================================================
 
 Menu.prototype.createContent = function(){
 
     for (let index = 0; index < this.data.length; index++) {
-        
-        var title = this.data[index].title;
+        var title = this.data[index].video.title;
         this.addPage(title,index)
-
     }
 
 }
 
-
 Menu.prototype.addPage = function(_title,_index){
     var page = document.createElement("div")
     page.className = "menuPage"
-    page.innerHTML = _title
     page.id = _index
     page.addEventListener("touchend",()=>{
-        this.hideContent()
-        this.goToPage(page.id)
-
+        
+        if(this.enableClick){
+            this.hideContent()
+            this.goToPage(page.id)
+        }else{
+            this.enableClick = true
+        }
+        
     })
+
+    var bg = document.createElement("div")
+    bg.className = "menuPageBg"
+    page.appendChild(bg)
+
+    
+    var title = document.createElement("div")
+    title.innerHTML = _title
+    title.className = "menuPageTitle"
+    page.appendChild(title)
+
     this.menuContent.appendChild(page)
     this.pages.push(page)
-    
 }
 
-Menu.prototype.loadImage = function(_url,_id){
+Menu.prototype.loadContentPageImages = function(){
+    
+    for (let index = 0; index < this.linhaDoTempo().pages.length; index++) {
+        
+        var page = this.linhaDoTempo().pages[index]
+        if(page.type == "content"){
+            console.log(page.cover.url)
+            this.loadVideoImage(page.cover.url,page.id)
+        }   
+    }
 }
+
+Menu.prototype.loadVideoImage = function(_url,_id){
+
+    var image = new Image()
+    image.src = _url
+    image.className = "menuImagePreview"
+    this.pages[_id].appendChild(image)
+
+}
+
+
 
 //===============================================================
 //===============================================================
@@ -1039,7 +1093,7 @@ var v = new linhaDoTempo(options.pages)
 
 //click debug
 window.addEventListener("touchstart", (en) =>{
-    console.log(en.target);
+    // console.log(en.target);
 })
 
 //TIMEOUT

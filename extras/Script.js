@@ -122,8 +122,6 @@ function saveData() {
 
     var data = 'var data = ' + JSON.stringify(modules, null, 4)
   
-    debugger
-  
     fs.writeFile("/Users/hugolucena/Desktop/linhaDoTempo/data.js", data, 'utf8', function(error){
     })
 }

@@ -141,7 +141,6 @@ timeLineControl.prototype.createDOMelements = function (_parent,_controlContaine
     this.playBtn.className = "play-pause"
     this.container.appendChild(this.playBtn)
     this.playBtn.addEventListener('touchstart', e => {
-        console.log("00000");
         this.togglePlay()
     })
 
@@ -341,8 +340,6 @@ function subtilteControl(_subs,_video,_subParent, _controlParent){
 }
 
 subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_subs,_subParent) {
-    
-    
 
     //-------------------
     //    container
@@ -373,7 +370,7 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
     if(_subs){
         
         for(var i = 0; i < _subs.length; i++ ){
-                
+
             //add controls
             var control = document.createElement("div")
             control.id = i
@@ -426,8 +423,6 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
     this.iconContainer.className = "iconContainer"
     this.controlContainer.appendChild(this.iconContainer)
     this.controlContainer.addEventListener('touchstart', e => {
-
-        console.log("00000");
 
         if (!this.animationEnded) return
 
@@ -611,8 +606,9 @@ subtitle.prototype.cueExit = function(){
 
 subtitle.prototype.setup = function(){
     
-
     for (var i = 0; i < this.textTrack.cues.length; i ++) {
+    
+        
         
         var cue = this.textTrack.cues[i];
         var text = cue.text
@@ -664,45 +660,6 @@ libras.prototype.makeActive = function(_isActve){
 //====================================================================
 //====================================================================
 //====================================================================
-
-var allVids = []
-
-for (let i = 0; i < 1; i++) {
-    
-    var index = i % 8
-
-    var subs = [
-        { 
-            type : "libras",
-            url : 'libras.webm' ,
-            title : "Libras",
-            default : false
-        },
-        { 
-            type : "text",
-            url : 'videos/' + index + '/subs/es.vtt' ,
-            title : "Ingles",
-            default : false
-        },
-        { 
-            type : "text",
-            url : 'videos/' + index + '/subs/de.vtt' ,
-            title : "Espanhol",
-            default : false
-        },
-        { 
-            type : "text",
-            url : 'videos/' + index + '/subs/en.vtt' ,
-            title : 'Portugês',
-            default : true
-        },
-    
-        ]
-    
-        // allVids.push(new simplePlayer("videos/" + index +"/video.mp4", subs , "A língua e as variações geográficas"))
-    
-}
-
 
 function getXY(_deg,_x,_y){
     var hipotenuse = _y == 0 ?  _x : _y / Math.sin(Math.atan(_y / _x));

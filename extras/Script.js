@@ -32,7 +32,7 @@ var getPages = (_pagedata) => {
                 ,
                 { 
                     type : "text",
-                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/es.vtt' ,
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/en.vtt' ,
                     title : "Ingles",
                     default : false
                 },
@@ -44,7 +44,7 @@ var getPages = (_pagedata) => {
                 },
                 { 
                     type : "text",
-                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/en.vtt' ,
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/pt.vtt' ,
                     title : 'Portugês',
                     default : true
                 }

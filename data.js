@@ -16,7 +16,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/1/es.vtt",
+                            "url": "content/1/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -28,7 +28,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/1/en.vtt",
+                            "url": "content/1/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -50,7 +50,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/2/es.vtt",
+                            "url": "content/1/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -62,7 +62,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/2/en.vtt",
+                            "url": "content/1/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -84,7 +84,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/3/es.vtt",
+                            "url": "content/1/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -96,7 +96,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/3/en.vtt",
+                            "url": "content/1/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -118,7 +118,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/4/es.vtt",
+                            "url": "content/1/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -130,7 +130,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/1/4/en.vtt",
+                            "url": "content/1/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -201,7 +201,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/1/es.vtt",
+                            "url": "content/2/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -213,7 +213,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/1/en.vtt",
+                            "url": "content/2/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -235,7 +235,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/2/es.vtt",
+                            "url": "content/2/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -247,7 +247,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/2/en.vtt",
+                            "url": "content/2/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -269,7 +269,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/3/es.vtt",
+                            "url": "content/2/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -281,7 +281,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/3/en.vtt",
+                            "url": "content/2/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -303,7 +303,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/4/es.vtt",
+                            "url": "content/2/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -315,7 +315,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/2/4/en.vtt",
+                            "url": "content/2/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -341,7 +341,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/1/es.vtt",
+                            "url": "content/3/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -353,7 +353,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/1/en.vtt",
+                            "url": "content/3/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -375,7 +375,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/2/es.vtt",
+                            "url": "content/3/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -387,7 +387,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/2/en.vtt",
+                            "url": "content/3/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -409,7 +409,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/3/es.vtt",
+                            "url": "content/3/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -421,7 +421,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/3/en.vtt",
+                            "url": "content/3/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -443,7 +443,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/4/es.vtt",
+                            "url": "content/3/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -455,7 +455,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/4/en.vtt",
+                            "url": "content/3/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -477,7 +477,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/5/es.vtt",
+                            "url": "content/3/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -489,7 +489,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/5/en.vtt",
+                            "url": "content/3/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -511,7 +511,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/6/es.vtt",
+                            "url": "content/3/6/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -523,7 +523,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/3/6/en.vtt",
+                            "url": "content/3/6/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -549,7 +549,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/1/es.vtt",
+                            "url": "content/4/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -561,7 +561,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/1/en.vtt",
+                            "url": "content/4/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -583,7 +583,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/2/es.vtt",
+                            "url": "content/4/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -595,7 +595,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/2/en.vtt",
+                            "url": "content/4/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -617,7 +617,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/3/es.vtt",
+                            "url": "content/4/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -629,7 +629,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/3/en.vtt",
+                            "url": "content/4/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -651,7 +651,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/4/es.vtt",
+                            "url": "content/4/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -663,7 +663,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/4/en.vtt",
+                            "url": "content/4/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -685,7 +685,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/5/es.vtt",
+                            "url": "content/4/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -697,7 +697,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/4/5/en.vtt",
+                            "url": "content/4/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -723,7 +723,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/1/es.vtt",
+                            "url": "content/5/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -735,7 +735,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/1/en.vtt",
+                            "url": "content/5/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -757,7 +757,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/2/es.vtt",
+                            "url": "content/5/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -769,7 +769,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/2/en.vtt",
+                            "url": "content/5/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -791,7 +791,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/3/es.vtt",
+                            "url": "content/5/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -803,7 +803,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/3/en.vtt",
+                            "url": "content/5/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -825,7 +825,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/4/es.vtt",
+                            "url": "content/5/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -837,7 +837,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/5/4/en.vtt",
+                            "url": "content/5/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -863,7 +863,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/1/es.vtt",
+                            "url": "content/6/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -875,7 +875,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/1/en.vtt",
+                            "url": "content/6/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -897,7 +897,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/2/es.vtt",
+                            "url": "content/6/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -909,7 +909,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/2/en.vtt",
+                            "url": "content/6/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -931,7 +931,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/3/es.vtt",
+                            "url": "content/6/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -943,7 +943,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/3/en.vtt",
+                            "url": "content/6/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -965,7 +965,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/4/es.vtt",
+                            "url": "content/6/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -977,7 +977,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/6/4/en.vtt",
+                            "url": "content/6/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1003,7 +1003,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/1/es.vtt",
+                            "url": "content/7/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1015,7 +1015,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/1/en.vtt",
+                            "url": "content/7/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1037,7 +1037,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/2/es.vtt",
+                            "url": "content/7/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1049,7 +1049,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/2/en.vtt",
+                            "url": "content/7/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1071,7 +1071,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/3/es.vtt",
+                            "url": "content/7/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1083,7 +1083,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/3/en.vtt",
+                            "url": "content/7/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1105,7 +1105,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/4/es.vtt",
+                            "url": "content/7/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1117,7 +1117,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/7/4/en.vtt",
+                            "url": "content/7/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1143,7 +1143,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/1/es.vtt",
+                            "url": "content/8/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1155,7 +1155,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/1/en.vtt",
+                            "url": "content/8/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1177,7 +1177,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/2/es.vtt",
+                            "url": "content/8/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1189,7 +1189,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/2/en.vtt",
+                            "url": "content/8/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1211,7 +1211,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/3/es.vtt",
+                            "url": "content/8/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1223,7 +1223,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/3/en.vtt",
+                            "url": "content/8/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1245,7 +1245,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/4/es.vtt",
+                            "url": "content/8/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1257,7 +1257,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/4/en.vtt",
+                            "url": "content/8/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1279,7 +1279,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/5/es.vtt",
+                            "url": "content/8/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1291,7 +1291,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/8/5/en.vtt",
+                            "url": "content/8/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1357,7 +1357,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/1/es.vtt",
+                            "url": "content/9/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1369,7 +1369,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/1/en.vtt",
+                            "url": "content/9/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1391,7 +1391,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/2/es.vtt",
+                            "url": "content/9/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1403,7 +1403,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/2/en.vtt",
+                            "url": "content/9/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1425,7 +1425,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/3/es.vtt",
+                            "url": "content/9/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1437,7 +1437,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/3/en.vtt",
+                            "url": "content/9/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1499,7 +1499,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/5/es.vtt",
+                            "url": "content/9/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1511,7 +1511,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/9/5/en.vtt",
+                            "url": "content/9/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1537,7 +1537,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/1/es.vtt",
+                            "url": "content/10/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1549,7 +1549,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/1/en.vtt",
+                            "url": "content/10/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1571,7 +1571,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/2/es.vtt",
+                            "url": "content/10/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1583,7 +1583,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/2/en.vtt",
+                            "url": "content/10/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1605,7 +1605,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/3/es.vtt",
+                            "url": "content/10/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1617,7 +1617,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/3/en.vtt",
+                            "url": "content/10/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1639,7 +1639,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/4/es.vtt",
+                            "url": "content/10/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1651,7 +1651,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/4/en.vtt",
+                            "url": "content/10/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1673,7 +1673,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/5/es.vtt",
+                            "url": "content/10/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1685,7 +1685,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/5/en.vtt",
+                            "url": "content/10/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1707,7 +1707,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/6/es.vtt",
+                            "url": "content/10/6/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1719,7 +1719,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/10/6/en.vtt",
+                            "url": "content/10/6/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1745,7 +1745,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/1/es.vtt",
+                            "url": "content/11/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1757,7 +1757,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/1/en.vtt",
+                            "url": "content/11/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1779,7 +1779,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/2/es.vtt",
+                            "url": "content/11/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1791,7 +1791,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/2/en.vtt",
+                            "url": "content/11/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1813,7 +1813,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/3/es.vtt",
+                            "url": "content/11/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1825,7 +1825,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/3/en.vtt",
+                            "url": "content/11/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1847,7 +1847,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/4/es.vtt",
+                            "url": "content/11/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1859,7 +1859,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/4/en.vtt",
+                            "url": "content/11/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1881,7 +1881,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/5/es.vtt",
+                            "url": "content/11/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1893,7 +1893,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/5/en.vtt",
+                            "url": "content/11/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1915,7 +1915,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/6/es.vtt",
+                            "url": "content/11/6/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1927,7 +1927,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/6/en.vtt",
+                            "url": "content/11/6/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1949,7 +1949,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/7/es.vtt",
+                            "url": "content/11/7/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1961,7 +1961,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/11/7/en.vtt",
+                            "url": "content/11/7/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -1987,7 +1987,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/1/es.vtt",
+                            "url": "content/12/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -1999,7 +1999,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/1/en.vtt",
+                            "url": "content/12/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2021,7 +2021,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/2/es.vtt",
+                            "url": "content/12/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2033,7 +2033,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/2/en.vtt",
+                            "url": "content/12/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2055,7 +2055,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/3/es.vtt",
+                            "url": "content/12/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2067,7 +2067,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/3/en.vtt",
+                            "url": "content/12/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2089,7 +2089,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/4/es.vtt",
+                            "url": "content/12/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2101,7 +2101,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/4/en.vtt",
+                            "url": "content/12/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2123,7 +2123,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/5/es.vtt",
+                            "url": "content/12/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2135,7 +2135,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/5/en.vtt",
+                            "url": "content/12/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2157,7 +2157,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/6/es.vtt",
+                            "url": "content/12/6/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2169,7 +2169,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/6/en.vtt",
+                            "url": "content/12/6/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2191,7 +2191,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/7/es.vtt",
+                            "url": "content/12/7/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2203,7 +2203,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/12/7/en.vtt",
+                            "url": "content/12/7/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2229,7 +2229,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/1/es.vtt",
+                            "url": "content/13/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2241,7 +2241,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/1/en.vtt",
+                            "url": "content/13/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2263,7 +2263,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/2/es.vtt",
+                            "url": "content/13/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2275,7 +2275,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/2/en.vtt",
+                            "url": "content/13/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2297,7 +2297,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/3/es.vtt",
+                            "url": "content/13/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2309,7 +2309,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/3/en.vtt",
+                            "url": "content/13/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2331,7 +2331,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/4/es.vtt",
+                            "url": "content/13/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2343,7 +2343,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/4/en.vtt",
+                            "url": "content/13/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2365,7 +2365,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/5/es.vtt",
+                            "url": "content/13/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2377,7 +2377,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/5/en.vtt",
+                            "url": "content/13/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2399,7 +2399,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/6/es.vtt",
+                            "url": "content/13/6/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2411,7 +2411,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/6/en.vtt",
+                            "url": "content/13/6/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2433,7 +2433,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/7/es.vtt",
+                            "url": "content/13/7/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2445,7 +2445,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/13/7/en.vtt",
+                            "url": "content/13/7/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2471,7 +2471,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/1/es.vtt",
+                            "url": "content/14/1/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2483,7 +2483,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/1/en.vtt",
+                            "url": "content/14/1/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2505,7 +2505,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/2/es.vtt",
+                            "url": "content/14/2/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2517,7 +2517,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/2/en.vtt",
+                            "url": "content/14/2/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2539,7 +2539,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/3/es.vtt",
+                            "url": "content/14/3/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2551,7 +2551,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/3/en.vtt",
+                            "url": "content/14/3/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2573,7 +2573,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/4/es.vtt",
+                            "url": "content/14/4/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2585,7 +2585,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/4/en.vtt",
+                            "url": "content/14/4/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2607,7 +2607,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/5/es.vtt",
+                            "url": "content/14/5/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2619,7 +2619,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/5/en.vtt",
+                            "url": "content/14/5/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2641,7 +2641,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/6/es.vtt",
+                            "url": "content/14/6/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2653,7 +2653,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/6/en.vtt",
+                            "url": "content/14/6/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2675,7 +2675,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/7/es.vtt",
+                            "url": "content/14/7/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2687,7 +2687,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/7/en.vtt",
+                            "url": "content/14/7/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }
@@ -2709,7 +2709,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/8/es.vtt",
+                            "url": "content/14/8/en.vtt",
                             "title": "Ingles",
                             "default": false
                         },
@@ -2721,7 +2721,7 @@ var data = [
                         },
                         {
                             "type": "text",
-                            "url": "content/14/8/en.vtt",
+                            "url": "content/14/8/pt.vtt",
                             "title": "Portugês",
                             "default": true
                         }

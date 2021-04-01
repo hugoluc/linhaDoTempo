@@ -13,6 +13,24 @@ var data = [
                             "url": "content/1/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -29,6 +47,24 @@ var data = [
                             "url": "content/1/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -45,6 +81,24 @@ var data = [
                             "url": "content/1/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -61,6 +115,24 @@ var data = [
                             "url": "content/1/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/1/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -126,6 +198,24 @@ var data = [
                             "url": "content/2/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -142,6 +232,24 @@ var data = [
                             "url": "content/2/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -158,6 +266,24 @@ var data = [
                             "url": "content/2/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -174,6 +300,24 @@ var data = [
                             "url": "content/2/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/2/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -194,6 +338,24 @@ var data = [
                             "url": "content/3/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -210,6 +372,24 @@ var data = [
                             "url": "content/3/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -226,6 +406,24 @@ var data = [
                             "url": "content/3/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -242,6 +440,24 @@ var data = [
                             "url": "content/3/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -258,6 +474,24 @@ var data = [
                             "url": "content/3/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -274,6 +508,24 @@ var data = [
                             "url": "content/3/6/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/6/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/6/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/3/6/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -294,6 +546,24 @@ var data = [
                             "url": "content/4/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -310,6 +580,24 @@ var data = [
                             "url": "content/4/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -326,6 +614,24 @@ var data = [
                             "url": "content/4/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -342,6 +648,24 @@ var data = [
                             "url": "content/4/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -358,6 +682,24 @@ var data = [
                             "url": "content/4/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/4/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -378,6 +720,24 @@ var data = [
                             "url": "content/5/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -394,6 +754,24 @@ var data = [
                             "url": "content/5/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -410,6 +788,24 @@ var data = [
                             "url": "content/5/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -426,6 +822,24 @@ var data = [
                             "url": "content/5/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/5/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -446,6 +860,24 @@ var data = [
                             "url": "content/6/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -462,6 +894,24 @@ var data = [
                             "url": "content/6/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -478,6 +928,24 @@ var data = [
                             "url": "content/6/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -494,6 +962,24 @@ var data = [
                             "url": "content/6/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/6/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -514,6 +1000,24 @@ var data = [
                             "url": "content/7/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -530,6 +1034,24 @@ var data = [
                             "url": "content/7/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -546,6 +1068,24 @@ var data = [
                             "url": "content/7/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -562,6 +1102,24 @@ var data = [
                             "url": "content/7/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/7/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -582,6 +1140,24 @@ var data = [
                             "url": "content/8/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -598,6 +1174,24 @@ var data = [
                             "url": "content/8/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -614,6 +1208,24 @@ var data = [
                             "url": "content/8/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -630,6 +1242,24 @@ var data = [
                             "url": "content/8/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -646,6 +1276,24 @@ var data = [
                             "url": "content/8/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/8/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -706,6 +1354,24 @@ var data = [
                             "url": "content/9/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -722,6 +1388,24 @@ var data = [
                             "url": "content/9/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -738,6 +1422,24 @@ var data = [
                             "url": "content/9/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -794,6 +1496,24 @@ var data = [
                             "url": "content/9/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/9/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -814,6 +1534,24 @@ var data = [
                             "url": "content/10/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -830,6 +1568,24 @@ var data = [
                             "url": "content/10/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -846,6 +1602,24 @@ var data = [
                             "url": "content/10/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -862,6 +1636,24 @@ var data = [
                             "url": "content/10/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -878,6 +1670,24 @@ var data = [
                             "url": "content/10/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -894,6 +1704,24 @@ var data = [
                             "url": "content/10/6/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/6/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/6/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/10/6/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -914,6 +1742,24 @@ var data = [
                             "url": "content/11/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -930,6 +1776,24 @@ var data = [
                             "url": "content/11/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -946,6 +1810,24 @@ var data = [
                             "url": "content/11/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -962,6 +1844,24 @@ var data = [
                             "url": "content/11/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -978,6 +1878,24 @@ var data = [
                             "url": "content/11/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -994,6 +1912,24 @@ var data = [
                             "url": "content/11/6/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/6/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/6/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/6/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1010,6 +1946,24 @@ var data = [
                             "url": "content/11/7/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/7/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/7/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/11/7/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1030,6 +1984,24 @@ var data = [
                             "url": "content/12/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1046,6 +2018,24 @@ var data = [
                             "url": "content/12/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1062,6 +2052,24 @@ var data = [
                             "url": "content/12/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1078,6 +2086,24 @@ var data = [
                             "url": "content/12/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1094,6 +2120,24 @@ var data = [
                             "url": "content/12/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1110,6 +2154,24 @@ var data = [
                             "url": "content/12/6/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/6/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/6/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/6/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1126,6 +2188,24 @@ var data = [
                             "url": "content/12/7/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/7/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/7/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/12/7/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1146,6 +2226,24 @@ var data = [
                             "url": "content/13/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1162,6 +2260,24 @@ var data = [
                             "url": "content/13/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1178,6 +2294,24 @@ var data = [
                             "url": "content/13/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1194,6 +2328,24 @@ var data = [
                             "url": "content/13/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1210,6 +2362,24 @@ var data = [
                             "url": "content/13/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1226,6 +2396,24 @@ var data = [
                             "url": "content/13/6/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/6/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/6/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/6/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1242,6 +2430,24 @@ var data = [
                             "url": "content/13/7/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/7/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/7/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/13/7/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1262,6 +2468,24 @@ var data = [
                             "url": "content/14/1/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/1/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/1/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/1/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1278,6 +2502,24 @@ var data = [
                             "url": "content/14/2/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/2/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/2/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/2/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1294,6 +2536,24 @@ var data = [
                             "url": "content/14/3/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/3/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/3/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/3/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1310,6 +2570,24 @@ var data = [
                             "url": "content/14/4/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/4/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/4/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/4/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1326,6 +2604,24 @@ var data = [
                             "url": "content/14/5/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/5/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/5/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/5/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1342,6 +2638,24 @@ var data = [
                             "url": "content/14/6/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/6/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/6/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/6/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1358,6 +2672,24 @@ var data = [
                             "url": "content/14/7/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/7/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/7/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/7/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }
@@ -1374,6 +2706,24 @@ var data = [
                             "url": "content/14/8/libras.mp4",
                             "title": "Libras",
                             "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/8/es.vtt",
+                            "title": "Ingles",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/8/es.vtt",
+                            "title": "Espanhol",
+                            "default": false
+                        },
+                        {
+                            "type": "text",
+                            "url": "content/14/8/en.vtt",
+                            "title": "Portugês",
+                            "default": true
                         }
                     ]
                 }

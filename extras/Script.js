@@ -29,25 +29,25 @@ var getPages = (_pagedata) => {
                     title : "Libras",
                     default : false
                 }
-                //,
-                // { 
-                //     type : "text",
-                //     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/es.vtt' ,
-                //     title : "Ingles",
-                //     default : false
-                // },
-                // { 
-                //     type : "text",
-                //     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/de.vtt' ,
-                //     title : "Espanhol",
-                //     default : false
-                // },
-                // { 
-                //     type : "text",
-                //     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/en.vtt' ,
-                //     title : 'Portugês',
-                //     default : true
-                // }
+                ,
+                { 
+                    type : "text",
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/es.vtt' ,
+                    title : "Ingles",
+                    default : false
+                },
+                { 
+                    type : "text",
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/es.vtt' ,
+                    title : "Espanhol",
+                    default : false
+                },
+                { 
+                    type : "text",
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/en.vtt' ,
+                    title : 'Portugês',
+                    default : true
+                }
                 ]
             }
         }

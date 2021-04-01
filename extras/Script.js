@@ -32,19 +32,19 @@ var getPages = (_pagedata) => {
                 ,
                 { 
                     type : "text",
-                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/en.vtt' ,
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/en.vtt' ,
                     title : "Ingles",
                     default : false
                 },
                 { 
                     type : "text",
-                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/es.vtt' ,
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/es.vtt' ,
                     title : "Espanhol",
                     default : false
                 },
                 { 
                     type : "text",
-                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/pt.vtt' ,
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/pt.vtt' ,
                     title : 'Portugês',
                     default : true
                 }

@@ -115,7 +115,7 @@ function timeLineControl(_video, _parent, _controlContainer, _container, _videoC
 
     this.createDOMelements(_parent, _controlContainer)
 
-    this.subtilteControl = new subtilteControl(  _subs, _video, _container, _parent)
+    this.subtilteControl = new subtilteControl(  _subs, _video, _container, _parent, _videoContainer)
     this.subtilteControl.interactionHandler = () => { this.closeControlTimeout() }
     this.subtilteControl.subtitlesContainer.style.transform = "translate(0px,-150px)"
 
@@ -339,7 +339,7 @@ function subtilteControl(_subs,_video,_subParent, _controlParent, _videoContaine
  
 }
 
-subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_subs,_subParent) {
+subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_subs,_subParent,_videoContainer) {
 
     //-------------------
     //    container
@@ -423,11 +423,8 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
     this.iconContainer = document.createElement("div")
     this.iconContainer.className = "iconContainer"
     this.controlContainer.appendChild(this.iconContainer)
-<<<<<<< HEAD
     this.iconContainer.addEventListener('touchend', e => {
-=======
-    this.controlContainer.addEventListener('touchstart', e => {
->>>>>>> 862c5b3442b29113a020725df52e96b87a78dae1
+
 
         if (!this.animationEnded) return
 

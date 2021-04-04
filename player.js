@@ -62,7 +62,7 @@ function simplePlayer(_videoUrl,_subs,_title,_parent) {
     this.btnsContainer.className = "btnsContainer"
     this.controlContainer.appendChild(this.btnsContainer)
     
-    this.controls = new timeLineControl( this.video, this.btnsContainer, this.controlContainer, this.videoContainer, _subs, _title ) 
+    this.controls = new timeLineControl( this.video, this.btnsContainer, this.controlContainer, this.videoContainer, this.container ,_subs, _title ) 
 
 }
 
@@ -88,7 +88,7 @@ simplePlayer.prototype.toggleVisibility = function(){
 
 // Timeline controls
 // Pause/play controls
-function timeLineControl(_video, _parent, _controlContainer, _container, _subs, _title){
+function timeLineControl(_video, _parent, _controlContainer, _container, _videoContainer ,_subs, _title){
 
     this.toggleControlsEvent = new Event("toggleControls",  { menuOpen : this.menuOpen });
     this.addEventListener = (_eventName, _function) => {
@@ -113,7 +113,7 @@ function timeLineControl(_video, _parent, _controlContainer, _container, _subs, 
     this.userInteracted = false
     this.menuOpen = true
 
-    this.createDOMelements(_parent, _controlContainer,_container)
+    this.createDOMelements(_parent, _controlContainer)
 
     this.subtilteControl = new subtilteControl(  _subs, _video, _container, _parent)
     this.subtilteControl.interactionHandler = () => { this.closeControlTimeout() }
@@ -127,7 +127,7 @@ function timeLineControl(_video, _parent, _controlContainer, _container, _subs, 
 
 }
 
-timeLineControl.prototype.createDOMelements = function (_parent,_controlContainer,_container) {
+timeLineControl.prototype.createDOMelements = function (_parent,_controlContainer) {
     
     this.container = document.createElement('div')
     this.container.className = "timeLineControls"
@@ -317,7 +317,7 @@ timeLineControl.prototype.closeControlTimeout = function(){
 //===================        Control Class        ====================
 //====================================================================
 
-function subtilteControl(_subs,_video,_subParent, _controlParent){
+function subtilteControl(_subs,_video,_subParent, _controlParent, _videoContainer){
 
     
 
@@ -335,7 +335,7 @@ function subtilteControl(_subs,_video,_subParent, _controlParent){
     this.activeSubtitle = ""
     this.defaultSubtitle = false
     
-    this.createDOMelements(_controlParent,_video,_subs,_subParent)
+    this.createDOMelements(_controlParent,_video,_subs,_subParent,_videoContainer)
     this.closeMenu()
  
 }
@@ -368,7 +368,8 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
     
     this.subtitlesContainer = document.createElement("div")
     this.subtitlesContainer.className = "subtitlesContainer"
-    _video.insertAdjacentElement("afterEnd", this.subtitlesContainer)
+    _videoContainer.appendChild(this.subtitlesContainer)
+    
     
     if(_subs){
         
@@ -379,7 +380,7 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
             control.id = i
             control.className = "subControl"
             control.innerHTML = _subs[i].title
-            control.addEventListener('touchstart', e => {
+            control.addEventListener('touchend', e => {
                 if (!this.animationEnded) return
     
                 this.animationEnded = false
@@ -425,9 +426,7 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
     this.iconContainer = document.createElement("div")
     this.iconContainer.className = "iconContainer"
     this.controlContainer.appendChild(this.iconContainer)
-    this.controlContainer.addEventListener('touchstart', e => {
-
-        console.log("00000");
+    this.iconContainer.addEventListener('touchend', e => {
 
         if (!this.animationEnded) return
 

@@ -603,6 +603,9 @@ subtitle.prototype.makeActive = function(_isActve){
 
 subtitle.prototype.cueEnter = function(_text){
 
+    console.log(_text)
+    console.log(_text.replace(/(\r\n|\n|\r)/gm, "<br />"))
+    console.log(this.isActive)
 
     this.subContainer.innerHTML = _text.replace(/(\r\n|\n|\r)/gm, "<br />");
 
@@ -624,8 +627,8 @@ subtitle.prototype.setup = function(){
         var text = cue.text
         var _this = this
 
-        cue.onenter = function()    { _this.cueEnter(this.text) }
-        cue.onexit  = function()    { _this.cueExit()           }
+        cue.onenter = function() { console.log(this.text) ; _this.cueEnter(this.text) }
+        cue.onexit  = function() { _this.cueExit()           }
     }
 
 }

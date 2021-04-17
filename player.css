@@ -175,7 +175,7 @@
  }
  
  .subControlContainer{
-    width: 225px;
+    width: 250px;
     height: 56px;
     background-color: white;
     position: relative;
@@ -295,3 +295,11 @@
     height: 45px;
   }
   
+  .subsTitle{
+    
+   color : White;
+   position: absolute;
+   margin-top: -45px;
+   font-size: 20px;
+
+}

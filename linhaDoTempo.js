@@ -1062,7 +1062,6 @@ Menu.prototype.loadContentPageImages = function(){
         
         var page = this.linhaDoTempo().pages[index]
         if(page.type == "content"){
-            console.log(page.cover.url)
             this.loadVideoImage(page.cover.url,page.id)
         }   
     }

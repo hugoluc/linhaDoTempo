@@ -15,7 +15,6 @@ var allImages = []
 var getPages = (_pagedata) => {
 
     if (!_pagedata) return
-    // debugger
 
     if(_pagedata.type == "video"){
         var data = { type : _pagedata.type, video : {
@@ -46,6 +45,12 @@ var getPages = (_pagedata) => {
                     type : "text",
                     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/pt.vtt' ,
                     title : 'Portugês',
+                    default : false
+                },
+                { 
+                    type : "text",
+                    url : '' ,
+                    title : 'Desativado',
                     default : true
                 }
                 ]

@@ -359,6 +359,15 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
         this.openMenuHeight = (2 * this.menuItemSizes.margin)  + (_subs.length * this.menuItemSizes.itemHeight)
         this.controlBg.style.height = this.openMenuHeight
     }
+
+   
+    this.subsTitle = document.createElement("div")
+    this.subsTitle.className="subsTitle"
+    this.subsTitle.innerHTML = "Legendas ou Libras"
+    this.controlBg.appendChild(this.subsTitle)
+
+
+
     //-------------------
     //    subtitles
     //-------------------
@@ -409,12 +418,9 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
                 this.libras = sub
             }
             this.subtitles.push( sub )
-            
+            if (_subs[i].default) this.selectSubtitle(i)
         }
-        
-        this.selectSubtitle(0)
-        
-    }
+    } 
 
     //-------------------
     //    icons
@@ -568,6 +574,7 @@ function subtitle(_video,_sub,_id,_parent){
     this.track.kind = "subtitles"
     this.track.id = _id
     this.track.mode = "hidden"
+    this.video = _video
     _video.appendChild(this.track)
 
     _video.textTracks[_video.textTracks.length-1].mode = "hidden"
@@ -595,6 +602,7 @@ subtitle.prototype.makeActive = function(_isActve){
 }
 
 subtitle.prototype.cueEnter = function(_text){
+
 
     this.subContainer.innerHTML = _text.replace(/(\r\n|\n|\r)/gm, "<br />");
 
@@ -638,7 +646,7 @@ function libras(_video,_sub,_id,_parent){
 }
 
 libras.prototype.setup = function(){
-    // this.makeActive(false)
+    this.makeActive(false)
 }
 
 libras.prototype.makeActive = function(_isActve){

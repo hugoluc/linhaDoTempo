@@ -636,12 +636,20 @@ subtitle.prototype.setup = function(){
 
 function libras(_video,_sub,_id,_parent){
 
+
+
     this.id = _id
+    
+    this.wrapper = document.createElement("div")
+    this.wrapper.className = "librasWrapper"
+    _parent.appendChild(this.wrapper)
+    
+    
     this.video = document.createElement("video")
     this.video.className = "librasVideo"
     this.video.src = _sub.url
     this.video.volume = 0
-    _parent.appendChild(this.video)
+    this.wrapper.appendChild(this.video)
     
 }
 

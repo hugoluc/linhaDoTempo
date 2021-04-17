@@ -12,7 +12,7 @@ function simplePlayer(_videoUrl,_subs,_title,_parent) {
     this.container.className = "playerVideo"
     this.loaded = false
     this.loadedVideosUrl = []
-    this.onloaded = function(){  console.log("video loaded") }
+    this.onloaded = function(){  console.log("video loaded")  }
     _parent.appendChild(this.container)
 
     this.videoContainer = document.createElement('div')
@@ -25,27 +25,27 @@ function simplePlayer(_videoUrl,_subs,_title,_parent) {
     this.video.src = _videoUrl
     this.videoContainer.appendChild(this.video)
     this.video.addEventListener('loadedmetadata', () => { 
-
-        this.load()
+        
         if(!this.loaded){
             this.loaded = true
             this.video.load()
         }else{
             this.video.isReady = true
         }
-
+        
     });
-
+    
     this.video.addEventListener('canplaythrough', (_e) => {  
-
+        
         for (let index = 0; index < this.loadedVideosUrl.length; index++) {
             if ( _e.target.currentSrc == this.loadedVideosUrl[index]){
                 return
             }
         }
-
+        
         this.loadedVideosUrl.push(_e.target.currentSrc)
-        this.onloaded() 
+        this.onloaded()
+        this.controls.subtilteControl.setup()
         this.onlaoded = {}
     
     });
@@ -64,10 +64,6 @@ function simplePlayer(_videoUrl,_subs,_title,_parent) {
     
     this.controls = new timeLineControl( this.video, this.btnsContainer, this.controlContainer, this.videoContainer, this.container ,_subs, _title ) 
 
-}
-
-simplePlayer.prototype.load = function(){
-    this.controls.subtilteControl.setup()
 }
 
 simplePlayer.prototype.toggleVisibility = function(){
@@ -540,7 +536,7 @@ subtilteControl.prototype.selectSubtitle = function(_id) {
         this.controls[this.activeSubtitle.id].className = "subControl"
         this.activeSubtitle.makeActive( false )
     }
-
+    
     this.controls[_id].classList.add("active")  
     this.activeSubtitle = this.subtitles[_id]
     this.activeSubtitle.makeActive( true )
@@ -567,6 +563,7 @@ subtilteControl.prototype.setup = function () {
 
 function subtitle(_video,_sub,_id,_parent){
 
+    this.sub = _sub
     this.id = _id
     this.isActive = false
     this.track = document.createElement("track")
@@ -590,7 +587,7 @@ function subtitle(_video,_sub,_id,_parent){
 }
 
 subtitle.prototype.makeActive = function(_isActve){
-
+    
     this.isActive = _isActve
     
     if (_isActve){
@@ -603,12 +600,8 @@ subtitle.prototype.makeActive = function(_isActve){
 
 subtitle.prototype.cueEnter = function(_text){
 
-    console.log(_text)
-    console.log(_text.replace(/(\r\n|\n|\r)/gm, "<br />"))
-    console.log(this.isActive)
-
     this.subContainer.innerHTML = _text.replace(/(\r\n|\n|\r)/gm, "<br />");
-
+    
     if  ( !this.isActive) return
     this.subContainer.style.display = "block"
 }
@@ -618,16 +611,14 @@ subtitle.prototype.cueExit = function(){
 }
 
 subtitle.prototype.setup = function(){
-    
+
     for (var i = 0; i < this.textTrack.cues.length; i ++) {
     
-        
-        
         var cue = this.textTrack.cues[i];
         var text = cue.text
         var _this = this
 
-        cue.onenter = function() { console.log(this.text) ; _this.cueEnter(this.text) }
+        cue.onenter = function() { _this.cueEnter(this.text) }
         cue.onexit  = function() { _this.cueExit()           }
     }
 

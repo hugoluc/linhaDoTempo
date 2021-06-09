@@ -11,7 +11,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/1/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -51,7 +51,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/1/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -91,7 +91,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/1/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -131,7 +131,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/1/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -220,7 +220,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/2/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -260,7 +260,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/2/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -300,7 +300,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/2/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -340,7 +340,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/2/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -384,7 +384,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/3/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -424,7 +424,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/3/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -464,7 +464,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/3/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -504,7 +504,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/3/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -544,7 +544,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/3/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -584,7 +584,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/3/6/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -628,7 +628,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/4/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -668,7 +668,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/4/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -708,7 +708,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/4/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -748,7 +748,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/4/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -788,7 +788,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/4/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -832,7 +832,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/5/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -872,7 +872,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/5/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -912,7 +912,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/5/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -952,7 +952,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/5/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -996,7 +996,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/6/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1036,7 +1036,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/6/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1076,7 +1076,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/6/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1116,7 +1116,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/6/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1160,7 +1160,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/7/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1200,7 +1200,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/7/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1240,7 +1240,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/7/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1280,7 +1280,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/7/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1324,7 +1324,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/8/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1364,7 +1364,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/8/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1404,7 +1404,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/8/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1444,7 +1444,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/8/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1484,7 +1484,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/8/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1568,7 +1568,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/9/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1608,7 +1608,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/9/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1648,7 +1648,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/9/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1728,7 +1728,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/9/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1772,7 +1772,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/10/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1812,7 +1812,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/10/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1852,7 +1852,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/10/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1892,7 +1892,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/10/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1932,7 +1932,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/10/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -1972,7 +1972,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/10/6/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2016,7 +2016,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/11/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2056,7 +2056,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/11/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2096,7 +2096,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/11/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2136,7 +2136,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/11/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2176,7 +2176,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/11/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2216,7 +2216,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/11/6/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2256,7 +2256,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/11/7/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2300,7 +2300,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/12/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2340,7 +2340,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/12/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2380,7 +2380,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/12/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2420,7 +2420,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/12/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2460,7 +2460,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/12/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2500,7 +2500,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/12/6/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2540,7 +2540,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/12/7/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2584,7 +2584,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/13/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2624,7 +2624,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/13/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2664,7 +2664,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/13/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2704,7 +2704,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/13/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2744,7 +2744,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/13/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2784,7 +2784,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/13/6/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2824,7 +2824,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/13/7/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2868,7 +2868,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/1/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2908,7 +2908,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/2/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2948,7 +2948,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/3/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -2988,7 +2988,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/4/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -3028,7 +3028,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/5/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -3068,7 +3068,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/6/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -3108,7 +3108,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/7/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {
@@ -3148,7 +3148,7 @@ var data = [
                         {
                             "type": "libras",
                             "url": "content/14/8/libras.mp4",
-                            "title": "Libras",
+                            "title": "LIBRAS",
                             "default": false
                         },
                         {

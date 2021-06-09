@@ -412,6 +412,9 @@ linhaDoTempo.prototype.createPages = function(){
             page.imageLoadedCallback= (_url,_id) => {
                 this.menu.loadVideoImage(_url,_id)
             }
+            
+            
+
             page.player.controls.addEventListener("toggleControls",(_e)=>{ if(_e.menuOpen){ this.openHeader() }else{ this.closeHeader() } })
             page.overlayCallback = (_noAnimation)=>{ 
                 this.open = true

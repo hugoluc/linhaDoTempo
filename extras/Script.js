@@ -25,7 +25,7 @@ var getPages = (_pagedata) => {
                 { 
                     type : "libras",
                     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id +'/libras.mp4',
-                    title : "Libras",
+                    title : "LIBRAS",
                     default : false
                 }
                 ,

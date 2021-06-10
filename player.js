@@ -359,7 +359,7 @@ subtilteControl.prototype.createDOMelements = function (_controlParent,_video,_s
    
     this.subsTitle = document.createElement("div")
     this.subsTitle.className="subsTitle"
-    this.subsTitle.innerHTML = "Legendas ou Libras"
+    this.subsTitle.innerHTML = "Legendas ou LIBRAS"
     this.controlBg.appendChild(this.subsTitle)
 
 

@@ -3,10 +3,10 @@
 /////////                               Player class                              ////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
-function simplePlayer(_videoUrl,_subs,_title,_parent) { 
+function simplePlayer(_videoUrl,_subs,_title,_parent,_videoEnded) { 
 
     this.isVisible = true
-    this.videoEnded = function(){}
+    this.videoEnded = _videoEnded ?  _videoEnded : function(){} 
     
     this.container = document.createElement('div')
     this.container.className = "playerVideo"

@@ -408,7 +408,7 @@ linhaDoTempo.prototype.createPages = function(){
 
 
         }else{
-            var page = new Page(pageData,index)
+            var page = new Page(pageData,index, () => { this.close() })
             page.imageLoadedCallback= (_url,_id) => {
                 this.menu.loadVideoImage(_url,_id)
             }
@@ -448,8 +448,9 @@ linhaDoTempo.prototype.playing = function(){
 //===============================================================
 //===============================================================
 
-function Page(_data,_id){
+function Page(_data,_id,_close){
 
+    this.close = _close
     this.id = _id
     this.data = _data.video
     this.overlayCallback = ()=>{}
@@ -467,10 +468,15 @@ Page.prototype.createDomElements = function(){
     this.container.className = "page"
     this.container.style.width = window.outerWidth
 
+    var close = () => {
+        this.close()
+    }
+
     this.player = new simplePlayer(
         this.data.videoUrl,
         this.data.subtitles,
-        this.data.title,this.container
+        this.data.title,this.container,
+        close,
     )
     
     this.player.id = this.id
@@ -940,7 +946,7 @@ Menu.prototype.createDomElements = function(){
     this.menuRight = document.createElement("div")
     this.menuRight.className = "menuBtn right"
     this.menuBtnContainer.appendChild(this.menuRight)
-    this.menuRight.innerHTML = '<svg width="69px" height="76px" viewBox="0 0 69 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="grid-icon" stroke="none" stroke-width="1" fill="#3D3D3D" fill-rule="evenodd"><rect id="Rectangle-0"  x="0" y="0" width="32" height="22"></rect><rect id="Rectangle-5"  x="0" y="27" width="32" height="22"></rect><rect id="Rectangle-4"  x="0" y="53" width="32" height="22"></rect><rect id="Rectangle-3"  x="37" y="0" width="32" height="22"></rect><rect id="Rectangle-2"  x="37" y="27" width="32" height="22"></rect><rect id="Rectangle-1"  x="37" y="55" width="32" height="22"></rect></g></svg>'
+    this.menuRight.innerHTML = '<svg width="69px" height="76px" viewBox="0 0 69 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="grid-icon" stroke="none" stroke-width="1" fill="#3D3D3D" fill-rule="evenodd"><rect id="Rectangle-0"  x="0" y="0" width="32" height="22"></rect><rect id="Rectangle-5"  x="0" y="27" width="32" height="22"></rect><rect id="Rectangle-4"  x="0" y="55" width="32" height="22"></rect><rect id="Rectangle-3"  x="37" y="0" width="32" height="22"></rect><rect id="Rectangle-2"  x="37" y="27" width="32" height="22"></rect><rect id="Rectangle-1"  x="37" y="55" width="32" height="22"></rect></g></svg>'
     this.menuRight.addEventListener("touchend", ()=>{
         this.linhaDoTempo().slideView = false
         this.handleVeiw()

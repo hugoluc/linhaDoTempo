@@ -4,8 +4,8 @@ const fs = require("fs")
 
 var allData = []
 
-var paginasCsvPath = '/Users/hugolucena/Desktop/linhaDoTempo/extras/paginas.csv'
-var imagensCsvPath = '/Users/hugolucena/Desktop/linhaDoTempo/extras/imagens.csv'
+var paginasCsvPath = __dirname + '/paginas.csv'
+var imagensCsvPath = __dirname + '/imagens.csv'
 
 var modules = []
 var pages = []
@@ -127,7 +127,7 @@ function saveData() {
 
     var data = 'var data = ' + JSON.stringify(modules, null, 4)
   
-    fs.writeFile("/Users/hugolucena/Desktop/linhaDoTempo/data.js", data, 'utf8', function(error){
+    fs.writeFile("../data.js", data, 'utf8', function(error){
     })
 }
 

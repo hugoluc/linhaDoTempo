@@ -49,7 +49,7 @@ var getPages = (_pagedata) => {
                 },
                 { 
                     type : "text",
-                    url : '' ,
+                    url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/des.vtt' ,
                     title : 'Desativado',
                     default : true
                 }

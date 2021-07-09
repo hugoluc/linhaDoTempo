@@ -563,6 +563,8 @@ subtilteControl.prototype.setup = function () {
 
 function subtitle(_video,_sub,_id,_parent){
 
+    console.log(_sub.url);
+
     this.sub = _sub
     this.id = _id
     this.isActive = false

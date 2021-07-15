@@ -44,7 +44,7 @@ var getPages = (_pagedata) => {
                 { 
                     type : "text",
                     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/pt.vtt' ,
-                    title : 'Portugês',
+                    title : 'Português',
                     default : false
                 },
                 { 

@@ -32,13 +32,13 @@ var getPages = (_pagedata) => {
                 { 
                     type : "text",
                     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/en.vtt' ,
-                    title : "Ingles",
+                    title : "English",
                     default : false
                 },
                 { 
                     type : "text",
                     url : 'content/' + _pagedata.module +'/'+ _pagedata.page_id + '/subs/es.vtt' ,
-                    title : "Espanhol",
+                    title : "Español",
                     default : false
                 },
                 { 
